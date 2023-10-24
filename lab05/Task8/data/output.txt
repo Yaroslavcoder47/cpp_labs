@@ -1,0 +1,18 @@
+New vector:
+4 9 4 6 3 7 5 8 3 
+New vector:
+4 9 4 6 7 5 8 6 
+New vector:
+9 6 7 5 8 6 8 
+New vector:
+9 7 8 6 8 11 
+New vector:
+9 8 8 11 13 
+New vector:
+9 11 13 16 
+New vector:
+13 16 20 
+New vector:
+20 29 
+New vector:
+49 

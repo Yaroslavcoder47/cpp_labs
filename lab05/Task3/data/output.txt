@@ -1,0 +1,16 @@
+Can : 1
+How : 1
+I : 2
+OK : 2
+am : 2
+an : 1
+and : 1
+apple : 3
+are : 1
+fine : 1
+give : 1
+me : 1
+nut : 2
+please : 1
+you : 3
+yur : 1

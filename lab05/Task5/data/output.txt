@@ -1,0 +1,13 @@
+New array: 
+1 4 3 9 5 5 4 7 15 
+Element 6 is not exist.
+New array: 
+1 4 3 9 5 5 4 7 15 10 
+Min_Element: 1
+Element 10 is exist.
+New array: 
+4 3 9 5 5 4 7 15 10 
+Min_Element: 3
+New array: 
+4 3 9 5 5 4 7 15 10 0 
+Element 8 is not exist.

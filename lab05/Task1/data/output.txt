@@ -1,0 +1,18 @@
+Union
+1
+2
+3
+4
+5
+6
+9
+Intersection
+2
+3
+4
+5
+A / B
+1
+B / A
+6
+9

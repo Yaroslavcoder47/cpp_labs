@@ -1,0 +1,10 @@
+9
+add 15
+is_exist 6
+add 10
+find_min
+is_exist 10
+delete 1
+find_min
+add 0
+is_exist 8

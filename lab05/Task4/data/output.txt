@@ -1,0 +1,8 @@
+NO
+On position: -1
+YES
+On position: 5
+YES
+On position: 2
+NO
+On position: -1
