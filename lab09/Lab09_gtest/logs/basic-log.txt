@@ -1,0 +1,612 @@
+[2023-12-23 21:32:38.018] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.018] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.018] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.018] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.019] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.019] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.019] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.019] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.019] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.019] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Size of stack is 4
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Size of stack is 1
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.020] [StackOnList] [info] Size of stack is 0
+[2023-12-23 21:32:38.025] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.026] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:32:38.026] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.028] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.028] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.028] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.028] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.028] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.028] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.030] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.030] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.030] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.030] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.030] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.030] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.031] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.031] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.031] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.031] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.031] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.031] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:32:38.034] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.045] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.048] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:32:38.048] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:32:38.048] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.050] [StackOnArray] [info] Size of stack is 0
+[2023-12-23 21:32:38.050] [StackOnArray] [info] Size of stack is 1
+[2023-12-23 21:32:38.050] [StackOnArray] [info] Size of stack is 2
+[2023-12-23 21:32:38.051] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.053] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.059] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.062] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:32:38.062] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:32:38.062] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.064] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:32:38.064] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:32:38.064] [StackOnArray] [warning] No elements
+[2023-12-23 21:32:38.067] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:32:38.067] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:32:38.067] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:33:42.157] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.157] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.157] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.157] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.158] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.158] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.158] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.158] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.158] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.158] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Size of stack is 4
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Size of stack is 1
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.159] [StackOnList] [info] Size of stack is 0
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.162] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.163] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:33:42.163] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.164] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.164] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.164] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.164] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.164] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.164] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.166] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.166] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.166] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.166] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.166] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.166] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.175] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.175] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.175] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.175] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.175] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.175] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:33:42.179] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.181] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.189] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:33:42.189] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:33:42.189] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.192] [StackOnArray] [info] Size of stack is 0
+[2023-12-23 21:33:42.192] [StackOnArray] [info] Size of stack is 1
+[2023-12-23 21:33:42.192] [StackOnArray] [info] Size of stack is 2
+[2023-12-23 21:33:42.194] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.196] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.198] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.202] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:33:42.203] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:33:42.203] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.206] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:33:42.206] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:33:42.206] [StackOnArray] [warning] No elements
+[2023-12-23 21:33:42.209] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:33:42.209] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:33:42.209] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:36:35.831] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.831] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.831] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.831] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.832] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.832] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.832] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.833] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.833] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.833] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Size of stack is 4
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Size of stack is 1
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.834] [StackOnList] [info] Size of stack is 0
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.838] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:36:35.839] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:36:35.839] [StackOnList] [info] Check stack is empty
+[2023-1[2023-12-23 21:39:23.293] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.293] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.293] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.293] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.295] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.295] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.295] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.295] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.295] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.295] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Size of stack is 4
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Size of stack is 1
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.296] [StackOnList] [info] Size of stack is 0
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.300] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.301] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.301] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Size of stack is 2
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check equal stacks
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.302] [StackOnList] [info] Size of stack is 3
+[2023-12-23 21:39:23.302] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.305] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.305] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.305] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.305] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.305] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.305] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.308] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.308] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.308] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.308] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.308] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.308] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.311] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.311] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.311] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.311] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.311] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.311] [StackOnList] [info] Check stack is empty
+[2023-12-23 21:39:23.326] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.326] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.326] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.328] [StackOnArray] [info] Size of stack is 0
+[2023-12-23 21:39:23.328] [StackOnArray] [info] Size of stack is 1
+[2023-12-23 21:39:23.328] [StackOnArray] [info] Size of stack is 2
+[2023-12-23 21:39:23.341] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.341] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.341] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.345] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.345] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.345] [StackOnArray] [info] Check stack is empty
+[2023-12-23 21:39:23.350] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:39:23.350] [StackOnArray] [info] Check equal stacks
+[2023-12-23 21:39:23.350] [StackOnArray] [info] Check equal stacks

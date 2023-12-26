@@ -1,0 +1,682 @@
+[2023:12:26] [21:13:43] [main] [---I---] Application started
+[2023:12:26] [21:13:43] [main] [---I---] Aplication finished
+[2023:12:26] [21:15:52] [main] [---I---] Application started
+[2023:12:26] [21:15:58] [main] [---I---] Aplication finished
+[2023:12:26] [21:48:37] [main] [---I---] Application started
+[2023:12:26] [21:48:39] [main] [---I---] Aplication finished
+[2023:12:26] [21:52:31] [main] [---I---] Application started
+[2023:12:26] [21:52:33] [main] [---I---] Aplication finished
+[2023:12:26] [22:00:38] [main] [---I---] Application started
+[2023:12:26] [22:00:39] [main] [---I---] Aplication finished
+[2023:12:26] [22:01:05] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:01:06] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:01:05] [main] [---I---] Application started
+[2023:12:26] [22:01:06] [main] [---I---] Aplication finished
+[2023:12:26] [22:01:22] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:01:23] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:01:22] [main] [---I---] Application started
+[2023:12:26] [22:01:23] [main] [---I---] Aplication finished
+[2023:12:26] [22:01:47] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:01:47] [StackOnList] [---D---] Element 1.5 is pushed
+[2023:12:26] [22:01:47] [StackOnList] [---D---] Top element in stack is 1.5
+[2023:12:26] [22:01:50] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:01:50] [StackOnList] [---D---] Element 1.5 is poped
+[2023:12:26] [22:01:47] [main] [---I---] Application started
+[2023:12:26] [22:01:50] [main] [---I---] Aplication finished
+[2023:12:26] [22:03:06] [main] [---I---] Application started
+[2023:12:26] [22:03:08] [main] [---I---] Aplication finished
+[2023:12:26] [22:12:55] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:12:55] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:12:55] [StackOnList] [---D---] Element 1 is pushed
+[2023:12:26] [22:12:55] [StackOnList] [---D---] Top element in stack is 1
+[2023:12:26] [22:12:55] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:12:55] [StackOnList] [---D---] Element 1 is poped
+[2023:12:26] [22:12:53] [main] [---I---] Application started
+[2023:12:26] [22:12:55] [main] [---I---] Aplication finished
+[2023:12:26] [22:15:15] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:15:15] [StackOnList] [---W---] No elements
+[2023:12:26] [22:15:15] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:15:14] [main] [---I---] Application started
+[2023:12:26] [22:21:18] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:21:18] [StackOnList] [---W---] No elements
+[2023:12:26] [22:21:18] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:21:16] [main] [---I---] Application started
+[2023:12:26] [22:21:34] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:21:34] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:21:34] [StackOnList] [---D---] Element d is pushed
+[2023:12:26] [22:21:34] [StackOnList] [---D---] Top element in stack is d
+[2023:12:26] [22:21:34] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:21:34] [StackOnList] [---D---] Element d is poped
+[2023:12:26] [22:21:33] [main] [---I---] Application started
+[2023:12:26] [22:21:34] [main] [---I---] Aplication finished
+[2023:12:26] [22:39:03] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:39:03] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:39:03] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [22:39:03] [StackOnList] [---W---] No elements
+[2023:12:26] [22:39:03] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:39:01] [main] [---I---] Application started
+[2023:12:26] [22:40:11] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:40:11] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:40:11] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [22:40:11] [StackOnList] [---W---] No elements
+[2023:12:26] [22:40:11] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:40:10] [main] [---I---] Application started
+[2023:12:26] [22:43:48] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:43:48] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [22:43:48] [StackOnList] [---W---] No elements
+[2023:12:26] [22:43:48] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:43:46] [main] [---I---] Application started
+[2023:12:26] [22:45:39] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:45:39] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [22:45:39] [StackOnList] [---D---] Top element in stack is 4
+[2023:12:26] [22:45:39] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:45:39] [StackOnList] [---D---] Element 4 is poped
+[2023:12:26] [22:45:38] [main] [---I---] Application started
+[2023:12:26] [22:45:39] [main] [---I---] Aplication finished
+[2023:12:26] [22:46:32] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:46:32] [StackOnList] [---D---] Element a is pushed
+[2023:12:26] [22:46:32] [StackOnList] [---D---] Top element in stack is a
+[2023:12:26] [22:46:32] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:46:32] [StackOnList] [---D---] Element a is poped
+[2023:12:26] [22:46:31] [main] [---I---] Application started
+[2023:12:26] [22:46:32] [main] [---I---] Aplication finished
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Element af is pushed
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Element efrfr is pushed
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Top element in stack is efrfr
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Element efrfr is poped
+[2023:12:26] [22:47:38] [StackOnList] [---D---] Element af is poped
+[2023:12:26] [22:47:36] [main] [---I---] Application started
+[2023:12:26] [22:47:38] [main] [---I---] Aplication finished
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Initialized stack costr
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Element af is pushed
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Element efrfr is pushed
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Top element in stack is efrfr
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Element efrfr is poped
+[2023:12:26] [22:58:23] [StackOnList] [---D---] Element af is poped
+[2023:12:26] [22:58:20] [main] [---I---] Application started
+[2023:12:26] [22:58:23] [main] [---I---] Aplication finished
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element a is pushed
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:26] [22:59:32] [StackOnList] [---I---] Check stack is empty
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element a is poped
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element 5 is poped
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element 4 is poped
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Top element in stack is 5
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:59:32] [StackOnList] [---D---] Element 5 is poped
+[2023:12:26] [22:59:26] [main] [---I---] Application started
+[2023:12:26] [22:59:32] [main] [---I---] Aplication finished
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Stack is created
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Element a is pushed
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Top element in stack is 4
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Element a is poped
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [22:59:51] [StackOnList] [---D---] Element 4 is poped
+[2023:12:26] [22:59:38] [main] [---I---] Application started
+[2023:12:26] [22:59:51] [main] [---I---] Aplication finished
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Element a is pushed
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Top element in stack is 4
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Element a is poped
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:00:05] [StackOnList] [---D---] Element 4 is poped
+[2023:12:26] [23:00:02] [main] [---I---] Application started
+[2023:12:26] [23:00:05] [main] [---I---] Aplication finished
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element i is pushed
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element i is pushed
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element 3 is pushed
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Top element in stack is 3
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element i is poped
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element i is poped
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:00:20] [StackOnList] [---D---] Element 3 is poped
+[2023:12:26] [23:00:18] [main] [---I---] Application started
+[2023:12:26] [23:00:20] [main] [---I---] Aplication finished
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Element a is pushed
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Element 9 is pushed
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Top element in stack is 9
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Element a is poped
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:08:31] [StackOnList] [---D---] Element 9 is poped
+[2023:12:26] [23:08:19] [main] [---I---] Application started
+[2023:12:26] [23:08:31] [main] [---I---] Aplication finished
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element i is pushed
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element ( is pushed
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element 8 is pushed
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Top element in stack is 8
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element i is poped
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element ( is poped
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:09:43] [StackOnList] [---D---] Element 8 is poped
+[2023:12:26] [23:09:38] [main] [---I---] Application started
+[2023:12:26] [23:09:43] [main] [---I---] Aplication finished
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Stack is created
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Element 1 is pushed
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Top element in stack is 1
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Stack is deleted
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Element 1 is poped
+[2023:12:26] [23:09:55] [StackOnList] [---D---] Element 4 is poped
+[2023:12:26] [23:09:48] [main] [---I---] Application started
+[2023:12:26] [23:09:55] [main] [---I---] Aplication finished
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element i is pushed
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Top element in stack is 4
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element i is poped
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:13:37] [StackOnList] [---D---] Element 4 is poped
+[2023:12:27] [00:13:15] [main] [---I---] Application started
+[2023:12:27] [00:13:37] [main] [---I---] Aplication finished
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Top element in stack is 5
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:13:57] [StackOnList] [---D---] Element 5 is poped
+[2023:12:27] [00:13:50] [main] [---I---] Application started
+[2023:12:27] [00:13:57] [main] [---I---] Aplication finished
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element i is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element i is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 4 is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 4 is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 5 is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 4 is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Top element in stack is 5
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:14] [StackOnList] [---D---] Element 5 is poped
+[2023:12:27] [00:22:06] [main] [---I---] Application started
+[2023:12:27] [00:22:14] [main] [---I---] Aplication finished
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Top element in stack is 5
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:36] [StackOnList] [---D---] Element 5 is poped
+[2023:12:27] [00:22:28] [main] [---I---] Application started
+[2023:12:27] [00:22:36] [main] [---I---] Aplication finished
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element 4 is pushed
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:27] [00:22:47] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element 5 is poped
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element 4 is poped
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element 5 is pushed
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:22:47] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:47] [StackOnList] [---D---] Element 5 is poped
+[2023:12:27] [00:22:37] [main] [---I---] Application started
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:22:52] [StackOnList] [---W---] No elements
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:22:52] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:22:50] [main] [---I---] Application started
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element i is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element a is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element 3 is pushed
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Top element in stack is 3
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element i is poped
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element a is poped
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:23:13] [StackOnList] [---D---] Element 3 is poped
+[2023:12:27] [00:22:56] [main] [---I---] Application started
+[2023:12:27] [00:23:13] [main] [---I---] Aplication finished
+[2023:12:27] [00:44:19] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:44:19] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:19] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [00:44:19] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:19] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:19] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [00:44:19] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:19] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:44:15] [main] [---I---] Application started
+[2023:12:27] [00:44:19] [main] [---I---] Aplication finished
+[2023:12:27] [00:44:33] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:44:33] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:33] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:44:22] [main] [---I---] Application started
+[2023:12:27] [00:44:33] [main] [---I---] Aplication finished
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Stack is created
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element / is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element - is pushed
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element - is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Top element in stack is /
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Element / is poped
+[2023:12:27] [00:44:52] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [00:44:52] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [00:44:37] [main] [---I---] Application started
+[2023:12:27] [00:44:52] [main] [---I---] Aplication finished
+[2023:12:27] [01:02:31] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:02:31] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:31] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:02:31] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:31] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:02:31] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:02:31] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:31] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Stack is created
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Element 8 is pushed
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Element 8 is poped
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Top element in stack is 2
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Top element in stack is 10
+[2023:12:27] [01:02:31] [StackOnArray] [---D---] Stack is deleted
+[2023:12:27] [01:02:29] [main] [---I---] Application started
+[2023:12:27] [01:02:31] [main] [---I---] Aplication finished
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:02:37] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:02:37] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:02:37] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:02:37] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:02:37] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:37] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Stack is created
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Element 4 is pushed
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Element 4 is poped
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Top element in stack is 2
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Element 2 is poped
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Top element in stack is 8
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Top element in stack is 10
+[2023:12:27] [01:02:37] [StackOnArray] [---D---] Stack is deleted
+[2023:12:27] [01:02:33] [main] [---I---] Application started
+[2023:12:27] [01:02:37] [main] [---I---] Aplication finished
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element / is pushed
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is /
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is /
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element / is poped
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element - is pushed
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element - is poped
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:02:54] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:02:54] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Stack is created
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 8 is pushed
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 2 is poped
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Top element in stack is 8
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 3 is pushed
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 1 is pushed
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 1 is poped
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Top element in stack is 3
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 3 is poped
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Top element in stack is 4
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Element 2 is poped
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Top element in stack is 1
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Top element in stack is 3
+[2023:12:27] [01:02:54] [StackOnArray] [---D---] Stack is deleted
+[2023:12:27] [01:02:39] [main] [---I---] Application started
+[2023:12:27] [01:02:54] [main] [---I---] Aplication finished
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element / is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element - is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element - is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is /
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element / is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element / is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element - is pushed
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is -
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element - is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Top element in stack is /
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Element / is poped
+[2023:12:27] [01:04:24] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:04:24] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Stack is created
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 8 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 5 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 5 is poped
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 2
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 10 is poped
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 8
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 1 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 3 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 2 is poped
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 3
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 6 is poped
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 1
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 4 is pushed
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 4 is poped
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 7
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Element 3 is poped
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 18
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Top element in stack is 6
+[2023:12:27] [01:04:24] [StackOnArray] [---D---] Stack is deleted
+[2023:12:27] [01:03:45] [main] [---I---] Application started
+[2023:12:27] [01:04:24] [main] [---I---] Aplication finished
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Stack is created
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element ( is pushed
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element + is pushed
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is +
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element + is poped
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is (
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element ( is poped
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element * is pushed
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Top element in stack is *
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Element * is poped
+[2023:12:27] [01:05:22] [StackOnList] [---I---] Check stack is empty
+[2023:12:27] [01:05:22] [StackOnList] [---D---] Stack is deleted
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Stack is created
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Element 4 is pushed
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Element 2 is pushed
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Element 2 is poped
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Top element in stack is 4
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Element 5 is pushed
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Element 5 is poped
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Top element in stack is 6
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Top element in stack is 30
+[2023:12:27] [01:05:22] [StackOnArray] [---D---] Stack is deleted
+[2023:12:27] [01:05:17] [main] [---I---] Application started
+[2023:12:27] [01:05:22] [main] [---I---] Aplication finished

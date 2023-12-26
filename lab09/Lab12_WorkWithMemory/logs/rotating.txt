@@ -1,0 +1,1 @@
+[2023-12-13 21:01:58.056] [some_logger_name] [info] End of example.
