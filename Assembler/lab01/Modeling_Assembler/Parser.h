@@ -6,12 +6,13 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 
 class Parser
 {
 public:
-	void parseData(std::string file, bool flag);
-	//std::map<std::string, double> parseCode(std::string file);
+	std::map<std::string, int> parseData(const std::string& file, bool flag);
+	//std::map<std::string, int> parseCode(std::string file);
 private:
 	void clearString(std::string& str);
 };

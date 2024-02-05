@@ -19,22 +19,27 @@ void Parser::clearString(std::string& str) {
 	}
 }
 
-void Parser::parseData(std::string file, bool flag)
+std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 {
-	std::vector<std::string> list;
+	std::map<std::string, int> list;
+	std::string arg1;
+	std::string arg2s;
+	int arg2;
+	char ch;
 	std::string str;
 	std::ifstream fin(file, std::ios::in);
 	while (getline(fin, str), str != ".code") {
-		//getline(fin, str);
 		if (str != ".data") {
 			clearString(str);
-			list.push_back(str);
+			std::stringstream ss(str);
+			ss >> arg1 >> arg2s;
+			//TODO with ?
+			arg2 = std::stoi(arg2s);
+			list[arg1] = arg2;
 		}
 	}
 	fin.close();
 
-	for (auto i : list) {
-		std::cout << i << "\n";
-	}
+	return list;
 
 }
