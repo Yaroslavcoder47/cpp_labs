@@ -14,10 +14,15 @@ using std::vector;
 
 int main()
 {
-	map<string, int> m;
+	map<string, int> dataNumber;
+	map<string, int> dataResult;
 	Parser p;
-	m = p.parseData("input.txt", 1);
-	for (const auto& i : m) {
+	dataNumber = p.parseData("input.txt", 1);
+	dataResult = p.parseData("input.txt", 0);
+	for (const auto& i : dataNumber) {
+		cout << i.first << " " << i.second << "\n";
+	}
+	for (const auto& i : dataResult) {
 		cout << i.first << " " << i.second << "\n";
 	}
 	return 0;

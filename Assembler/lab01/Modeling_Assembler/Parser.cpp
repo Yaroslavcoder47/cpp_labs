@@ -34,8 +34,19 @@ std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 			std::stringstream ss(str);
 			ss >> arg1 >> arg2s;
 			//TODO with ?
-			arg2 = std::stoi(arg2s);
-			list[arg1] = arg2;
+			if (flag) {
+				if (arg2s != "?") {
+					arg2 = std::stoi(arg2s);
+					list[arg1] = arg2;
+				}
+			}
+			else {
+				if (arg2s == "?") {
+					list[arg1] = 0;
+				}
+			}
+			
+			
 		}
 	}
 	fin.close();
