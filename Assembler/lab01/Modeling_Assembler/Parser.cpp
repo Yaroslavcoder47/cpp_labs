@@ -25,7 +25,6 @@ std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 	std::string arg1;
 	std::string arg2s;
 	int arg2;
-	char ch;
 	std::string str;
 	std::ifstream fin(file, std::ios::in);
 	while (getline(fin, str), str != ".code") {
@@ -33,7 +32,6 @@ std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 			clearString(str);
 			std::stringstream ss(str);
 			ss >> arg1 >> arg2s;
-			//TODO with ?
 			if (flag) {
 				if (arg2s != "?") {
 					arg2 = std::stoi(arg2s);
@@ -50,7 +48,27 @@ std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 		}
 	}
 	fin.close();
-
 	return list;
+}
 
+
+std::map<std::string, std::string> Parser::parseCode(std::string file)
+{
+	std::map<std::string, std::string> list;
+	std::string arg1;
+	std::string arg2;
+	std::string ch;
+	std::string str;
+	std::ifstream fin(file, std::ios::in);
+	while (getline(fin, str), str != ".code") {
+		continue;
+	}
+	while (getline(fin, str), str != "end") {
+			clearString(str);
+			std::stringstream ss(str);
+			ss >> arg1 >> ch >> arg2;
+			list[arg1] = arg2;
+	}
+	fin.close();
+	return list;
 }

@@ -12,7 +12,7 @@ class Parser
 {
 public:
 	std::map<std::string, int> parseData(const std::string& file, bool flag);
-	//std::map<std::string, string> parseCode(std::string file);
+	std::map<std::string, std::string> parseCode(std::string file);
 private:
 	void clearString(std::string& str);
 };
