@@ -17,9 +17,11 @@ class ProgramClass
 {
 public:
 	static int Calculate();
-	void setData();
+	friend void Parser::parseCode(std::string file);
 private:
 	std::map<std::string, int> dataNumber;
+	std::map<std::string, int> dataResult;
+	int EAX;
 };
 
 #endif // !PROGRAM_CLASS_H
