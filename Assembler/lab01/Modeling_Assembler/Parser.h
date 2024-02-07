@@ -11,7 +11,7 @@ class Parser
 {
 public:
 	std::map<std::string, int> parseData(const std::string& file, bool flag);
-	void parseCode(std::string file);
+	void parseCode(std::string, ProgramClass&);
 private:
 	void clearString(std::string& str);
 };
