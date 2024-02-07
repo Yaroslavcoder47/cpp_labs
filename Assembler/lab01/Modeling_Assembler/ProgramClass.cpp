@@ -1,25 +1,39 @@
 #include "ProgramClass.h"
 
+//TODO add tests and log
 int ProgramClass::Calculate()
 {
 	ProgramClass program;
 	Parser pars;
-	program.dataNumber = pars.parseData("input.txt", 1);
-	
-	/*for (const auto& i : program.dataNumber) {
-		std::cout << i.first << " " << i.second << "\n";
-	}*/
-	program.dataResult = pars.parseData("input.txt", 0);
-	program.parseCode("input.txt", program);
-	cout << program.getRegisterData();
+	program.dataNumber = pars.parseData("input-asm-code.txt", 1);
+	program.dataResult = pars.parseData("input-asm-code.txt", 0);
+	program.parseCode("input-asm-code.txt", program);
+	program.printData("output.txt");
 	return 0;
 }
 
+void ProgramClass::printData(std::string file)
+{
+	std::ofstream fout(file, std::ios::out);
+	if (file == "output.json") {
+		fout << "{ ";
+		for (const auto& item : dataResult) {
+			fout << '\"' << item.first << "\":" << item.second << ", ";
+		}
+		fout << '}';
+	}
+	if (file == "output.txt") {
+		for (const auto& item : dataResult) {
+			fout << item.first << ' ' << item.second << '\n';
+		}
+	}
+	
+}
+
+//TODO much easier with if
 void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 {
-	
 	Parser pars;
-	std::map<std::string, std::string> list;
 	std::string arg1;
 	std::string arg2;
 	std::string ch;
@@ -94,6 +108,5 @@ void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 			}
 		}
 	}
-
 	fin.close();
 }

@@ -5,6 +5,7 @@
 #include <map>
 #include <vector>
 #include <string>
+#include <fstream>
 #include "Parser.h"
 #include "Command.h"
 
@@ -24,6 +25,7 @@ public:
 	int getRegisterData() { return EAX; };
 	int getResultData(std::string key) { return dataResult[key]; };
 	int getDataNumber(std::string key) { return dataNumber[key]; };
+	void printData(std::string file);
 private:
 	std::map<std::string, int> dataNumber;
 	std::map<std::string, int> dataResult;
