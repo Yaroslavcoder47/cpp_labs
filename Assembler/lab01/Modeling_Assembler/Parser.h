@@ -3,7 +3,6 @@
 #define PARSER_H
 #include <map>
 #include <string>
-#include <vector>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -11,8 +10,8 @@
 class Parser
 {
 public:
-	static std::map<std::string, int> parseData(const std::string& file, bool flag);
-	std::map<std::string, std::string> parseCode(std::string file);
+	std::map<std::string, int> parseData(const std::string& file, bool flag);
+	void parseCode(std::string file);
 private:
 	void clearString(std::string& str);
 };

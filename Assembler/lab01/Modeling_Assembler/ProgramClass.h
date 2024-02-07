@@ -1,19 +1,25 @@
 #pragma once
 #ifndef PROGRAM_CLASS_H
 #define PROGRAM_CLASS_H
+#include <spdlog/spdlog.h>
+#include <map>
+#include <vector>
+#include <string>
+#include "Parser.h"
 
+using std::cin;
+using std::cout;
+using std::string;
+using std::map;
+using std::vector;
 
 class ProgramClass
 {
 public:
-	void Calculate();
+	static int Calculate();
+	void setData();
 private:
-	map<string, int> dataNumber;
+	std::map<std::string, int> dataNumber;
 };
 
-void ProgramClass::Calculate()
-{
-	Parser p;
-	dataNumber = p.parseData("input.txt", 1);
-}
 #endif // !PROGRAM_CLASS_H

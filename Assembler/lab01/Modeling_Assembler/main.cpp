@@ -1,28 +1,17 @@
-#include <spdlog/spdlog.h>
-#include <map>
-#include <vector>
-#include <string>
-#include "Parser.h"
-
-using std::cin;
-using std::cout;
-using std::string;
-using std::map;
-using std::vector;
-
+#include <iostream>
+#include "ProgramClass.h"
 
 int main()
 {
 	
-	map<string, string> dataResult;
+	/*map<string, string> dataResult;
 	Parser p;
 	
 	dataResult = p.parseCode("input.txt");
-	for (const auto& i : dataNumber) {
-		cout << i.first << " " << i.second << "\n";
-	}
+	
 	for (const auto& i : dataResult) {
 		cout << i.first << " " << i.second << "\n";
-	}
-	return 0;
+	}*/
+	return ProgramClass::Calculate();
+	
 }

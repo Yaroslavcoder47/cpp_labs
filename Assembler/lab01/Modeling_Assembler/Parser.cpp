@@ -52,7 +52,7 @@ std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 }
 
 
-std::map<std::string, std::string> Parser::parseCode(std::string file)
+void Parser::parseCode(std::string file)
 {
 	std::map<std::string, std::string> list;
 	std::string arg1;
@@ -70,5 +70,4 @@ std::map<std::string, std::string> Parser::parseCode(std::string file)
 			list[arg1] = arg2;
 	}
 	fin.close();
-	return list;
 }
