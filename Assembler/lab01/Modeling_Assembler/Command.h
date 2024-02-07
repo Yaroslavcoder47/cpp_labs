@@ -4,7 +4,8 @@
 class Command
 {
 public:
-	void execute();
+	~Command() = default;
+	virtual int execute(const int&, const int&) const = 0;
 };
 
 #endif // !COMMAND_H
