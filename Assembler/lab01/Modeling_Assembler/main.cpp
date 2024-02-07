@@ -13,10 +13,10 @@ using std::vector;
 
 int main()
 {
-	map<string, int> dataNumber;
+	
 	map<string, string> dataResult;
 	Parser p;
-	dataNumber = p.parseData("input.txt", 1);
+	
 	dataResult = p.parseCode("input.txt");
 	for (const auto& i : dataNumber) {
 		cout << i.first << " " << i.second << "\n";

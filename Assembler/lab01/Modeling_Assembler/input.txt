@@ -13,7 +13,7 @@ add	Ak   x03
 mov	x05  Ak      //  ax2+c
 mov	Ak   x04
 mul	Ak   x02
-mul	Ak   х00     //  -bx
+mul	Ak   x00     //  -bx
 add	Ak   x05
 mov	x05  Ak      
 end
