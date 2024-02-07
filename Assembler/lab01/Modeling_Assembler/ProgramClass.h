@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include "Parser.h"
+#include "Command.h"
 
 using std::cin;
 using std::cout;
