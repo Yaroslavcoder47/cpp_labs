@@ -18,7 +18,12 @@ class ProgramClass
 {
 public:
 	static int Calculate();
-	friend void Parser::parseCode(std::string file);
+	void parseCode(std::string file, ProgramClass& obj);
+	void setRegisterData(int data) { EAX = data; };
+	void setResultData(std::string key, int value) { dataResult[key] = value; };
+	int getRegisterData() { return EAX; };
+	int getResultData(std::string key) { return dataResult[key]; };
+	int getDataNumber(std::string key) { return dataNumber[key]; };
 private:
 	std::map<std::string, int> dataNumber;
 	std::map<std::string, int> dataResult;

@@ -4,8 +4,12 @@
 class Command
 {
 public:
-	~Command() = default;
-	virtual int execute(const int&, const int&) const = 0;
+	static int multiplication(const int& a, const int& b);
+	static int addition(const int& a, const int& b);
+	static int division(const int& a, const int& b);
+	static int subtraction(const int& a, const int& b);
 };
+
+
 
 #endif // !COMMAND_H

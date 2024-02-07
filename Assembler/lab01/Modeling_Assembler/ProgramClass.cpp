@@ -6,17 +6,18 @@ int ProgramClass::Calculate()
 	Parser pars;
 	program.dataNumber = pars.parseData("input.txt", 1);
 	
-	for (const auto& i : program.dataNumber) {
+	/*for (const auto& i : program.dataNumber) {
 		std::cout << i.first << " " << i.second << "\n";
-	}
+	}*/
 	program.dataResult = pars.parseData("input.txt", 0);
-	pars.parseCode("input.txt");
-	
+	program.parseCode("input.txt", program);
+	cout << program.getRegisterData();
 	return 0;
 }
 
-void Parser::parseCode(std::string file)
+void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 {
+	
 	Parser pars;
 	std::map<std::string, std::string> list;
 	std::string arg1;
@@ -31,7 +32,68 @@ void Parser::parseCode(std::string file)
 		pars.clearString(str);
 		std::stringstream ss(str);
 		ss >> arg1 >> ch >> arg2;
-
+		
+		if (arg1 == "mul") {
+			if (ch == "Ak") {
+				if (dataNumber.find(arg2) == dataNumber.end()) {
+					obj.setRegisterData(Command::multiplication(obj.getRegisterData(), obj.getResultData(arg2)));
+				}
+				else {
+					obj.setRegisterData(Command::multiplication(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				}
+			}
+			else {
+				obj.setResultData(ch, Command::multiplication(obj.getRegisterData(), obj.getDataNumber(arg2)));
+			}
+		}
+		if (arg1 == "add") {
+			if (ch == "Ak") {
+				if (dataNumber.find(arg2) == dataNumber.end()) {
+					obj.setRegisterData(Command::addition(obj.getRegisterData(), obj.getResultData(arg2)));
+				}
+				else {
+					obj.setRegisterData(Command::addition(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				}
+			}
+			else {
+				obj.setResultData(ch, Command::addition(obj.getRegisterData(), obj.getDataNumber(arg2)));
+			}
+		}
+		if (arg1 == "div") {
+			if (ch == "Ak") {
+				if (dataNumber.find(arg2) == dataNumber.end()) {
+					obj.setRegisterData(Command::division(obj.getRegisterData(), obj.getResultData(arg2)));
+				}
+				else {
+					obj.setRegisterData(Command::division(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				}
+			}
+			else {
+				obj.setResultData(ch, Command::division(obj.getRegisterData(), obj.getDataNumber(arg2)));
+			}
+		}
+		if (arg1 == "sub") {
+			if (ch == "Ak") {
+				if (dataNumber.find(arg2) == dataNumber.end()) {
+					obj.setRegisterData(Command::subtraction(obj.getRegisterData(), obj.getResultData(arg2)));
+				}
+				else {
+					obj.setRegisterData(Command::subtraction(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				}
+			}
+			else {
+				obj.setResultData(ch, Command::subtraction(obj.getRegisterData(), obj.getDataNumber(arg2)));
+			}
+		}
+		if (arg1 == "mov") {
+			if (ch == "Ak") {
+				obj.setRegisterData(obj.getDataNumber(arg2));
+			}
+			else {
+				obj.setResultData(ch, obj.getRegisterData());
+			}
+		}
 	}
+
 	fin.close();
 }

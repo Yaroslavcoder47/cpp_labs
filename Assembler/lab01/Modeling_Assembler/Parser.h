@@ -6,13 +6,13 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include "ProgramClass.h"
 
 class Parser
 {
 public:
 	std::map<std::string, int> parseData(const std::string& file, bool flag);
-	void parseCode(std::string, ProgramClass&);
-private:
+	//friend void ProgramClass::parseCode(std::string file, ProgramClass& obj);
 	void clearString(std::string& str);
 };
 
