@@ -1,6 +1,7 @@
 #pragma once
 #ifndef COMMAND_H
 #define COMMAND_H
+#include <spdlog/spdlog.h>
 class Command
 {
 public:

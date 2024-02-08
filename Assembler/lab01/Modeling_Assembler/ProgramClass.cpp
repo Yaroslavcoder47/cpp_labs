@@ -1,18 +1,24 @@
 #include "ProgramClass.h"
 
-//TODO add tests and log
+
 int ProgramClass::Calculate()
 {
-	spdlog::set_level(spdlog::level::debug);
-	spdlog::info("Start");
-	ProgramClass program;
-	Parser pars;
-	program.dataNumber = pars.parseData("input-asm-code.txt", 1);
-	program.dataResult = pars.parseData("input-asm-code.txt", 0);
-	program.parseCode("input-asm-code.txt", program);
-	program.printData("output.json");
+	try {
+		spdlog::set_level(spdlog::level::debug);
+		spdlog::info("Start");
 
-	spdlog::info("End");
+		ProgramClass program;
+		Parser pars;
+		program.dataNumber = pars.parseData("input-asm-code.txt", 1);
+		program.dataResult = pars.parseData("input-asm-code.txt", 0);
+		program.parseCode("input-asm-code.txt", program);
+		program.printData("output.json");
+
+		spdlog::info("End");
+	}
+	catch (const std::exception& ex) {
+		std::cerr << ex.what();
+	}
 	return 0;
 }
 

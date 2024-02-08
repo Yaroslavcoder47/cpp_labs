@@ -3,7 +3,6 @@
 #define PROGRAM_CLASS_H
 #include <spdlog/spdlog.h>
 #include <map>
-#include <vector>
 #include <string>
 #include <fstream>
 #include "Parser.h"
@@ -13,7 +12,7 @@ using std::cin;
 using std::cout;
 using std::string;
 using std::map;
-using std::vector;
+
 
 class ProgramClass
 {
