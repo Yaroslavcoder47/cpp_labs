@@ -1,7 +1,7 @@
 #include "ProgramClass.h"
 
 
-int ProgramClass::Calculate()
+int ProgramClass::main()
 {
 	try {
 		spdlog::set_level(spdlog::level::debug);
@@ -12,7 +12,7 @@ int ProgramClass::Calculate()
 		program.dataNumber = pars.parseData("input-asm-code.txt", 1);
 		program.dataResult = pars.parseData("input-asm-code.txt", 0);
 		program.parseCode("input-asm-code.txt", program);
-		program.printData("output.json");
+		program.printData("output.txt");
 
 		spdlog::info("End");
 	}
@@ -20,6 +20,11 @@ int ProgramClass::Calculate()
 		std::cerr << ex.what();
 	}
 	return 0;
+}
+
+int ProgramClass::executeCommand(Command* cmd)
+{
+	return cmd->execute();
 }
 
 void ProgramClass::printData(std::string file)
@@ -42,7 +47,6 @@ void ProgramClass::printData(std::string file)
 	}
 }
 
-//TODO much easier with if
 void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 {
 	spdlog::debug("Parsing part of .code");
@@ -59,57 +63,81 @@ void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 		pars.clearString(str);
 		std::stringstream ss(str);
 		ss >> arg1 >> ch >> arg2;
-		
+		int result;
 		if (arg1 == "mul") {
 			if (ch == "Ak") {
 				if (dataNumber.find(arg2) == dataNumber.end()) {
-					obj.setRegisterData(Command::multiplication(obj.getRegisterData(), obj.getResultData(arg2)));
+					result = getRegisterData();
+					Command* mulCommand = new Multiplication(result, getResultData(arg2));
+					setRegisterData(executeCommand(mulCommand));
 				}
 				else {
-					obj.setRegisterData(Command::multiplication(obj.getRegisterData(), obj.getDataNumber(arg2)));
+					result = getRegisterData();
+					Command* mulCommand = new Multiplication(result, getDataNumber(arg2));
+					setRegisterData(executeCommand(mulCommand));
 				}
 			}
 			else {
-				obj.setResultData(ch, Command::multiplication(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				result = getRegisterData();
+				Command* mulCommand = new Multiplication(result, getDataNumber(arg2));
+				setResultData(ch, executeCommand(mulCommand));
 			}
 		}
 		if (arg1 == "add") {
 			if (ch == "Ak") {
 				if (dataNumber.find(arg2) == dataNumber.end()) {
-					obj.setRegisterData(Command::addition(obj.getRegisterData(), obj.getResultData(arg2)));
+					result = getRegisterData();
+					Command* addComand = new Addition(result, getResultData(arg2));
+					setRegisterData(executeCommand(addComand));
 				}
 				else {
-					obj.setRegisterData(Command::addition(obj.getRegisterData(), obj.getDataNumber(arg2)));
+					result = getRegisterData();
+					Command* addComand = new Addition(result, getDataNumber(arg2));
+					setRegisterData(executeCommand(addComand));
 				}
 			}
 			else {
-				obj.setResultData(ch, Command::addition(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				result = getRegisterData();
+				Command* addComand = new Addition(result, getDataNumber(arg2));
+				setResultData(ch, executeCommand(addComand));
 			}
 		}
 		if (arg1 == "div") {
 			if (ch == "Ak") {
 				if (dataNumber.find(arg2) == dataNumber.end()) {
-					obj.setRegisterData(Command::division(obj.getRegisterData(), obj.getResultData(arg2)));
+					result = getRegisterData();
+					Command* divCommand = new Division(result, getResultData(arg2));
+					setRegisterData(executeCommand(divCommand));
 				}
 				else {
-					obj.setRegisterData(Command::division(obj.getRegisterData(), obj.getDataNumber(arg2)));
+					result = getRegisterData();
+					Command* divCommand = new Division(result, getDataNumber(arg2));
+					setRegisterData(executeCommand(divCommand));
 				}
 			}
 			else {
-				obj.setResultData(ch, Command::division(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				result = getRegisterData();
+				Command* divCommand = new Division(result, getDataNumber(arg2));
+				setResultData(ch, executeCommand(divCommand));
 			}
 		}
 		if (arg1 == "sub") {
 			if (ch == "Ak") {
 				if (dataNumber.find(arg2) == dataNumber.end()) {
-					obj.setRegisterData(Command::subtraction(obj.getRegisterData(), obj.getResultData(arg2)));
+					result = getRegisterData();
+					Command* subCommand = new Subtraction(result, getResultData(arg2));
+					setRegisterData(executeCommand(subCommand));
 				}
 				else {
-					obj.setRegisterData(Command::subtraction(obj.getRegisterData(), obj.getDataNumber(arg2)));
+					result = getRegisterData();
+					Command* subCommand = new Subtraction(result, getDataNumber(arg2));
+					setRegisterData(executeCommand(subCommand));
 				}
 			}
 			else {
-				obj.setResultData(ch, Command::subtraction(obj.getRegisterData(), obj.getDataNumber(arg2)));
+				result = getRegisterData();
+				Command* subCommand = new Subtraction(result, getDataNumber(arg2));
+				setResultData(ch, executeCommand(subCommand));
 			}
 		}
 		if (arg1 == "mov") {
