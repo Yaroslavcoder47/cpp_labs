@@ -10,6 +10,4 @@ public:
 	static int subtraction(const int& a, const int& b);
 };
 
-
-
 #endif // !COMMAND_H

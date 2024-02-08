@@ -3,19 +3,25 @@
 //TODO add tests and log
 int ProgramClass::Calculate()
 {
+	spdlog::set_level(spdlog::level::debug);
+	spdlog::info("Start");
 	ProgramClass program;
 	Parser pars;
 	program.dataNumber = pars.parseData("input-asm-code.txt", 1);
 	program.dataResult = pars.parseData("input-asm-code.txt", 0);
 	program.parseCode("input-asm-code.txt", program);
-	program.printData("output.txt");
+	program.printData("output.json");
+
+	spdlog::info("End");
 	return 0;
 }
 
 void ProgramClass::printData(std::string file)
 {
+	spdlog::debug("Output data in file");
 	std::ofstream fout(file, std::ios::out);
 	if (file == "output.json") {
+		spdlog::info("Output data in JSON file");
 		fout << "{ ";
 		for (const auto& item : dataResult) {
 			fout << '\"' << item.first << "\":" << item.second << ", ";
@@ -23,16 +29,17 @@ void ProgramClass::printData(std::string file)
 		fout << '}';
 	}
 	if (file == "output.txt") {
+		spdlog::info("Output data in TXT file");
 		for (const auto& item : dataResult) {
 			fout << item.first << ' ' << item.second << '\n';
 		}
 	}
-	
 }
 
 //TODO much easier with if
 void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 {
+	spdlog::debug("Parsing part of .code");
 	Parser pars;
 	std::string arg1;
 	std::string arg2;

@@ -1,6 +1,7 @@
 #include "Parser.h"
 
 void Parser::clearString(std::string& str) {
+	spdlog::debug("Clear string of comments");
 	for (size_t i = 0; i < str.length(); ++i) {
 		if (str[i] == '/') {
 			if (str[i+1] == '*') {
@@ -21,6 +22,7 @@ void Parser::clearString(std::string& str) {
 
 std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 {
+	spdlog::debug("Parsing part of .data");
 	std::map<std::string, int> list;
 	std::string arg1;
 	std::string arg2s;
