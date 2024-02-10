@@ -6,7 +6,7 @@
 class Addition : public Command
 {
 public:
-	int execute() const { operand_ += value_; return operand_; }
+	int execute() const { spdlog::debug("Addition {0:d}, {1:d}", operand_, value_); operand_ += value_; return operand_; }
 	Addition(int& operand, int value) : operand_(operand), value_(value) {}
 private:
 	int& operand_;

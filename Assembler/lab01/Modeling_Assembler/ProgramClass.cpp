@@ -142,10 +142,10 @@ void ProgramClass::parseCode(std::string file, ProgramClass& obj)
 		}
 		if (arg1 == "mov") {
 			if (ch == "Ak") {
-				obj.setRegisterData(obj.getDataNumber(arg2));
+				setRegisterData(getDataNumber(arg2));
 			}
 			else {
-				obj.setResultData(ch, obj.getRegisterData());
+				setResultData(ch, getRegisterData());
 			}
 		}
 	}

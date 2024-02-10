@@ -6,7 +6,7 @@
 class Division : public Command
 {
 public:
-	int execute() const { operand_ /= value_; return operand_; }
+	int execute() const { spdlog::debug("Division {0:d}, {1:d}", operand_, value_); operand_ /= value_; return operand_; }
 	Division(int& operand, int value) : operand_(operand), value_(value) {}
 private:
 	int& operand_;
