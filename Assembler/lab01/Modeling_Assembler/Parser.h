@@ -1,12 +1,15 @@
 #pragma once
 #ifndef PARSER_H
 #define PARSER_H
+
 #include <map>
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include "ProgramClass.h"
+#include "spdlog/spdlog.h"
+
 
 class Parser
 {

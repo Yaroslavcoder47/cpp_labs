@@ -1,7 +1,7 @@
 #pragma once
 #ifndef PROGRAM_CLASS_H
 #define PROGRAM_CLASS_H
-#include "spdlog/spdlog.h"
+
 #include <map>
 #include <string>
 #include <fstream>
@@ -11,6 +11,7 @@
 #include "Division.h"
 #include "Addition.h"
 #include "Subtraction.h"
+#include "spdlog/spdlog.h"
 
 using std::cin;
 using std::cout;
@@ -30,10 +31,10 @@ public:
 	int getDataNumber(std::string key) { return dataNumber[key]; };
 	void printData(std::string file);
 private:
-	int executeCommand(Command* cmd);
+	int executeCommand(Command* cmd); 
 	std::map<std::string, int> dataNumber;
 	std::map<std::string, int> dataResult;
 	int EAX;
 };
 
-#endif !PROGRAMCLASS_H
+#endif // !PROGRAMCLASS_H

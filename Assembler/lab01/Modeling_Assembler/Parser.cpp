@@ -45,8 +45,6 @@ std::map<std::string, int> Parser::parseData(const std::string& file, bool flag)
 					list[arg1] = 0;
 				}
 			}
-			
-			
 		}
 	}
 	fin.close();
