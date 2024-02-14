@@ -10,10 +10,10 @@ int main()
 	cin >> a;
 	__asm {
 		mov eax, a
-		imul eax, eax
+		mul eax
 		mov ebx, eax
 		imul ebx, a
-		imul eax, eax
+		mul eax
 		imul eax, a
 		add eax, ebx
 		add eax, a
