@@ -47,9 +47,32 @@ void SecondTask()
 	cout << "The result of operation (a^5+2(a^2-4) + a)/a^3: " << res << '\n';
 }
 
+void ThirdTask()
+{
+	int a, n;
+	cout << "Input value of a: ";
+	cin >> a;
+	__asm {
+		mov eax, a
+		xor edx, edx
+		xor ecx, ecx
+		check:
+			imul eax
+			test edx, edx
+			jnz overflow
+			inc ecx
+			jmp check
+		overflow:
+			dec ecx
+			mov n, ecx
+	}
+	cout << n;
+}
+
 int main()
 {
 	//FirstTask();
-	SecondTask();
+	//SecondTask();
+	ThirdTask();
 	return 0;
 }
