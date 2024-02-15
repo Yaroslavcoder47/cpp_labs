@@ -1,9 +1,12 @@
 #include <QCoreApplication>
 #include <iostream>
 #include <QTextStream>
+#include <string>
+#include <QTextCodec>
+#include <Windows.h>
 
 
-int main()
+void f1()
 {
     QTextStream in(stdin);
     QTextStream out(stdout);
@@ -20,5 +23,15 @@ int main()
         }
     }
     out << Qt::endl;
+}
+
+int main()
+{
+    QTextStream out(stdout);
+    QTextStream in(stdin);
+    out.setCodec(QTextCodec::codecForName("cp866"));
+    in.setCodec(QTextCodec::codecForName("cp866"));
+    QString str = in.readLine();
+    out << str << Qt::endl;
     return 0;
 }
