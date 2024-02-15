@@ -1,0 +1,26 @@
+# ninja log v5
+7	765	7297216225364204	lab01_autogen/timestamp	cb4dc8ec71ae0eef
+7	765	7297216225364204	lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+7	765	7297216225364204	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/timestamp	cb4dc8ec71ae0eef
+7	765	7297216225364204	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+767	2590	7297216244764173	CMakeFiles/lab01.dir/lab01_autogen/mocs_compilation.cpp.obj	89da0998b0a6f8b8
+773	5382	7297216272705897	CMakeFiles/lab01.dir/main.cpp.obj	333686999464aca7
+5389	6623	7297216285189135	lab01.exe	264c30d0ec56cd95
+31	298	7297217437402186	lab01_autogen/timestamp	cb4dc8ec71ae0eef
+31	298	7297217437402186	lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+31	298	7297217437402186	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/timestamp	cb4dc8ec71ae0eef
+31	298	7297217437402186	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+300	4231	7297217476713867	CMakeFiles/lab01.dir/main.cpp.obj	333686999464aca7
+4232	4574	7297217480103847	lab01.exe	264c30d0ec56cd95
+26	241	7297217963758360	lab01_autogen/timestamp	cb4dc8ec71ae0eef
+26	241	7297217963758360	lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+26	241	7297217963758360	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/timestamp	cb4dc8ec71ae0eef
+26	241	7297217963758360	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+243	3771	7297217999043011	CMakeFiles/lab01.dir/main.cpp.obj	333686999464aca7
+3772	4091	7297218002182989	lab01.exe	264c30d0ec56cd95
+25	235	7297218740636359	lab01_autogen/timestamp	cb4dc8ec71ae0eef
+25	235	7297218740636359	lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+25	235	7297218740636359	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/timestamp	cb4dc8ec71ae0eef
+25	235	7297218740636359	D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/mocs_compilation.cpp	cb4dc8ec71ae0eef
+237	3917	7297218777422510	CMakeFiles/lab01.dir/main.cpp.obj	333686999464aca7
+3917	4224	7297218780452495	lab01.exe	264c30d0ec56cd95
