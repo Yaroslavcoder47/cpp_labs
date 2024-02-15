@@ -1,0 +1,9 @@
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/lab01.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/lab01_autogen_timestamp_deps.dir
+D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/lab01_autogen.dir
