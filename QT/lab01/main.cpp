@@ -51,8 +51,30 @@ void f2()
     out << QString("Количество слов, заканчивающихся на р: ") << counter2 << Qt::endl;
 }
 
+void f3()
+{
+    QTextStream in(stdin);
+    QTextStream out(stdout);
+    QString str1 = in.readLine();
+    QString str2 = in.readLine();
+
+    QStringList list1 = str1.toLower().split(' ');
+    QStringList list2 = str2.toLower().split(' ');
+
+    foreach (QString word, list1) {
+        if(list2.contains(word)){
+            out << "yes ";
+        }
+        else
+        {
+            out << "no ";
+        }
+    }
+    out << Qt::endl;
+}
+
 int main()
 {
-    f2();
+
     return 0;
 }
