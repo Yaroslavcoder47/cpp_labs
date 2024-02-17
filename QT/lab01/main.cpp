@@ -4,77 +4,18 @@
 #include <string>
 #include <QTextCodec>
 #include <QStringList>
+#include "command.h"
+#include "receiver.h"
+#include "invoker.h"
+#include "task1command.h"
 
-
-
-void f1()
-{
-    QTextStream in(stdin);
-    QTextStream out(stdout);
-    QString str1, str2;
-    in >> str1;
-    in >> str2;
-
-    for(int i = 0; i < str1.length(); ++i){
-        if(str2.toLower().contains(str1.toLower()[i])){
-            out << "yes ";
-        }
-        else{
-            out << "no ";
-        }
-    }
-    out << Qt::endl;
-}
-
-void f2()
-{
-    int counter1 = 0;
-    int counter2 = 0;
-    QTextStream out(stdout);
-    out.setCodec(QTextCodec::codecForName("cp866"));
-
-    QTextStream in(stdin);
-    in.setCodec(QTextCodec::codecForName("cp866"));
-
-    QString str = in.readLine();
-    QStringList list = str.split(' ');
-
-    foreach (QString word, list){
-        if(word[0] == "н"){
-            ++counter1;
-        }
-        if(word[word.length()-1] == "р"){
-            ++counter2;
-        }
-    }
-    out << QString("Количество слов, начинающихся с н: ") << counter1 << Qt::endl;
-    out << QString("Количество слов, заканчивающихся на р: ") << counter2 << Qt::endl;
-}
-
-void f3()
-{
-    QTextStream in(stdin);
-    QTextStream out(stdout);
-    QString str1 = in.readLine();
-    QString str2 = in.readLine();
-
-    QStringList list1 = str1.toLower().split(' ');
-    QStringList list2 = str2.toLower().split(' ');
-
-    foreach (QString word, list1) {
-        if(list2.contains(word)){
-            out << "yes ";
-        }
-        else
-        {
-            out << "no ";
-        }
-    }
-    out << Qt::endl;
-}
 
 int main()
 {
-
+    Invoker* invoker = new Invoker();
+    Receiver* receiver = new Receiver();
+    Task1Command* task1 = new Task1Command(receiver);
+    invoker->SetCommand(task1);
+    invoker->Run();
     return 0;
 }
