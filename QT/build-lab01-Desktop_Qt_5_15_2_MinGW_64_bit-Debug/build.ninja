@@ -97,6 +97,22 @@ build CMakeFiles/lab01.dir/task1command.cpp.obj: CXX_COMPILER__lab01_unscanned_D
   OBJECT_DIR = CMakeFiles\lab01.dir
   OBJECT_FILE_DIR = CMakeFiles\lab01.dir
 
+build CMakeFiles/lab01.dir/task2command.cpp.obj: CXX_COMPILER__lab01_unscanned_Debug D$:/Laboratory$ works/QT/lab01/task2command.cpp || cmake_object_order_depends_target_lab01
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles\lab01.dir\task2command.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/include" -isystem D:/Prilogeniy/Qt/5.15.2/mingw81_64/include -isystem D:/Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore -isystem D:/Prilogeniy/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
+  OBJECT_DIR = CMakeFiles\lab01.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab01.dir
+
+build CMakeFiles/lab01.dir/task3command.cpp.obj: CXX_COMPILER__lab01_unscanned_Debug D$:/Laboratory$ works/QT/lab01/task3command.cpp || cmake_object_order_depends_target_lab01
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles\lab01.dir\task3command.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"D:/Laboratory works/QT/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/lab01_autogen/include" -isystem D:/Prilogeniy/Qt/5.15.2/mingw81_64/include -isystem D:/Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore -isystem D:/Prilogeniy/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
+  OBJECT_DIR = CMakeFiles\lab01.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab01.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab01
@@ -105,7 +121,7 @@ build CMakeFiles/lab01.dir/task1command.cpp.obj: CXX_COMPILER__lab01_unscanned_D
 #############################################
 # Link the executable lab01.exe
 
-build lab01.exe: CXX_EXECUTABLE_LINKER__lab01_Debug CMakeFiles/lab01.dir/lab01_autogen/mocs_compilation.cpp.obj CMakeFiles/lab01.dir/main.cpp.obj CMakeFiles/lab01.dir/command.cpp.obj CMakeFiles/lab01.dir/receiver.cpp.obj CMakeFiles/lab01.dir/invoker.cpp.obj CMakeFiles/lab01.dir/task1command.cpp.obj | D$:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/libQt5Core.a || lab01_autogen lab01_autogen_timestamp_deps
+build lab01.exe: CXX_EXECUTABLE_LINKER__lab01_Debug CMakeFiles/lab01.dir/lab01_autogen/mocs_compilation.cpp.obj CMakeFiles/lab01.dir/main.cpp.obj CMakeFiles/lab01.dir/command.cpp.obj CMakeFiles/lab01.dir/receiver.cpp.obj CMakeFiles/lab01.dir/invoker.cpp.obj CMakeFiles/lab01.dir/task1command.cpp.obj CMakeFiles/lab01.dir/task2command.cpp.obj CMakeFiles/lab01.dir/task3command.cpp.obj | D$:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/libQt5Core.a || lab01_autogen lab01_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = D:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/libQt5Core.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab01.dir
@@ -207,7 +223,7 @@ build lab01_autogen/timestamp lab01_autogen/mocs_compilation.cpp | ${cmake_ninja
 #############################################
 # Phony custom command for CMakeFiles\lab01_autogen_timestamp_deps
 
-build CMakeFiles/lab01_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/lab01_autogen_timestamp_deps: phony D$:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/libQt5Core.a D$:/Prilogeniy/Qt/5.15.2/mingw81_64/bin/moc.exe
+build CMakeFiles/lab01_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/lab01_autogen_timestamp_deps: phony D$:/Prilogeniy/Qt/5.15.2/mingw81_64/bin/moc.exe D$:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/libQt5Core.a
 
 
 #############################################

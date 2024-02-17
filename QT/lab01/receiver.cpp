@@ -33,7 +33,7 @@ void Receiver::task2()
     QStringList list = str.split(' ');
 
     foreach (QString word, list){
-        if(word[0] == "н"){
+        if(word[0].toLower() == "н"){
             ++counter1;
         }
         if(word[word.length()-1] == "р"){
@@ -47,7 +47,9 @@ void Receiver::task2()
 void Receiver::task3()
 {
     QTextStream in(stdin);
+    in.setCodec(QTextCodec::codecForName("cp866"));
     QTextStream out(stdout);
+    out.setCodec(QTextCodec::codecForName("cp866"));
     QString str1 = in.readLine();
     QString str2 = in.readLine();
 

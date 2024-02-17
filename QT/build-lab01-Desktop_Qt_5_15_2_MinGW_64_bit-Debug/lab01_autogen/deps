@@ -13,6 +13,10 @@ lab01_autogen/timestamp: \
 	D:/Laboratory\ works/QT/lab01/receiver.h \
 	D:/Laboratory\ works/QT/lab01/task1command.cpp \
 	D:/Laboratory\ works/QT/lab01/task1command.h \
+	D:/Laboratory\ works/QT/lab01/task2command.cpp \
+	D:/Laboratory\ works/QT/lab01/task2command.h \
+	D:/Laboratory\ works/QT/lab01/task3command.cpp \
+	D:/Laboratory\ works/QT/lab01/task3command.h \
 	D:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake \
 	D:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake \
 	D:/Prilogeniy/Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake \

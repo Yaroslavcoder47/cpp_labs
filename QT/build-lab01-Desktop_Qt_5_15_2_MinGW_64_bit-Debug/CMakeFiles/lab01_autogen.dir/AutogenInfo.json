@@ -70,6 +70,18 @@
 			"MU",
 			"EWIEGA46WW/moc_task1command.cpp",
 			null
+		],
+		[
+			"D:/Laboratory works/QT/lab01/task2command.h",
+			"MU",
+			"EWIEGA46WW/moc_task2command.cpp",
+			null
+		],
+		[
+			"D:/Laboratory works/QT/lab01/task3command.h",
+			"MU",
+			"EWIEGA46WW/moc_task3command.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -124,7 +136,9 @@
 		[ "D:/Laboratory works/QT/lab01/invoker.cpp", "MU", null ],
 		[ "D:/Laboratory works/QT/lab01/main.cpp", "MU", null ],
 		[ "D:/Laboratory works/QT/lab01/receiver.cpp", "MU", null ],
-		[ "D:/Laboratory works/QT/lab01/task1command.cpp", "MU", null ]
+		[ "D:/Laboratory works/QT/lab01/task1command.cpp", "MU", null ],
+		[ "D:/Laboratory works/QT/lab01/task2command.cpp", "MU", null ],
+		[ "D:/Laboratory works/QT/lab01/task3command.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

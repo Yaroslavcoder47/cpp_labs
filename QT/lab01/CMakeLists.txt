@@ -18,6 +18,8 @@ add_executable(lab01
   receiver.h receiver.cpp
   invoker.h invoker.cpp
   task1command.h task1command.cpp
+  task2command.h task2command.cpp
+  task3command.h task3command.cpp
 )
 target_link_libraries(lab01 Qt${QT_VERSION_MAJOR}::Core)
 
