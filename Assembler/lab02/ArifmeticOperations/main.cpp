@@ -53,17 +53,15 @@ void ThirdTask()
 	cout << "Input value of a: ";
 	cin >> a;
 	__asm {
+		mov ecx, 1
 		mov eax, a
-		xor edx, edx
-		xor ecx, ecx
-		check:
-			imul eax
-			test edx, edx
-			jnz overflow
-			inc ecx
-			jmp check
-		overflow:
-			dec ecx
+		jo end_
+		begin_:
+			imul a
+			jo end_
+			add ecx, 1
+			jmp begin_
+		end_:
 			mov n, ecx
 	}
 	cout << n;
