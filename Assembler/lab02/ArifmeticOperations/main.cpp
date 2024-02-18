@@ -2,6 +2,7 @@
 
 using std::cin;
 using std::cout;
+using namespace std;
 
 void FirstTask()
 {
@@ -67,10 +68,45 @@ void ThirdTask()
 	cout << n;
 }
 
+void FourthTask()
+{
+	_int16 a1, a2, a3;
+	_int16 b1, b2, b3;
+	_int16 c1, c2, c3;
+	/*cout << "Input a1, a2, a3: \n";
+	cin >> a1 >> a2 >> a3;
+	cout << "Input b1, b2, b3: \n";
+	cin >> b1 >> b2 >> b3;*/
+	a1 = 0x1234;
+	a2 = 0x5678;
+	a3 = 0x9ABC;
+
+	b1 = 0xDEF0;
+	b2 = 0x1234;
+	b3 = 0x5678;
+	__asm {
+		mov ax, a1
+		add ax, b1
+		mov c1, ax
+
+		mov ax, a2
+		adc ax, b2
+		mov c2, ax
+
+		mov ax, a3
+		adc ax, b3
+		mov c3, ax
+		
+	}
+	long long result = (static_cast<long long>(c3) << 32) | (static_cast<long long>(c2) << 16) | c1;
+	cout << "Result in decimal: " << dec << result << endl;
+}
+
 int main()
 {
 	//FirstTask();
 	//SecondTask();
-	ThirdTask();
+	//ThirdTask();
+	FourthTask();
 	return 0;
 }
