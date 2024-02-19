@@ -1,89 +1,28 @@
 #include <iostream>
+#include <vector>
+#include "Task3.h"
 
 using std::cin;
 using std::cout;
 using namespace std;
 
-void FirstTask()
-{
-	int a, res;
-	cout << "Input value of a: ";
-	cin >> a;
-	__asm {
-		mov eax, a
-		mul eax
-		mov ebx, eax
-		imul ebx, a
-		mul eax
-		imul eax, a
-		add eax, ebx
-		add eax, a
-		mov res, eax
-	}
-	cout << "The result of operation a^5+a^3+a: " << res << '\n';
-}
-
-void SecondTask()
-{
-	int a, res;
-	cout << "Input value of a: ";
-	cin >> a;
-	__asm {
-		mov eax, a
-		mul eax
-		mov ebx, eax
-		sub ebx, 4
-		imul ebx, 2
-		mul eax
-		imul eax, a
-		add eax, ebx
-		add eax, a
-		mov ebx, a
-		imul ebx, a
-		imul ebx, a
-		div ebx
-		mov res, eax
-	}
-
-	cout << "The result of operation (a^5+2(a^2-4) + a)/a^3: " << res << '\n';
-}
-
-void ThirdTask()
-{
-	int a, n;
-	cout << "Input value of a: ";
-	cin >> a;
-	__asm {
-		mov ecx, 1
-		mov eax, a
-		jo end_
-		begin_:
-			imul a
-			jo end_
-			add ecx, 1
-			jmp begin_
-		end_:
-			mov n, ecx
-	}
-	cout << n;
-}
 
 void FourthTask()
 {
-	_int16 a1, a2, a3;
-	_int16 b1, b2, b3;
-	_int16 c1, c2, c3;
+	uint16_t a1, a2, a3;
+	uint16_t b1, b2, b3;
+	uint16_t c1, c2, c3;
 	/*cout << "Input a1, a2, a3: \n";
 	cin >> a1 >> a2 >> a3;
 	cout << "Input b1, b2, b3: \n";
 	cin >> b1 >> b2 >> b3;*/
-	a1 = 0x1234;
-	a2 = 0x5678;
-	a3 = 0x9ABC;
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0xEFFF;
 
-	b1 = 0xDEF0;
-	b2 = 0x1234;
-	b3 = 0x5678;
+	b1 = 0x0001;
+	b2 = 0x0000;
+	b3 = 0x0000;
 	__asm {
 		mov ax, a1
 		add ax, b1
@@ -98,15 +37,16 @@ void FourthTask()
 		mov c3, ax
 		
 	}
-	long long result = (static_cast<long long>(c3) << 32) | (static_cast<long long>(c2) << 16) | c1;
-	cout << "Result in decimal: " << dec << result << endl;
+	cout << hex << c3 << ':' << c2 << ':' << c1 << endl;
+	cout << ((static_cast<long long>(c3) << 32) | (static_cast<long long>(c2) << 16) | c1);
 }
+
+
 
 int main()
 {
-	//FirstTask();
-	//SecondTask();
-	//ThirdTask();
-	FourthTask();
+	int a;
+	cin >> a;
+	cout << task3(a);
 	return 0;
 }
