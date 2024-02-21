@@ -23,27 +23,33 @@ std::vector<uint16_t> task4Asm(uint16_t a1, uint16_t a2, uint16_t a3, uint16_t b
 {
 	logger4.get()->debug("Function task4Asm started");
 	std::vector<uint16_t> result;
-	uint32_t c1;
-	uint32_t c2;
-	uint32_t c3;
+	uint16_t c1;
+	uint16_t c2;
+	uint16_t c3;
+	uint16_t c4;
 	
 	__asm {
+		xor cx, cx
+
 		mov ax, a1
 		add ax, b1
 		mov c1, ax
 
-		mov ax, a2
-		adc ax, b2
-		mov c2, ax
+		mov bx, a2
+		adc bx, b2
+		mov c2, bx
 
-		mov ax, a3
-		adc ax, b3
-		mov c3, ax
+		mov dx, a3
+		adc dx, b3
+		mov c3, dx
+
+		adc cx, 0
+		mov c4, cx
 	}
 	
 	result.push_back(static_cast<uint16_t>(c1));
 	result.push_back(static_cast<uint16_t>(c2));
 	result.push_back(static_cast<uint16_t>(c3));
-	result.push_back(static_cast<uint16_t>(c3 >> 16));
+	result.push_back(static_cast<uint16_t>(c4));
 	return result;
 }

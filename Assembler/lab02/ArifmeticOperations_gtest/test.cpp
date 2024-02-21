@@ -146,7 +146,135 @@ TEST(AdditionTest, task4Test) {
 }
 
 TEST(AdditionTest, task4AsmTest) {
+	uint16_t a1 = 0x0000;
+	uint16_t a2 = 0x0000;
+	uint16_t a3 = 0x0000;
+	uint16_t b1 = 0x0000;
+	uint16_t b2 = 0x0000;
+	uint16_t b3 = 0x0000;
 
+	std::vector<uint16_t> expectedResult = { 0x0000, 0x0000, 0x0000, 0x0000 };
+	std::vector<uint16_t> realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0x0000;
+	a3 = 0x0000;
+	b1 = 0x0001;
+	b2 = 0x0000;
+	b3 = 0x0000;
+
+	expectedResult = { 0x0000, 0x0001, 0x0000, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0xEFFF;
+	b1 = 0x0001;
+	b2 = 0x0000;
+	b3 = 0x0000;
+
+	expectedResult = { 0x0000, 0x0000, 0xF000, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0x0002;
+	a2 = 0xFFFF;
+	a3 = 0x0000;
+	b1 = 0x0009;
+	b2 = 0x0001;
+	b3 = 0x0000;
+
+	expectedResult = { 0x000B, 0x0000, 0x0001, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0x0100;
+	a2 = 0x2BAC;
+	a3 = 0x000F;
+	b1 = 0x0001;
+	b2 = 0x0000;
+	b3 = 0x0000;
+
+	expectedResult = { 0x0101, 0x2BAC, 0x000F, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0x0000;
+	b1 = 0x0001;
+	b2 = 0x0001;
+	b3 = 0x0000;
+
+	expectedResult = { 0x0000, 0x0001, 0x0001, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0x0000;
+	b1 = 0x0001;
+	b2 = 0x0001;
+	b3 = 0x000F;
+
+	expectedResult = { 0x0000, 0x0001, 0x0010, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0x000F;
+	b1 = 0x0001;
+	b2 = 0x0001;
+	b3 = 0x0001;
+
+	expectedResult = { 0x0000, 0x0001, 0x0011, 0x0000 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0xFFFF;
+	b1 = 0x0001;
+	b2 = 0x0000;
+	b3 = 0x0000;
+
+	expectedResult = { 0x0000, 0x0000, 0x0000, 0x0001 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
+
+	a1 = 0xFFFF;
+	a2 = 0xFFFF;
+	a3 = 0xFFFF;
+	b1 = 0xFFFF;
+	b2 = 0xFFFF;
+	b3 = 0xFFFF;
+
+	expectedResult = { 0xFFFE, 0xFFFF, 0xFFFF, 0x0001 };
+	realResult = task4Asm(a1, a2, a3, b1, b2, b3);
+	for (size_t i = 0; i < realResult.size(); ++i) {
+		EXPECT_EQ(expectedResult[i], realResult[i]);
+	}
 }
 
 TEST(EquationTest, task1Test){

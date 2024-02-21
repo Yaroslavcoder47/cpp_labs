@@ -1,2 +1,8 @@
 [2024-02-21 16:01:01.021] [Lab02] [info] Start project
 [2024-02-21 16:01:01.026] [Lab02] [info] End project
+[2024-02-21 18:46:17.280] [Lab02_main] [info] Start project
+[2024-02-21 18:46:17.289] [Lab02_main] [info] End project
+[2024-02-21 18:46:56.717] [Lab02_main] [info] Start project
+[2024-02-21 18:46:56.719] [Lab02_main] [info] End project
+[2024-02-21 18:49:18.059] [Lab02_main] [info] Start project
+[2024-02-21 18:49:18.065] [Lab02_main] [info] End project
