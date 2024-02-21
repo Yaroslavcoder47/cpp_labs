@@ -1,0 +1,2 @@
+[2024-02-21 16:01:01.021] [Lab02] [info] Start project
+[2024-02-21 16:01:01.026] [Lab02] [info] End project

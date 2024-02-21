@@ -1,7 +1,12 @@
 #include "Task2.h"
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/basic_file_sink.h"
+
+auto logger2 = spdlog::basic_logger_mt("Lab02_task2", "Lab02Logger.txt");
 
 int task2(int a)
 {
+	logger2.get()->debug("Function task2 started");
 	int res = 0;
 	__asm {
 		mov eax, a

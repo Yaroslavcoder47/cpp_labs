@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 #include "Task3.h"
+#include "Task4.h"
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/basic_file_sink.h"
+
 
 using std::cin;
 using std::cout;
@@ -45,8 +49,13 @@ void FourthTask()
 
 int main()
 {
-	int a;
-	cin >> a;
-	cout << task3(a);
+	try {
+		auto logger = spdlog::basic_logger_mt("Lab02_main", "Lab02Logger.txt");
+		logger.get()->info("Start project");
+		logger.get()->info("End project");
+	}
+	catch (const spdlog::spdlog_ex& ex) {
+		std::cerr << "Log is failed: " << ex.what() << '\n';
+	}
 	return 0;
 }

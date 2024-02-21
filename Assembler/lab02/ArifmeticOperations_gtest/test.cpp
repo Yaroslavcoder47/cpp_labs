@@ -3,6 +3,8 @@
 #include "../ArifmeticOperations/Task2.cpp"
 #include "../ArifmeticOperations/Task3.cpp"
 #include "../ArifmeticOperations/Task4.cpp"
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/basic_file_sink.h"
 
 
 
@@ -141,6 +143,10 @@ TEST(AdditionTest, task4Test) {
 	for (size_t i = 0; i < realResult.size(); ++i) {
 		EXPECT_EQ(expectedResult[i], realResult[i]);
 	}
+}
+
+TEST(AdditionTest, task4AsmTest) {
+
 }
 
 TEST(EquationTest, task1Test){
