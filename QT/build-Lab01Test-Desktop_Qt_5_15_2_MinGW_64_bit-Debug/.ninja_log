@@ -1,0 +1,87 @@
+# ninja log v5
+5	1301	7302476603999029	Task1Test_autogen/timestamp	9b9369046396a24e
+5	1301	7302476603999029	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+5	1301	7302476603999029	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+5	1301	7302476603999029	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1309	1450	7302476607545189	CMakeFiles/Task1Test.dir/Task1Test_autogen/mocs_compilation.cpp.obj	ab1392fe92cb07a1
+1303	6277	7302476655823183	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+6283	6734	7302476660313502	Task1Test.exe	54e47bef1859c0a0
+38	1299	7303763261004057	Task1Test_autogen/timestamp	9b9369046396a24e
+38	1299	7303763261004057	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+38	1299	7303763261004057	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+38	1299	7303763261004057	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1093	7303767165081762	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1093	7303767165081762	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1093	7303767165081762	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1093	7303767165081762	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+24	1011	7303767636596462	Task1Test_autogen/timestamp	9b9369046396a24e
+24	1011	7303767636596462	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+24	1011	7303767636596462	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+24	1011	7303767636596462	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	988	7303768116363419	Task1Test_autogen/timestamp	9b9369046396a24e
+26	988	7303768116363419	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	988	7303768116363419	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+26	988	7303768116363419	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1084	7303768457834172	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1084	7303768457834172	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1084	7303768457834172	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1084	7303768457834172	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	1042	7303769534184695	Task1Test_autogen/timestamp	9b9369046396a24e
+26	1042	7303769534184695	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	1042	7303769534184695	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+26	1042	7303769534184695	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1078	7303770152413998	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1078	7303770152413998	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1078	7303770152413998	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1078	7303770152413998	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+23	984	7303770474935200	Task1Test_autogen/timestamp	9b9369046396a24e
+23	984	7303770474935200	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+23	984	7303770474935200	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+23	984	7303770474935200	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+992	6734	7303770532414337	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+25	1055	7303770759493689	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1055	7303770759493689	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1055	7303770759493689	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1055	7303770759493689	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	1088	7303771200111189	Task1Test_autogen/timestamp	9b9369046396a24e
+26	1088	7303771200111189	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	1088	7303771200111189	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+26	1088	7303771200111189	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1096	6054	7303771249741170	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+6055	6363	7303771252813205	Task1Test.exe	54e47bef1859c0a0
+25	1088	7303771430513942	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1088	7303771430513942	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1088	7303771430513942	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1088	7303771430513942	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1096	6113	7303771480733935	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+6114	6403	7303771483619200	Task1Test.exe	54e47bef1859c0a0
+13	1054	7303778725006547	Task1Test_autogen/timestamp	9b9369046396a24e
+13	1054	7303778725006547	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+13	1054	7303778725006547	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+13	1054	7303778725006547	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1059	7303779324560576	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1059	7303779324560576	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1059	7303779324560576	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1059	7303779324560576	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1067	6031	7303779374250252	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+28	1827	7303958819273228	Task1Test_autogen/timestamp	9b9369046396a24e
+28	1827	7303958819273228	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+28	1827	7303958819273228	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+28	1827	7303958819273228	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1835	10092	7303958901955109	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+25	1505	7303959107633437	Task1Test_autogen/timestamp	9b9369046396a24e
+25	1505	7303959107633437	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+25	1505	7303959107633437	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+25	1505	7303959107633437	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1513	7063	7303959163210884	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+27	1149	7303959561322230	Task1Test_autogen/timestamp	9b9369046396a24e
+27	1149	7303959561322230	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+27	1149	7303959561322230	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+27	1149	7303959561322230	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1157	6769	7303959617515400	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+26	1198	7303959751731680	Task1Test_autogen/timestamp	9b9369046396a24e
+26	1198	7303959751731680	Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+26	1198	7303959751731680	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/timestamp	9b9369046396a24e
+26	1198	7303959751731680	D:/Laboratory works/QT/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/Task1Test_autogen/mocs_compilation.cpp	9b9369046396a24e
+1206	6745	7303959807167248	CMakeFiles/Task1Test.dir/tst_task1test.cpp.obj	37a5c4dc99d63f24
+6746	7042	7303959810119773	Task1Test.exe	54e47bef1859c0a0

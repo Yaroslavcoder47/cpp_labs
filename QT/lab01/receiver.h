@@ -12,9 +12,9 @@ class Receiver
 {
 public:
     Receiver() = default;
-    void task1();
+    QString task1(QString str1, QString str2);
     void task2();
-    void task3();
+    QString task3(QString str1, QString str2);
 };
 
 #endif // RECEIVER_H

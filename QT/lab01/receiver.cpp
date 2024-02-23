@@ -1,22 +1,24 @@
 #include "receiver.h"
 
-void Receiver::task1()
+QString Receiver::task1(QString str1, QString str2)
 {
-    QTextStream in(stdin);
-    QTextStream out(stdout);
-    QString str1, str2;
-    in >> str1;
-    in >> str2;
+    QString res;
+    //QTextStream in(stdin);
+    //QTextStream out(stdout);
+    //QString str1, str2;
+    //in >> str1;
+    //in >> str2;
 
     for(int i = 0; i < str1.length(); ++i){
         if(str2.toLower().contains(str1.toLower()[i])){
-            out << "yes ";
+            res += "yes ";
         }
         else{
-            out << "no ";
+            res += "no ";
         }
     }
-    out << Qt::endl;
+    //out << Qt::endl;
+    return res;
 }
 
 void Receiver::task2()
@@ -44,26 +46,30 @@ void Receiver::task2()
     out << QString("Количество слов, заканчивающихся на р: ") << counter2 << Qt::endl;
 }
 
-void Receiver::task3()
+QString Receiver::task3(QString str1, QString str2)
 {
-    QTextStream in(stdin);
-    in.setCodec(QTextCodec::codecForName("cp866"));
-    QTextStream out(stdout);
-    out.setCodec(QTextCodec::codecForName("cp866"));
-    QString str1 = in.readLine();
-    QString str2 = in.readLine();
+    QString res;
+    // QTextStream in(stdin);
+    // in.setCodec(QTextCodec::codecForName("cp866"));
+    // QTextStream out(stdout);
+    // out.setCodec(QTextCodec::codecForName("cp866"));
+    // QString str1 = in.readLine();
+    // QString str2 = in.readLine();
 
     QStringList list1 = str1.toLower().split(' ');
     QStringList list2 = str2.toLower().split(' ');
 
     foreach (QString word, list1) {
         if(list2.contains(word)){
-            out << "yes ";
+            //out << "yes ";
+            res += "yes ";
         }
         else
         {
-            out << "no ";
+            res += "no ";
+            //out << "no ";
         }
     }
-    out << Qt::endl;
+    //out << Qt::endl;
+    return res;
 }
