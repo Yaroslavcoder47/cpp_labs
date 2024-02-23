@@ -13,7 +13,7 @@ class Receiver
 public:
     Receiver() = default;
     QString task1(QString str1, QString str2);
-    void task2();
+    QString task2(QString str);
     QString task3(QString str1, QString str2);
 };
 
