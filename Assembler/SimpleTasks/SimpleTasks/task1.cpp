@@ -26,10 +26,11 @@ void task1(int num)
 		jmp _loop
 		_incr:
 			inc cl
+			//jmp _loop
 		mov evenCounter, ch
 		mov zeroCounter, cl
 	}
 
-	std::cout << evenCounter << '\n';
-	std::cout << zeroCounter << '\n';
+	std::cout << static_cast<int>(evenCounter) << '\n';
+	std::cout << static_cast<int>(zeroCounter) << '\n';
 }
