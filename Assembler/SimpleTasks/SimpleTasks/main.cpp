@@ -6,6 +6,6 @@ using std::cin;
 
 int main()
 {
-	task1(24078);
+	task1(11018);
 	return 0;
 }
