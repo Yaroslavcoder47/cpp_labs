@@ -18,11 +18,11 @@ void task1(int num)
 			neg eax
 		_loop :
 			cdq
-			idiv bl
-			test eax, 1
-			jnz _check
-			inc ch
-			test eax, eax
+			idiv bl  // разделили на 10
+			test eax, 1 // сравнили по маске на четность цифру
+			jnz _check // если нечетная то проверяем на остаток цифр 
+			inc ch // увеличиваем счетчик четных
+			test eax, eax  
 			jnz _check
 			inc cl
 			jmp _check
