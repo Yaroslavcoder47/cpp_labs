@@ -1,8 +1,11 @@
 #include "task1.h"
+auto logger1 = spdlog::basic_logger_mt("Lab03_task1", "../Logs/Lab03Logger.txt");
 
-//std::pair<int, int> task1(int num)
-void task1(int num)
+std::pair<int, int> task1(int num)
 {
+	logger1->set_level(spdlog::level::debug);
+	logger1.get()->debug("Function task1 work");
+	std::pair<int, int> res;
 	uint8_t evenCounter = 0;
 	uint8_t zeroCounter = 0;
 	__asm {
@@ -34,7 +37,7 @@ void task1(int num)
 			mov evenCounter, ch
 			mov zeroCounter, cl
 	}
-
-	std::cout << static_cast<int>(evenCounter) << '\n';
-	std::cout << static_cast<int>(zeroCounter) << '\n';
+	res.first = static_cast<int>(evenCounter);
+	res.second = static_cast<int>(zeroCounter);
+	return res;
 }

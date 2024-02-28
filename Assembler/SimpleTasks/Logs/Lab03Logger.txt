@@ -1,0 +1,7 @@
+
+[2024-02-28 19:18:17.986] [Lab03_test] [debug] Test 1 of task 1 function
+[2024-02-28 19:18:17.986] [Lab03_test] [debug] Test 2 of task 1 function
+[2024-02-28 19:18:17.986] [Lab03_test] [debug] Test 3 of task 1 function
+[2024-02-28 19:18:17.986] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 19:18:17.986] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 19:18:17.986] [Lab03_task1] [debug] Function task1 work
