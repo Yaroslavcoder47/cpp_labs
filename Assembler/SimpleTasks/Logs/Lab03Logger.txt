@@ -33,3 +33,45 @@
 [2024-02-28 20:12:37.730] [Lab03_task2] [debug] Function task2 work
 [2024-02-28 20:12:37.730] [Lab03_task2] [debug] Function task2 work
 [2024-02-28 20:12:37.730] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 23:11:38.657] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:11:38.656] [Lab03_main] [info] Application started
+[2024-02-28 23:11:38.657] [Lab03_main] [info] Application ended
+[2024-02-28 23:15:01.303] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:15:01.303] [Lab03_main] [info] Application started
+[2024-02-28 23:15:01.307] [Lab03_main] [info] Application ended
+[2024-02-28 23:15:24.312] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:15:24.311] [Lab03_main] [info] Application started
+[2024-02-28 23:15:24.312] [Lab03_main] [info] Application ended
+[2024-02-28 23:47:23.967] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:47:23.967] [Lab03_main] [info] Application started
+[2024-02-28 23:47:23.976] [Lab03_main] [info] Application ended
+[2024-02-28 23:49:55.694] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:49:55.693] [Lab03_main] [info] Application started
+[2024-02-28 23:49:55.702] [Lab03_main] [info] Application ended
+[2024-02-28 23:50:08.028] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:50:08.027] [Lab03_main] [info] Application started
+[2024-02-28 23:50:08.029] [Lab03_main] [info] Application ended
+[2024-02-28 23:50:29.103] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:50:29.102] [Lab03_main] [info] Application started
+[2024-02-28 23:50:29.103] [Lab03_main] [info] Application ended
+[2024-02-28 23:50:43.846] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:50:43.846] [Lab03_main] [info] Application started
+[2024-02-28 23:50:43.848] [Lab03_main] [info] Application ended
+[2024-02-28 23:54:49.812] [Lab03_test] [debug] Test 1 of task 1 function
+[2024-02-28 23:54:49.814] [Lab03_test] [debug] Test 2 of task 1 function
+[2024-02-28 23:54:49.814] [Lab03_test] [debug] Test 3 of task 1 function
+[2024-02-28 23:54:49.814] [Lab03_test] [debug] Test 1 of task 2 function
+[2024-02-28 23:54:49.814] [Lab03_test] [debug] Test 2 of task 2 function
+[2024-02-28 23:54:49.814] [Lab03_test] [debug] Test 3 of task 2 function
+[2024-02-28 23:54:49.814] [Lab03_test] [debug] Test 1 of task 3 function
+[2024-02-28 23:54:49.815] [Lab03_test] [debug] Test 2 of task 3 function
+[2024-02-28 23:54:49.815] [Lab03_test] [debug] Test 3 of task 3 function
+[2024-02-28 23:54:49.813] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 23:54:49.814] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 23:54:49.814] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 23:54:49.814] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 23:54:49.814] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 23:54:49.814] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 23:54:49.814] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:54:49.815] [Lab03_task3] [debug] Function task3 work
+[2024-02-28 23:54:49.815] [Lab03_task3] [debug] Function task3 work

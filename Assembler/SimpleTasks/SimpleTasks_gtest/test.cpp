@@ -62,3 +62,24 @@ TEST(TestSecondTask, task2Test3) {
 	EXPECT_EQ(resultPair.first, expectedtPair.first);
 	EXPECT_EQ(resultPair.second, expectedtPair.second);
 }
+
+TEST(TestThirdTask, task3Test1) {
+	loggerTest.get()->debug("Test 1 of task 3 function");
+	int result = task3(5, 13);
+	int expectedResult = 1220703125;
+	EXPECT_EQ(result, expectedResult);
+}
+
+TEST(TestThirdTask, task3Test2) {
+	loggerTest.get()->debug("Test 2 of task 3 function");
+	int result = task3(7, 4);
+	int expectedResult = 2401;
+	EXPECT_EQ(result, expectedResult);
+}
+
+TEST(TestThirdTask, task3Test3) {
+	loggerTest.get()->debug("Test 3 of task 3 function");
+	int result = task3(8, 1);
+	int expectedResult = 8;
+	EXPECT_EQ(result, expectedResult);
+}

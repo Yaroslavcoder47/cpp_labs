@@ -3,6 +3,8 @@
 #include "spdlog/sinks/basic_file_sink.h"
 #include "task1.h"
 #include "task2.h"
+#include "task3.h"
+#include "task4.h"
 
 using std::cout;
 using std::cin;
@@ -14,7 +16,7 @@ int main()
 		logger->set_level(spdlog::level::info);
 		logger.get()->info("Application started");
 
-		cout << task2(-3, 9).first << '/' << task2(-3, 9).second;
+		cout << task3(2, 30);
 
 		logger.get()->info("Application ended");
 	}
