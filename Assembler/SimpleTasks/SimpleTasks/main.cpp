@@ -16,7 +16,7 @@ int main()
 		logger->set_level(spdlog::level::info);
 		logger.get()->info("Application started");
 
-		cout << task3(2, 30);
+		cout << task4(500).first << " " << task4(500).second;
 
 		logger.get()->info("Application ended");
 	}
