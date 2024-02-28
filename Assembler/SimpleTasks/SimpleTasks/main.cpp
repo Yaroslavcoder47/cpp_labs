@@ -2,16 +2,26 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/basic_file_sink.h"
 #include "task1.h"
+#include "task2.h"
 
 using std::cout;
 using std::cin;
 
 int main()
 {
-	auto logger = spdlog::basic_logger_mt("Lab03_main", "../Logs/Lab03Logger.txt");
-	logger->set_level(spdlog::level::info);
-	logger.get()->info("Application started");
-	cout << task1(2405).first << ' ' << task1(458).second;
-	logger.get()->info("Application ended");
+	try {
+		auto logger = spdlog::basic_logger_mt("Lab03_main", "../Logs/Lab03Logger.txt");
+		logger->set_level(spdlog::level::info);
+		logger.get()->info("Application started");
+
+		cout << task2(-3, 9).first << '/' << task2(-3, 9).second;
+
+		logger.get()->info("Application ended");
+	}
+	catch (const spdlog::spdlog_ex& ex)
+	{
+		std::cout << "Log init failed: " << ex.what() << std::endl;
+	}
+	
 	return 0;
 }

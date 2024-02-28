@@ -38,3 +38,27 @@ TEST(TestFirstTask, task1Test3) {
 	EXPECT_EQ(resultPair.first, expectedtPair.first);
 	EXPECT_EQ(resultPair.second, expectedtPair.second);
 }
+
+TEST(TestSecondTask, task2Test1) {
+	loggerTest.get()->debug("Test 1 of task 2 function");
+	std::pair<int, int> resultPair = task2(4, 8);
+	std::pair<int, int> expectedtPair(1, 2);
+	EXPECT_EQ(resultPair.first, expectedtPair.first);
+	EXPECT_EQ(resultPair.second, expectedtPair.second);
+}
+
+TEST(TestSecondTask, task2Test2) {
+	loggerTest.get()->debug("Test 2 of task 2 function");
+	std::pair<int, int> resultPair = task2(-3, 9);
+	std::pair<int, int> expectedtPair(-1, 3);
+	EXPECT_EQ(resultPair.first, expectedtPair.first);
+	EXPECT_EQ(resultPair.second, expectedtPair.second);
+}
+
+TEST(TestSecondTask, task2Test3) {
+	loggerTest.get()->debug("Test 3 of task 2 function");
+	std::pair<int, int> resultPair = task2(5, 7);
+	std::pair<int, int> expectedtPair(5, 7);
+	EXPECT_EQ(resultPair.first, expectedtPair.first);
+	EXPECT_EQ(resultPair.second, expectedtPair.second);
+}

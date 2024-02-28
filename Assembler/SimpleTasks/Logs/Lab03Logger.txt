@@ -5,3 +5,31 @@
 [2024-02-28 19:18:17.986] [Lab03_task1] [debug] Function task1 work
 [2024-02-28 19:18:17.986] [Lab03_task1] [debug] Function task1 work
 [2024-02-28 19:18:17.986] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 20:08:58.334] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:08:58.334] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:08:58.334] [Lab03_main] [info] Application started
+[2024-02-28 20:08:58.336] [Lab03_main] [info] Application ended
+[2024-02-28 20:09:18.448] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:09:18.448] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:09:18.448] [Lab03_main] [info] Application started
+[2024-02-28 20:09:18.449] [Lab03_main] [info] Application ended
+[2024-02-28 20:09:33.204] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:09:33.204] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:09:33.203] [Lab03_main] [info] Application started
+[2024-02-28 20:09:33.205] [Lab03_main] [info] Application ended
+[2024-02-28 20:11:27.461] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:11:27.461] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:11:27.461] [Lab03_main] [info] Application started
+[2024-02-28 20:11:27.463] [Lab03_main] [info] Application ended
+[2024-02-28 20:12:37.729] [Lab03_test] [debug] Test 1 of task 1 function
+[2024-02-28 20:12:37.730] [Lab03_test] [debug] Test 2 of task 1 function
+[2024-02-28 20:12:37.730] [Lab03_test] [debug] Test 3 of task 1 function
+[2024-02-28 20:12:37.730] [Lab03_test] [debug] Test 1 of task 2 function
+[2024-02-28 20:12:37.730] [Lab03_test] [debug] Test 2 of task 2 function
+[2024-02-28 20:12:37.730] [Lab03_test] [debug] Test 3 of task 2 function
+[2024-02-28 20:12:37.729] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 20:12:37.730] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 20:12:37.730] [Lab03_task1] [debug] Function task1 work
+[2024-02-28 20:12:37.730] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:12:37.730] [Lab03_task2] [debug] Function task2 work
+[2024-02-28 20:12:37.730] [Lab03_task2] [debug] Function task2 work
