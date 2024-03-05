@@ -167,3 +167,7 @@
 [2024-02-29 00:32:08.923] [Lab03_task3] [debug] Function task3 work
 [2024-02-29 00:32:08.923] [Lab03_task3] [debug] Function task3 work
 [2024-02-29 00:32:08.923] [Lab03_task3] [debug] Function task3 work
+[2024-03-04 13:46:10.530] [Lab03_task4] [debug] Function task4 work
+[2024-03-04 13:46:10.530] [Lab03_task4] [debug] Function task4 work
+[2024-03-04 13:46:10.527] [Lab03_main] [info] Application started
+[2024-03-04 13:46:10.534] [Lab03_main] [info] Application ended
