@@ -268,6 +268,7 @@ Makefile: ../Translator/Translator.pro ../../../../Prilogeniy/Qt/5.15.2/mingw81_
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/resources.prf \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/moc.prf \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/win32/opengl.prf \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/uic.prf \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/qmake_use.prf \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/file_copies.prf \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/win32/windows.prf \
@@ -276,6 +277,7 @@ Makefile: ../Translator/Translator.pro ../../../../Prilogeniy/Qt/5.15.2/mingw81_
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/yacc.prf \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/lex.prf \
 		../Translator/Translator.pro \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/Qt5Widgets.prl \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/Qt5Gui.prl \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/Qt5Core.prl \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/qtmain.prl \
@@ -479,6 +481,7 @@ Makefile: ../Translator/Translator.pro ../../../../Prilogeniy/Qt/5.15.2/mingw81_
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/resources.prf:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/moc.prf:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/win32/opengl.prf:
+../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/uic.prf:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/qmake_use.prf:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/file_copies.prf:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/win32/windows.prf:
@@ -487,6 +490,7 @@ Makefile: ../Translator/Translator.pro ../../../../Prilogeniy/Qt/5.15.2/mingw81_
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/yacc.prf:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/features/lex.prf:
 ../Translator/Translator.pro:
+../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/Qt5Widgets.prl:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/Qt5Gui.prl:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/Qt5Core.prl:
 ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/lib/qtmain.prl:

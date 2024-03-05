@@ -1,6 +1,3 @@
-#include <QGridLayout>
-#include <QLabel>
-#include <QLineEdit>
 #include "translator.h"
 #include "ui_translator.h"
 
