@@ -5,6 +5,7 @@
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QLineEdit>
+#include <QObject>
 
 class Translator : public QWidget
 {
@@ -13,6 +14,15 @@ class Translator : public QWidget
 public:
     Translator(QWidget *parent = nullptr);
     ~Translator() = default;
+signals:
+    void created();
+public slots:
+    void onCreated();
+private:
+    QLabel *resultLabel;
+    QLabel *infoLabel1;
+    QLabel *infoLabel2;
+    QLineEdit *number;
 
 };
 #endif // TRANSLATOR_H
