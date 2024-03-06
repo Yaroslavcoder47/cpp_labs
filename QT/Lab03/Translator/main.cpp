@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     Translator w;
-    w.resize(500, 500);
+    w.resize(200, 200);
     w.setWindowTitle("Translator");
 
 
