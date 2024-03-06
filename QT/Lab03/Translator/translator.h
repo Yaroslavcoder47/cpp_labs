@@ -2,16 +2,9 @@
 #define TRANSLATOR_H
 
 #include <QWidget>
-#include <QGridLayout>
+#include <QHBoxLayout>
 #include <QLabel>
 #include <QLineEdit>
-
-
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class Translator;
-}
-QT_END_NAMESPACE
 
 class Translator : public QWidget
 {
@@ -19,9 +12,8 @@ class Translator : public QWidget
 
 public:
     Translator(QWidget *parent = nullptr);
-    //~Translator();
+    ~Translator() = default;
 
 private:
-   //Ui::Translator *ui;
 };
 #endif // TRANSLATOR_H

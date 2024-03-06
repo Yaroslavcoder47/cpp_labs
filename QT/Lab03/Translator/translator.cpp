@@ -4,12 +4,13 @@
 Translator::Translator(QWidget *parent) : QWidget(parent)
 {
    // ui->setupUi(this);
-    QLabel *result = new QLabel("0", this);
+    QLabel *result = new QLabel("jgjthgjtgjtghjtgh", this);
     QLineEdit *number = new QLineEdit(this);
+    number->frameSize();
 
-    QGridLayout *grid = new QGridLayout();
-    grid->addWidget(number, 0, 0);
-    grid->addWidget(result, 0, 1);
+    QVBoxLayout *grid = new QVBoxLayout();
+    grid->addWidget(number);
+    grid->addWidget(result);
 
     setLayout(grid);
 
