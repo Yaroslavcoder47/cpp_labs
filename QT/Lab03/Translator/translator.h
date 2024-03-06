@@ -15,14 +15,15 @@ public:
     Translator(QWidget *parent = nullptr);
     ~Translator() = default;
 signals:
-    void created();
+    void setNumber();
 public slots:
-    void onCreated();
+    void translateNumber();
 private:
     QLabel *resultLabel;
     QLabel *infoLabel1;
     QLabel *infoLabel2;
     QLineEdit *number;
+    QVBoxLayout *box;
 
 };
 #endif // TRANSLATOR_H

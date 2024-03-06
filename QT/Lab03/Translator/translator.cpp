@@ -4,26 +4,24 @@
 
 Translator::Translator(QWidget *parent) :  QWidget(parent)
 {
-    connect(this, SIGNAL(created()), this, SLOT(onCreated()));
+    connect(this, SIGNAL(setNumber()), this, SLOT(translateNumber()));
 
-    emit created();
-
+    resultLabel = new QLabel("0", this);
     infoLabel1 = new QLabel("Input integer decimal number", this);
     infoLabel2 = new QLabel("Result as binary number", this);
     number = new QLineEdit(this);
 
-    QVBoxLayout *box = new QVBoxLayout();
+    box = new QVBoxLayout();
     box->setContentsMargins(50, 50, 50, 100);
     box->addWidget(infoLabel1);
     box->addWidget(number);
     box->addWidget(infoLabel2);
     box->addWidget(resultLabel);
 
-
     setLayout(box);
 }
 
-void Translator::onCreated()
+void Translator::translateNumber()
 {
-    resultLabel = new QLabel("Hello", this);
+
 }
