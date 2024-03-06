@@ -10,8 +10,6 @@ int main(int argc, char *argv[])
     w.resize(200, 200);
     w.setWindowTitle("Translator");
 
-
-
     w.show();
     return a.exec();
 }

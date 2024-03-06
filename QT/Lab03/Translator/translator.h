@@ -14,6 +14,5 @@ public:
     Translator(QWidget *parent = nullptr);
     ~Translator() = default;
 
-private:
 };
 #endif // TRANSLATOR_H
