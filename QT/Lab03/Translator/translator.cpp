@@ -6,6 +6,7 @@ Translator::Translator(QWidget *parent)
     , ui(new Ui::Translator)
 {
     ui->setupUi(this);
+
     connect(ui->pushButton, &QPushButton::clicked, this, &Translator::convert);
 }
 
