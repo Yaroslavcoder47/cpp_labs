@@ -1,27 +1,21 @@
 #include "translator.h"
 #include "ui_translator.h"
-#include <iostream>
 
-Translator::Translator(QWidget *parent) :  QWidget(parent)
+Translator::Translator(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::Translator)
 {
-    connect(this, SIGNAL(setNumber()), this, SLOT(translateNumber()));
-
-    resultLabel = new QLabel("0", this);
-    infoLabel1 = new QLabel("Input integer decimal number", this);
-    infoLabel2 = new QLabel("Result as binary number", this);
-    number = new QLineEdit(this);
-
-    box = new QVBoxLayout();
-    box->setContentsMargins(50, 50, 50, 100);
-    box->addWidget(infoLabel1);
-    box->addWidget(number);
-    box->addWidget(infoLabel2);
-    box->addWidget(resultLabel);
-
-    setLayout(box);
+    ui->setupUi(this);
+    connect(ui->pushButton, &QPushButton::clicked, this, &Translator::convert);
 }
 
-void Translator::translateNumber()
+Translator::~Translator()
 {
+    delete ui;
+}
 
+void Translator::convert()
+{
+    textEdit1 = ui->lineEdit->text();
+    textEdit2 = ui->lineEdit_2->text();
 }

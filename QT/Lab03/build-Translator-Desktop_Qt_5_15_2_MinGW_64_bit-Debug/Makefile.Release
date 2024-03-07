@@ -109,8 +109,8 @@ compiler_moc_header_make_all: release/moc_translator.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) release\moc_translator.cpp
 release/moc_translator.cpp: ../Translator/translator.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
@@ -136,6 +136,7 @@ release/moc_translator.cpp: ../Translator/translator.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
@@ -212,6 +213,8 @@ release/moc_translator.cpp: ../Translator/translator.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		release/moc_predefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/bin/moc.exe
 	D:\Prilogeniy\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include "D:/Laboratory works/QT/Lab03/build-Translator-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h" -ID:/Prilogeniy/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -I"D:/Laboratory works/QT/Lab03/Translator" -ID:/Prilogeniy/Qt/5.15.2/mingw81_64/include -ID:/Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets -ID:/Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui -ID:/Prilogeniy/Qt/5.15.2/mingw81_64/include/QtANGLE -ID:/Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore -I. -ID:/Prilogeniy/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Prilogeniy/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Prilogeniy/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Prilogeniy/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Prilogeniy/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Prilogeniy/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Translator\translator.h -o release\moc_translator.cpp
@@ -240,8 +243,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 release/main.o: ../Translator/main.cpp ../Translator/translator.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
@@ -267,6 +270,7 @@ release/main.o: ../Translator/main.cpp ../Translator/translator.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
@@ -343,6 +347,8 @@ release/main.o: ../Translator/main.cpp ../Translator/translator.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -352,8 +358,9 @@ release/main.o: ../Translator/main.cpp ../Translator/translator.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Translator\main.cpp
 
-release/translator.o: ../Translator/translator.cpp ../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
+release/translator.o: ../Translator/translator.cpp ../Translator/translator.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
@@ -379,11 +386,13 @@ release/translator.o: ../Translator/translator.cpp ../../../../Prilogeniy/Qt/5.1
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
@@ -411,16 +420,10 @@ release/translator.o: ../Translator/translator.cpp ../../../../Prilogeniy/Qt/5.1
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
@@ -443,6 +446,7 @@ release/translator.o: ../Translator/translator.cpp ../../../../Prilogeniy/Qt/5.1
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
+		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
@@ -459,37 +463,9 @@ release/translator.o: ../Translator/translator.cpp ../../../../Prilogeniy/Qt/5.1
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
-		../Translator/translator.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
-		ui_translator.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
 		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qmenubar.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qmenu.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/QStatusBar \
-		../../../../Prilogeniy/Qt/5.15.2/mingw81_64/include/QtWidgets/qstatusbar.h
+		ui_translator.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\translator.o ..\Translator\translator.cpp
 
 release/moc_translator.o: release/moc_translator.cpp 

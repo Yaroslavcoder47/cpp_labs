@@ -1,29 +1,28 @@
 #ifndef TRANSLATOR_H
 #define TRANSLATOR_H
 
-#include <QWidget>
-#include <QHBoxLayout>
-#include <QLabel>
-#include <QLineEdit>
-#include <QObject>
+#include <QMainWindow>
+#include <QPushButton>
 
-class Translator : public QWidget
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class Translator;
+}
+QT_END_NAMESPACE
+
+class Translator : public QMainWindow
 {
     Q_OBJECT
 
 public:
     Translator(QWidget *parent = nullptr);
-    ~Translator() = default;
-signals:
-    void setNumber();
-public slots:
-    void translateNumber();
-private:
-    QLabel *resultLabel;
-    QLabel *infoLabel1;
-    QLabel *infoLabel2;
-    QLineEdit *number;
-    QVBoxLayout *box;
+    ~Translator();
+private slots:
+    void convert();
 
+private:
+    QString textEdit1;
+    QString textEdit2;
+    Ui::Translator *ui;
 };
 #endif // TRANSLATOR_H
