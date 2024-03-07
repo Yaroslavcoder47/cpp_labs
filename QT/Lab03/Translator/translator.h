@@ -21,8 +21,8 @@ private slots:
     void convert();
 
 private:
-    QString textEdit1;
-    QString textEdit2;
+    QString comboBoxText1;
+    QString comboBoxText2;
     Ui::Translator *ui;
 };
 #endif // TRANSLATOR_H
