@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QEvent>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,14 +22,16 @@ public:
 private slots:
     void changeButtonColor();
 
-protected:
-    void enterEvent(QEvent *event) override;
-
 private:
     Ui::StartButton *ui;
 
+    class Button : public QPushButton{
+    public:
+        Button(const QString &text, QWidget *parent = nullptr);
+    protected:
+        void enterEvent(QEvent *event) override;
+    };
 
-
-    QPushButton *btn;
+    Button *btn;
 };
 #endif // STARTBUTTON_H
