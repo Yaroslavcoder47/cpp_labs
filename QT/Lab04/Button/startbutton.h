@@ -15,11 +15,13 @@ class StartButton : public QWidget
     Q_OBJECT
 
 public:
-    StartButton(QWidget *parent = nullptr);
+    explicit StartButton(QWidget *parent = nullptr);
     ~StartButton();
+private slots:
+    void changeButtonColor();
 
 private:
     Ui::StartButton *ui;
-    QPushButton* btn = new QPushButton("Click me");
+    QPushButton* btn;
 };
 #endif // STARTBUTTON_H
