@@ -7,7 +7,7 @@ StartButton::StartButton(QWidget *parent) : QWidget(parent), ui(new Ui::StartBut
     btn = new Button(QString("Click me!"), this);
     //btn = new QPushButton("Click me!", this);
     btn->setGeometry(100, 100, 80, 80);
-    //connect(btn, &QPushButton::clicked, this, StartButton::changeButtonColor);
+    connect(btn, &QPushButton::clicked, this, StartButton::changeButtonColor);
 
 }
 StartButton::~StartButton()
