@@ -7,6 +7,7 @@ StartButton::StartButton(QWidget *parent) : QWidget(parent), ui(new Ui::StartBut
     btn = new QPushButton("Click me!", this);
     btn->setGeometry(100, 100, 80, 80);
     connect(btn, &QPushButton::clicked, this, StartButton::changeButtonColor);
+
 }
 StartButton::~StartButton()
 {
@@ -17,4 +18,10 @@ StartButton::~StartButton()
 void StartButton::changeButtonColor()
 {
     btn->setStyleSheet("background-color: red;");
+}
+
+void StartButton::enterEvent(QEvent *event) {
+    Q_UNUSED(event);
+    // Генерация новых случайных координат для кнопки
+   btn->setGeometry(0, 0, 80, 80);
 }
