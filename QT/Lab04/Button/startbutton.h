@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <QEvent>
 #include <QString>
+#include <QRandomGenerator>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

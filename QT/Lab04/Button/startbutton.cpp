@@ -25,6 +25,7 @@ void StartButton::changeButtonColor()
 
 void StartButton::Button::enterEvent(QEvent *event) {
     Q_UNUSED(event);
-    // Генерация новых случайных координат для кнопки
-    setGeometry(0, 0, 80, 80);
+    int posX = QRandomGenerator::global()->bounded(0, parentWidget()->width() - width());
+    int posY = QRandomGenerator::global()->bounded(0, parentWidget()->height() - height());
+    setGeometry(posX, posY, 80, 80);
 }
