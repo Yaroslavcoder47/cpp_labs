@@ -1,0 +1,32 @@
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   03/11/24 14:09:51
+asmMain.asm						     Page 1 - 1
+
+
+				.686
+asmMain.asm(1) : error A2008:syntax error : .
+				PUBLIC @mul2@4
+				.model flat
+asmMain.asm(3) : error A2008:syntax error : .
+ 00000000			.code
+ 00000000			@mul2@4 proc
+ 00000000  8B C1		 mov eax,ecx ;первый параметр
+ 00000002  BB 00000002		 mov ebx, 2 ;второй параметр
+ 00000007  99			 cdq
+ 00000008  F7 EB		 imul ebx
+ 0000000A  C3			 ret
+ 0000000B			@mul2@4 endp
+				end
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   03/11/24 14:09:51
+asmMain.asm						     Symbols 2 - 1
+
+
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+@mul2@4  . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000000B Public
+
+	   0 Warnings
+	   2 Errors
