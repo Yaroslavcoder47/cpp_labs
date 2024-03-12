@@ -2,6 +2,6 @@
 extern "C" int __fastcall mul2(int);
 int main() {
 
-	std::cout << "multiply by 2 = " << mul2(5) << std::endl;
+	std::cout << "multipled by 2 = " << mul2(10) << std::endl;
 
 }
