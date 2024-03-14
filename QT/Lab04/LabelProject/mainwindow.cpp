@@ -27,6 +27,18 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
     }
 }
 
+void MainWindow::keyPressEvent(QKeyEvent *event){
+    if (event->key() == Qt::Key_Space){
+        changeTextOnLabels(QString("oopsie!"));
+    }
+}
+
+void MainWindow::keyReleaseEvent(QKeyEvent *event){
+    if (event->key() == Qt::Key_Space){
+        changeTextOnLabels(QString("Label"));
+    }
+}
+
 void MainWindow::addLabel()
 {
     QLabel *label = new QLabel(this);
@@ -57,4 +69,11 @@ bool MainWindow::checkIntersection(QRect a){
         }
     }
     return false;
+}
+
+void MainWindow::changeTextOnLabels(QString text)
+{
+    for(auto& lbl : labels_){
+        lbl->setText(text);
+    }
 }

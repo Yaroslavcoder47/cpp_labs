@@ -7,6 +7,7 @@
 #include <vector>
 #include <QRandomGenerator>
 #include <QRect>
+#include <QKeyEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,6 +24,8 @@ public:
     ~MainWindow();
 protected:
     void mousePressEvent(QMouseEvent* event) override;
+    void keyPressEvent(QKeyEvent* event) override;
+    void keyReleaseEvent(QKeyEvent* event) override;
 
 signals:
     void makeLabel();
@@ -35,5 +38,6 @@ private:
     Ui::MainWindow *ui;
     std::vector<QLabel*> labels_;
     bool checkIntersection(QRect a);
+    void changeTextOnLabels(QString text);
 };
 #endif // MAINWINDOW_H
