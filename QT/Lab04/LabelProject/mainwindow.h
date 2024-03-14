@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <vector>
 #include <QRandomGenerator>
+#include <QRect>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -33,5 +34,6 @@ public slots:
 private:
     Ui::MainWindow *ui;
     std::vector<QLabel*> labels_;
+    bool checkIntersection(QRect a);
 };
 #endif // MAINWINDOW_H

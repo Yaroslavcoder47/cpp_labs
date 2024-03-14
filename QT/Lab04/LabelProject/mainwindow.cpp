@@ -20,7 +20,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
-    if(event == nullptr) // Проверка на nullptr
+    if(event == nullptr)
         return;
     if(event->button() == Qt::LeftButton){
         emit makeLabel();
@@ -30,11 +30,31 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 void MainWindow::addLabel()
 {
     QLabel *label = new QLabel(this);
-    label->setText("Label");
-    label->setStyleSheet("background-color: yellow;");
+    int count = 0;
     int posX = QRandomGenerator::global()->bounded(0, this->width() - label->width());
     int posY = QRandomGenerator::global()->bounded(0, this->height() - label->height());
-    label->setGeometry(posX, posY, 80, 80);
+    while(checkIntersection(QRect(posX,posY,label->width(),label->height()))){
+        ++count;
+        posX = QRandomGenerator::global()->bounded(0, this->width() - label->width());
+        posY = QRandomGenerator::global()->bounded(0, this->height() - label->height());
+        if(count >= 10000){
+            return;
+        }
+    }
+    label->move(posX, posY);
+    label->setText("Label");
+    label->setAlignment(Qt::AlignCenter);
+    QString colorStr = "background-color: rgb(%1,%2,%3)";
+    label->setStyleSheet(colorStr.arg(std::max(170,rand() % 255)).arg(std::max(170,rand() % 255)).arg(std::max(170,rand() % 255)));
     labels_.push_back(label);
     label->show();
+}
+
+bool MainWindow::checkIntersection(QRect a){
+    for(size_t i = 0; i < labels_.size();i++){
+        if(a.intersects(labels_[i]->geometry())){
+            return true;
+        }
+    }
+    return false;
 }
