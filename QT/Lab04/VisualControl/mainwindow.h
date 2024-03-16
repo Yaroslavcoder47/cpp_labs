@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QCheckBox>
 #include <QPushButton>
-#include <QGridLayout>
+#include <QLayout>
 #include <QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,7 +21,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 private slots:
-    void buttonDisappear(QPushButton &btn);
+    void buttonDisappear(QPushButton* btn, int state);
 
 private:
     Ui::MainWindow *ui;
