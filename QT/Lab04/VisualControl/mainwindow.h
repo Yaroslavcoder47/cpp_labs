@@ -20,6 +20,8 @@ class MainWindow : public QWidget
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+private slots:
+    void buttonDisappear(QPushButton &btn);
 
 private:
     Ui::MainWindow *ui;

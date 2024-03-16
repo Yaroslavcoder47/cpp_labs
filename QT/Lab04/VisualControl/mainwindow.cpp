@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::MainWindow)
 {
+
     resize(400, 200);
     QGridLayout* grid = new QGridLayout;
     QCheckBox* chb1 = new QCheckBox("Box 1");
@@ -24,6 +25,9 @@ MainWindow::MainWindow(QWidget *parent)
     setButtonParametrs(btn3);
     setButtonParametrs(btn4);
     setButtonParametrs(btn5);
+
+    connect(chb1, &QCheckBox::stateChanged, this, SLOT(buttonDisappear(QPushButton* btn)));
+
 
 
     grid->addWidget(btn1, 0, 0);
@@ -50,4 +54,9 @@ void MainWindow::setButtonParametrs(QPushButton* btn)
 {
     btn->setFixedSize(70, 30);
     btn->setStyleSheet("QPushButton { text-align: center; background-color: rgb(150, 242, 230)}");
+}
+
+void MainWindow::buttonDisappear(QPushButton &btn)
+{
+    btn.hide();
 }
