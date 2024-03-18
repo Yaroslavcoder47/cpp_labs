@@ -1,12 +1,10 @@
 #pragma once
 
-#ifndef EX9_H
-#define EX9_H
+#ifndef TASK1_H
+#define TASK1_H
 
 #include <vector>
-
 #include "spdlog/spdlog.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
 
 void vectorRebuild(int* _ptr) {
 
@@ -48,9 +46,9 @@ void vectorRebuild(int* _ptr) {
 
 	spdlog::debug("__asm started.");
 
-	/*__asm {
-		mov edx, dword ptr[_ptr]
-		mov eax, dword ptr[edx]
+	__asm {
+		mov edx, dword ptr[_ptr] // длина массива
+		mov eax, dword ptr[edx] // 
 		mov esi, 1
 		firstLoopBegin_ :
 			cmp esi, dword ptr[edx]
@@ -58,7 +56,7 @@ void vectorRebuild(int* _ptr) {
 			jmp end__
 		secondLoop_ :
 			mov edi, dword ptr[edx]
-			secondLoopBegin_ :
+		secondLoopBegin_ :
 			cmp edi, esi
 			jg continueSecondLoop_
 			inc esi
@@ -85,12 +83,10 @@ void vectorRebuild(int* _ptr) {
 
 			jmp secondLoopBegin_
 			end__ :
-	}*/
-
+	}
 
 	spdlog::debug("__asm finished.");
-
 	spdlog::trace("vectorRebuild func. finished.");
 }
 
-#endif //EX9_H
+#endif //TASK1_H

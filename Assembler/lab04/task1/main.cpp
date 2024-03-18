@@ -2,8 +2,6 @@
 #include <vector>
 #include "task1.h"
 #include "spdlog/spdlog.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
-
 
 int main() {
 
@@ -34,12 +32,10 @@ int main() {
 
 	
 	std::vector <int> vec = {5, 1, 1, 2, 2, 3};
-
 	int size = 5;
-
 	int* ptrArr = vec.data();
 	int* length = ptrArr;
-	*length = size; //vec[0] = size;
+	*length = size;
 
 	size_t i = 1;
 
@@ -56,13 +52,6 @@ int main() {
 		}
 		++i;
 	}
-
-	/*for (size_t i = 0; i <= vec[0]; ++i) {
-		std::cout << vec[i] << ' ';
-	}*/
-	
-
-	//vectorRebuild(length);
 
 	std::cout << "Rebuild vector looks like:\n";
 
