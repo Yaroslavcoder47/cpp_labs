@@ -13,10 +13,15 @@ Widget::Widget(QWidget *parent)
     ui->comboBox->addItem("TextEdit");
 
     ui->spinBox->setRange(0, 5);
-
+    connect(ui->pushButton, &QPushButton::clicked, this, )
 }
 
 Widget::~Widget()
 {
     delete ui;
+}
+
+void Widget::placeWidget(QString widgetName, char count)
+{
+
 }

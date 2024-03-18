@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,8 +17,12 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+private slots:
+    void placeWidget(QString widgetName, char count);
 
 private:
     Ui::Widget *ui;
+    QString widgetToPlace;
+    char count;
 };
 #endif // WIDGET_H
