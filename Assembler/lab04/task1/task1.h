@@ -48,38 +48,34 @@ void vectorRebuild(int* _ptr) {
 
 	spdlog::debug("__asm started.");
 
-	__asm {
+	/*__asm {
 		mov edx, dword ptr[_ptr]
 		mov eax, dword ptr[edx]
 		mov esi, 1
 		firstLoopBegin_ :
-		cmp esi, dword ptr[edx]
+			cmp esi, dword ptr[edx]
 			jl secondLoop_
 			jmp end__
-			secondLoop_ :
-		mov edi, dword ptr[edx]
+		secondLoop_ :
+			mov edi, dword ptr[edx]
 			secondLoopBegin_ :
 			cmp edi, esi
 			jg continueSecondLoop_
 			inc esi
 			jmp firstLoopBegin_
-			continueSecondLoop_ :
-		mov ebx, dword ptr[edx + esi * 4]
+		continueSecondLoop_ :
+			mov ebx, dword ptr[edx + esi * 4]
 			cmp ebx, dword ptr[edx + edi * 4]
 			je thirdLoop_
 			dec edi
 			jmp secondLoopBegin_
-
-			thirdLoop_ :
-
-		mov ecx, dword ptr[edx]
+		thirdLoop_ :
+			mov ecx, dword ptr[edx]
 			sub ecx, edi
 			mov i, esi
 			mov esi, edi
-
-			thirdLoopBegin_ :
-
-		mov eax, dword ptr[edx + esi * 4]
+		thirdLoopBegin_ :
+			mov eax, dword ptr[edx + esi * 4]
 			mov ebx, [edx + esi * 4 + 4]
 			mov[edx + esi * 4], ebx
 
@@ -89,7 +85,8 @@ void vectorRebuild(int* _ptr) {
 
 			jmp secondLoopBegin_
 			end__ :
-	}
+	}*/
+
 
 	spdlog::debug("__asm finished.");
 

@@ -1,12 +1,25 @@
 .686
-PUBLIC @mul2@4
+PUBLIC @mul2fastCall@4
 .model flat
 .code
-@mul2@4 proc
+@mul2fastCall@4 proc
  mov eax,ecx ;первый параметр
  mov ebx, 2 ;второй параметр
  cdq
  imul ebx
  ret
-@mul2@4 endp
+@mul2fastCall@4 endp
+end
+
+
+PUBLIC @mul2StdCall@4
+.model flat
+.code
+@mul2StdCall@4 proc
+ mov eax,ecx ;первый параметр
+ mov ebx, 2 ;второй параметр
+ cdq
+ imul ebx
+ ret
+@mul2StdCall@4 endp
 end

@@ -10,7 +10,7 @@ int main() {
 	spdlog::set_level(spdlog::level::trace);
 	spdlog::trace("program started.");
 
-	int size;
+	/*int size;
 	std::cout << "Input the size of the array: ";
 	std::cin >> size;
 
@@ -30,9 +30,9 @@ int main() {
 
 	int* ptrArr = vec.data();
 	int* length = ptrArr;
-	*length = size; //vec[0] = size;
+	*length = size; //vec[0] = size;*/
 
-	/*
+	
 	std::vector <int> vec = {5, 1, 1, 2, 2, 3};
 
 	int size = 5;
@@ -43,26 +43,26 @@ int main() {
 
 	size_t i = 1;
 
-  while (i < *length) {
-	size_t j = *length;
-	while (j > i) {
-		if ((*(length + i)) == (*(length + j))) {
-			for (int k = j; k < *length; ++k) {
-				*(length + k) = *(length + k + 1);
+	while (i < *length) {
+		size_t j = *length;
+		while (j > i) {
+			if ((*(length + i)) == (*(length + j))) {
+				for (int k = j; k < *length; ++k) {
+					*(length + k) = *(length + k + 1);
+				}
+				*length = *length - 1;
 			}
-			*length = *length - 1;
-
+			--j;
 		}
-		--j;
+		++i;
 	}
-	++i;
-}
-	for (size_t i = 0; i <= vec[0]; ++i){
-		std::cout << vec[i] << ' ';
-	}
-	*/
 
-	vectorRebuild(length);
+	/*for (size_t i = 0; i <= vec[0]; ++i) {
+		std::cout << vec[i] << ' ';
+	}*/
+	
+
+	//vectorRebuild(length);
 
 	std::cout << "Rebuild vector looks like:\n";
 
