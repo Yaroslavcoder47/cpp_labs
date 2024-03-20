@@ -31,14 +31,11 @@ int main() {
 	*length = size; //vec[0] = size;*/
 
 	
-	std::vector <int> vec = {5, 1, 1, 2, 2, 3};
-	int size = 5;
+	std::vector <int> vec = {4, 1, 2, 2, 3};
 	int* ptrArr = vec.data();
-	int* length = ptrArr;
-	*length = size;
 
+	/*int* length = ptrArr;
 	size_t i = 1;
-
 	while (i < *length) {
 		size_t j = *length;
 		while (j > i) {
@@ -51,8 +48,10 @@ int main() {
 			--j;
 		}
 		++i;
-	}
+	}*/
+	
 
+	vectorRebuild(ptrArr);
 	std::cout << "Rebuild vector looks like:\n";
 
 	for (size_t i = 1; i <= vec[0]; ++i) {
