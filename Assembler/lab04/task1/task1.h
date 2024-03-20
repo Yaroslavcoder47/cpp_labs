@@ -16,7 +16,7 @@ void vectorRebuild(int* _ptr) {
 		 mov edx, dword ptr[_ptr] // length begin of array
 		 mov esi, 1 // var i
 		 firstLoop_:
-			cmp esi, edx
+			cmp esi, dword ptr[edx]
 			jge end_
 			mov edi, dword ptr[edx] // var j
 			jmp secondLoop_
@@ -28,14 +28,17 @@ void vectorRebuild(int* _ptr) {
 			cmp ebx, dword ptr[edx + edi * 4]
 			jne secondLoopCont_
 			mov ecx, dword ptr[edx]
-			sub ecx, edi
-			mov i, edi
+			sub ecx, edi // counter from j to k
+			mov i, esi
+			mov esi, edi
+			dec dword ptr[edx]
 			jmp thirdLoop_  // зашли в if и цикл for
 		thirdLoop_:
-			mov eax, dword ptr[edx + i * 4 + 4]
-			mov dword ptr[edx + i * 4], eax
+			mov eax, dword ptr[edx + esi * 4 + 4]
+			mov dword ptr[edx + esi * 4], eax
 			loop thirdLoop_
-			//TODO
+			mov esi, i
+			jmp secondLoopCont_
 		secondLoopCont_:
 			dec edi
 			jmp secondLoop_

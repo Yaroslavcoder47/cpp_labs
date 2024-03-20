@@ -31,7 +31,7 @@ int main() {
 	*length = size; //vec[0] = size;*/
 
 	
-	std::vector <int> vec = {4, 1, 2, 2, 3};
+	std::vector <int> vec = {3, 1, 1, 1};
 	int* ptrArr = vec.data();
 
 	/*int* length = ptrArr;
