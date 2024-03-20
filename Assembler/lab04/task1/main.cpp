@@ -8,32 +8,10 @@ int main() {
 	spdlog::set_level(spdlog::level::trace);
 	spdlog::trace("program started.");
 
-	/*int size;
-	std::cout << "Input the size of the array: ";
-	std::cin >> size;
-
-	std::vector <int> vec;
-	vec.reserve(size + 1);
-
-	int tmp;
-
-	spdlog::debug("input started.");
-
-	for (size_t i = 1; i < size + 1; ++i) {
-		std::cin >> tmp;
-		vec.push_back(tmp);
-	}
-
-	spdlog::debug("input finished.");
-
-	int* ptrArr = vec.data();
-	int* length = ptrArr;
-	*length = size; //vec[0] = size;*/
-
-	
 	std::vector <int> vec = {4, 1, 1, 1, 1};
 	int* ptrArr = vec.data();
 
+	// Code on C++
 	/*int* length = ptrArr;
 	size_t i = 1;
 	while (i < *length) {
@@ -50,7 +28,6 @@ int main() {
 		++i;
 	}*/
 	
-
 	vectorRebuild(ptrArr);
 	std::cout << "Rebuild vector looks like:\n";
 
@@ -58,9 +35,8 @@ int main() {
 		std::cout << vec[i] << ' ';
 	}
 	std::cout << '\n';
-
 	std::cout << "Vector's size is " << vec[0] << '\n';
 
 	spdlog::trace("program finished.");
-
+	return 0;
 }
