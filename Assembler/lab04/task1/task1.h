@@ -33,15 +33,22 @@ void vectorRebuild(int* _ptr) {
 			mov esi, edi
 			dec dword ptr[edx]
 			jmp thirdLoop_  // зашли в if и цикл for
+
 		thirdLoop_:
+			cmp ecx, 0
+			je loopContinue_
 			mov eax, dword ptr[edx + esi * 4 + 4]
 			mov dword ptr[edx + esi * 4], eax
-			loop thirdLoop_
+			dec ecx
+
+		loopContinue_:
 			mov esi, i
 			jmp secondLoopCont_
+
 		secondLoopCont_:
 			dec edi
 			jmp secondLoop_
+
 		firstLoopCont_:
 			inc esi
 			jmp firstLoop_
