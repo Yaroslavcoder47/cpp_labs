@@ -20,11 +20,11 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
-
 private:
     Ui::Widget *ui;
     QVector<QVector<QPushButton*>> buttons;
     QVector<QString> sign{"X", "O"};
+    bool checkWin();
     size_t dim = 3;
     size_t turn = 0;
 };

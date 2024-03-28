@@ -22,6 +22,8 @@ Widget::Widget(QWidget *parent)
         for(size_t j = 0; j < dim; ++j){
             connect(buttons[i][j], &QPushButton::clicked, [this, i, j](){
                 buttons[i][j]->setText(sign[turn]);
+                ++turn;
+                turn %= 2;
             });
         }
     }
@@ -30,5 +32,10 @@ Widget::Widget(QWidget *parent)
 Widget::~Widget()
 {
     delete ui;
+}
+
+bool Widget::checkWin()
+{
+
 }
 
