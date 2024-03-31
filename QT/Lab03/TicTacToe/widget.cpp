@@ -32,6 +32,12 @@ Widget::Widget(QWidget *parent)
                     QLabel* lbl = new QLabel;
                     lbl->setText(checkWin().second + " Win");
                     grid->addWidget(lbl, dim, 0, dim, -1, Qt::AlignCenter);
+                    DisableButtons();
+                }
+                if(checkDraw()){
+                    QLabel* lbl = new QLabel("Draw");
+                    grid->addWidget(lbl, dim, 0, dim, -1, Qt::AlignCenter);
+                    DisableButtons();
                 }
             });
         }
@@ -95,5 +101,31 @@ QPair<bool, QString> Widget::checkWin()
 
     result.first = false;
     return result;
+}
+
+void Widget::DisableButtons()
+{
+    for(size_t i = 0; i < dim; ++i){
+        for(size_t j = 0; j < dim; ++j){
+            buttons[i][j]->setEnabled(false);
+        }
+    }
+}
+
+bool Widget::checkDraw()
+{
+    int sum = 0;
+    for(size_t i = 0; i < dim; ++i){
+        for(size_t j = 0; j < dim; ++j){
+            if(check[i][j] == 0){
+                return false;
+            }
+            sum += check[i][j];
+        }
+    }
+    if(abs(sum) == 1){
+        return true;
+    }
+    return false;
 }
 

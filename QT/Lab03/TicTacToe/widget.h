@@ -27,11 +27,12 @@ public:
 private:
     Ui::Widget *ui;
     QVector<QVector<QPushButton*>> buttons;
-
+    void DisableButtons();
     QVector<QString> sign{"X", "O"};
     QPair<bool, QString> checkWin();
     size_t dim = 3;
     std::vector<std::vector<int>> check;
     size_t turn = 0;
+    bool checkDraw();
 };
 #endif // WIDGET_H
