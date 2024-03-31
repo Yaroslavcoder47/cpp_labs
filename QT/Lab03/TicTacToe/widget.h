@@ -5,6 +5,9 @@
 #include <QPushButton>
 #include <QVector>
 #include <QString>
+#include <QLabel>
+#include <vector>
+#include <cmath>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,9 +26,11 @@ public:
 private:
     Ui::Widget *ui;
     QVector<QVector<QPushButton*>> buttons;
+
     QVector<QString> sign{"X", "O"};
     bool checkWin();
     size_t dim = 3;
+    std::vector<std::vector<int>> check;
     size_t turn = 0;
 };
 #endif // WIDGET_H
