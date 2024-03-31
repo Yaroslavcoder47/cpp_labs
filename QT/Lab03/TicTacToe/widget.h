@@ -8,6 +8,7 @@
 #include <QLabel>
 #include <vector>
 #include <cmath>
+#include <QPair>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -28,7 +29,7 @@ private:
     QVector<QVector<QPushButton*>> buttons;
 
     QVector<QString> sign{"X", "O"};
-    bool checkWin();
+    QPair<bool, QString> checkWin();
     size_t dim = 3;
     std::vector<std::vector<int>> check;
     size_t turn = 0;

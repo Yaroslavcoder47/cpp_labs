@@ -28,8 +28,9 @@ Widget::Widget(QWidget *parent)
                 check[i][j] = turn * 2 - 1; // -1 - X; 1 - O
                 ++turn;
                 turn %= 2;
-                if(checkWin()){
-                    QLabel* lbl = new QLabel("Win");
+                if(checkWin().first){
+                    QLabel* lbl = new QLabel;
+                    lbl->setText(checkWin().second + " Win");
                     grid->addWidget(lbl, dim, 0, dim, -1, Qt::AlignCenter);
                 }
             });
@@ -42,8 +43,9 @@ Widget::~Widget()
     delete ui;
 }
 
-bool Widget::checkWin()
+QPair<bool, QString> Widget::checkWin()
 {
+    QPair<bool, QString> result;
     int HorizontalSum = 0;
     int VerticalSum = 0;
     for(size_t i = 0; i < dim; ++i){
@@ -51,7 +53,9 @@ bool Widget::checkWin()
             HorizontalSum += check[i][j];
         }
         if(abs(HorizontalSum) == 3){
-            return true;
+            result.first = true;
+            result.second = buttons[i][0]->text();
+            return result;
         }
         HorizontalSum = 0;
     }
@@ -61,7 +65,9 @@ bool Widget::checkWin()
             VerticalSum += check[j][i];
         }
         if(abs(VerticalSum) == 3){
-            return true;
+            result.first = true;
+            result.second = buttons[dim-1][i]->text();
+            return result;
         }
         VerticalSum = 0;
     }
@@ -72,17 +78,22 @@ bool Widget::checkWin()
     for(size_t i = 0; i < dim; ++i){
         HorizontalSum += check[i][i];
         if(abs(HorizontalSum) == 3){
-            return true;
+            result.first = true;
+            result.second = buttons[i][i]->text();
+            return result;
         }
     }
 
     for(size_t i = 0; i < dim; ++i){
         VerticalSum += check[i][dim-i-1];
         if(abs(VerticalSum) == 3){
-            return true;
+            result.first = true;
+            result.second = buttons[i][dim-i-1]->text();
+            return result;
         }
     }
 
-    return false;
+    result.first = false;
+    return result;
 }
 
