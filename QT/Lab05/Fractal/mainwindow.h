@@ -6,6 +6,7 @@
 #include <QColor>
 #include <QtMath>
 #include <cmath>
+#include <QRandomGenerator>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
