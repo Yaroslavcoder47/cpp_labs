@@ -6,3 +6,4 @@ int main() {
 	std::cout << "multipled by 2 = " << mul2(10) << std::endl;
 
 }
+

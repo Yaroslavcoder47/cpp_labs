@@ -23,3 +23,9 @@ PUBLIC @mul2StdCall@4
  ret
 @mul2StdCall@4 endp
 end
+
+PUBLIC @palindromfastCall@8
+.model flat
+.code
+@palindromfastCall@8
+	mov 
