@@ -3,7 +3,7 @@
 #include "task1.h"
 #include "task2.h"
 #include "spdlog/spdlog.h"
-
+//
 //int main() {
 //
 //	spdlog::set_level(spdlog::level::trace);
@@ -12,22 +12,6 @@
 //	std::vector <int> vec = {4, 1, 1, 1, 1};
 //	int* ptrArr = vec.data();
 //
-//	// Code on C++
-//	/*int* length = ptrArr;
-//	size_t i = 1;
-//	while (i < *length) {
-//		size_t j = *length;
-//		while (j > i) {
-//			if ((*(length + i)) == (*(length + j))) {
-//				for (int k = j; k < *length; ++k) {
-//					*(length + k) = *(length + k + 1);
-//				}
-//				*length = *length - 1;
-//			}
-//			--j;
-//		}
-//		++i;
-//	}*/
 //	
 //	vectorRebuild(ptrArr);
 //	std::cout << "Rebuild vector looks like:\n";
@@ -44,13 +28,14 @@
 
 int main()
 {
-	
+	spdlog::set_level(spdlog::level::trace);
+	spdlog::trace("program started.");
 	std::vector<int> a = { 1, 2, 5, 8 };
-	std::vector<int> b = { 3, 4, 6 };
+	std::vector<int> b = { 2, 4, 6 };
 
 	std::vector<int> r = mergeArrays(a.data(), b.data(), a.size(), b.size());
-	//std::vector<int> r = mergeAsm(a, b);
-	/*for (size_t i = 0; i < r.size(); ++i) {
+	
+	for (size_t i = 0; i < r.size(); ++i) {
 		std::cout << r[i] << " ";
-	} */
+	} 
 }

@@ -56,4 +56,21 @@ void vectorRebuild(int* _ptr) {
 	spdlog::debug("__asm finished.");
 	spdlog::trace("vectorRebuild func. finished.");
 }
+// Code on C++
+//	/*int* length = ptrArr;
+//	size_t i = 1;
+//	while (i < *length) {
+//		size_t j = *length;
+//		while (j > i) {
+//			if ((*(length + i)) == (*(length + j))) {
+//				for (int k = j; k < *length; ++k) {
+//					*(length + k) = *(length + k + 1);
+//				}
+//				*length = *length - 1;
+//			}
+//			--j;
+//		}
+//		++i;
+//	}*/
+
 #endif //TASK1_H
