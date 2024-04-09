@@ -44,5 +44,13 @@
 
 int main()
 {
-	std::cout << f();
+	
+	std::vector<int> a = { 1, 2, 5, 8 };
+	std::vector<int> b = { 3, 4, 6 };
+
+	std::vector<int> r = mergeArrays(a.data(), b.data(), a.size(), b.size());
+	//std::vector<int> r = mergeAsm(a, b);
+	/*for (size_t i = 0; i < r.size(); ++i) {
+		std::cout << r[i] << " ";
+	} */
 }
