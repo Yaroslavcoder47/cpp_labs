@@ -1,0 +1,67 @@
+Microsoft (R) Macro Assembler Version 14.38.33133.0	    04/10/24 21:51:32
+asmMain.asm						     Page 1 - 1
+
+
+				.686
+				PUBLIC @mul2fastCall@4
+				.model flat
+ 00000000			.code
+ 00000000			@mul2fastCall@4 proc
+ 00000000  8B C1		 mov eax,ecx ;первый параметр
+ 00000002  BB 00000002		 mov ebx, 2 ;второй параметр
+ 00000007  99			 cdq
+ 00000008  F7 EB		 imul ebx
+ 0000000A  C3			 ret
+ 0000000B			@mul2fastCall@4 endp
+				end 
+
+
+				PUBLIC _mul2StdCall@4
+				.model flat
+				.code
+				_mul2StdCall@4 proc
+				 mov eax,ecx ;первый параметр
+				 mov ebx, 2 ;второй параметр
+				 cdq
+				 imul ebx
+				 ret 4
+				_mul2StdCall@4 endp
+				end 
+Microsoft (R) Macro Assembler Version 14.38.33133.0	    04/10/24 21:51:32
+asmMain.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000000B Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+@mul2fastCall@4  . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000000B Public
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000000h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+
+	   0 Warnings
+	   0 Errors
