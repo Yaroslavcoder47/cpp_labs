@@ -2,6 +2,7 @@
 #include <vector>
 #include "task1.h"
 #include "task2.h"
+#include "task3.h"
 #include "spdlog/spdlog.h"
 //
 //int main() {
@@ -30,12 +31,17 @@ int main()
 {
 	spdlog::set_level(spdlog::level::trace);
 	spdlog::trace("program started.");
-	std::vector<int> a = { 1, 2, 5, 8 };
+	/*std::vector<int> a = { 1, 2, 5, 8 };
 	std::vector<int> b = { 2, 4, 6 };
 
 	std::vector<int> r = mergeArrays(a.data(), b.data(), a.size(), b.size());
 	
 	for (size_t i = 0; i < r.size(); ++i) {
 		std::cout << r[i] << " ";
-	} 
+	} */
+
+	std::vector<int> a = { 4, 7, 2 };
+	std::vector<int> b = { 7, 4, 15 };
+	std::vector<int> c = { 4, 7 };
+ 	std::cout << arrayIntersection(a, b, c);
 }
