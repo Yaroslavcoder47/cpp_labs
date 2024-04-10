@@ -8,20 +8,20 @@
 
 bool arrayIntersection(std::vector<int>& a, std::vector<int>& b, std::vector<int>& c) 
 {
+	spdlog::trace("arrayIntersection func. started.");
+	spdlog::debug("__asm started.");
 	int* ptrA = a.data();
 	int* ptrB = b.data();
-	int aSize = a.size();
+	int aSize = a.size(); 
 	int bSize = b.size();
-	 // доделать с выделением памяти
-	std::vector<int>* res = new std::vector<int>();
-	//int* ptrRes = res.data();
+	
+	int* res = new int[std::min(aSize, bSize)];
+	int leng;
 
 	__asm {
 		xor edx, edx
 		xor ebx, ebx
-
 		mov esi, 0
-		//mov edi, ptrRes
 		mov edi, dword ptr[res]
 		firstLoop_:
 			cmp edx, aSize
@@ -47,25 +47,17 @@ bool arrayIntersection(std::vector<int>& a, std::vector<int>& b, std::vector<int
 			inc edx
 			jmp firstLoop_
 		end_:
+			mov leng, esi
 	}
-	for (size_t i = 0; i < res->size(); ++i) {
-		std::cout << *(res->begin()+1) << ' ';
-	}
-	/*for (auto it : res) {
-		std::cout << it << ' ';
-	}
-	sort(res.begin(), res.end());
-	if (res.size() != c.size()) {
+	if (leng != c.size()) {
 		return 0;
 	}
-	for (size_t i = 0; i < res.size(); ++i) {
-		std::cout << res[i] << ' ';
+	for (size_t i = 0; i < leng; ++i) {
 		if (res[i] != c[i]) {
 			return 0;
 		}
-	}*/
+	}
 	return 1;
-
 }
 
 #endif // !TASK3_H

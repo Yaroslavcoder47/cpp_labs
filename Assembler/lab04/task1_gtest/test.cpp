@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "../task1/task1.h"
 #include "../task1/task2.h"
+#include "../task1/task3.h"
 #include "spdlog/spdlog.h"
 
 TEST(TestCaseName, TestName) {
@@ -73,4 +74,26 @@ TEST(Task2Test, TestCase3) {
 	for (size_t i = 0; i < result.size(); ++i) {
 		EXPECT_EQ(result[i], expectedRes[i]);
 	}
+}
+
+//task3 test
+TEST(Task3Test, TestCase1) {
+	std::vector<int> a = { 4, 7, 2 };
+	std::vector<int> b = { 7, 4, 15 };
+	std::vector<int> c = { 4, 7 };
+	EXPECT_EQ(arrayIntersection(a, b, c), 1);
+}
+
+TEST(Task3Test, TestCase2) {
+	std::vector<int> a = { 4, 7, 2 };
+	std::vector<int> b = { 7, 4, 15 };
+	std::vector<int> c = { 4, 7, 7 };
+	EXPECT_EQ(arrayIntersection(a, b, c), 0);
+}
+
+TEST(Task3Test, TestCase3) {
+	std::vector<int> a = { 4, 7, 2 };
+	std::vector<int> b = { 7, 4, 15 };
+	std::vector<int> c = { 4, 5 };
+	EXPECT_EQ(arrayIntersection(a, b, c), 0);
 }
