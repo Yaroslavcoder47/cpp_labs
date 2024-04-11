@@ -1,0 +1,31 @@
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   04/11/24 10:03:56
+sqrt.asm						     Page 1 - 1
+
+
+				.686
+sqrt.asm(1) : error A2008:syntax error : .
+				PUBLIC @CalculateSqrt@4
+				.model flat
+sqrt.asm(3) : error A2008:syntax error : .
+ 00000000			.code
+ 00000000			@CalculateSqrt@4 proc
+ 00000000  8B C1			mov eax, ecx
+ 00000002  FF C0			inc eax
+ 00000004  C3				ret
+ 00000005			@CalculateSqrt@4 endp
+				end
+
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   04/11/24 10:03:56
+sqrt.asm						     Symbols 2 - 1
+
+
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+@CalculateSqrt@4 . . . . . . . .	P 	 00000000 _TEXT	Length= 00000005 Public
+
+	   0 Warnings
+	   2 Errors

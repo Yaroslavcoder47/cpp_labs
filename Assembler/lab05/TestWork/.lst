@@ -1,33 +1,42 @@
-Microsoft (R) Macro Assembler Version 14.38.33133.0	    04/10/24 21:51:32
+Microsoft (R) Macro Assembler Version 14.38.33133.0	    04/11/24 23:21:52
 asmMain.asm						     Page 1 - 1
 
 
 				.686
-				PUBLIC @mul2fastCall@4
+				PUBLIC @calculateSqrt@8
 				.model flat
  00000000			.code
- 00000000			@mul2fastCall@4 proc
- 00000000  8B C1		 mov eax,ecx ;первый параметр
- 00000002  BB 00000002		 mov ebx, 2 ;второй параметр
- 00000007  99			 cdq
- 00000008  F7 EB		 imul ebx
- 0000000A  C3			 ret
- 0000000B			@mul2fastCall@4 endp
-				end 
+ 00000000			@calculateSqrt@8 proc
+ 00000000  9B DB E3		finit  
+ 00000003  D9 02		fld dword ptr[edx] 
+ 00000005  D9 02		fld dword ptr[edx]
+ 00000007			_loop:
 
+ 00000007  D9 E8		fld1
+ 00000009  D9 E8		fld1
+ 0000000B  DE C1		fadd
+ 0000000D  DE F9		fdivp st(1), st(0)
 
-				PUBLIC _mul2StdCall@4
-				.model flat
-				.code
-				_mul2StdCall@4 proc
-				 mov eax,ecx ;первый параметр
-				 mov ebx, 2 ;второй параметр
-				 cdq
-				 imul ebx
-				 ret 4
-				_mul2StdCall@4 endp
-				end 
-Microsoft (R) Macro Assembler Version 14.38.33133.0	    04/10/24 21:51:32
+ 0000000F  D9 C1		fld st(1) 
+ 00000011  D9 C0		fld st(0)
+
+ 00000013  D9 E8		fld1
+ 00000015  D9 E8		fld1
+ 00000017  DE C1		fadd
+
+ 00000019  DE FA		fdivp st(2), st(0) ; st(2)
+
+ 0000001B  DE C9		fmulp st(1), st(0)
+ 0000001D  DE C1		faddp st(1), st(0)
+
+ 0000001F  E2 E6		loop _loop
+
+ 00000021  C3			ret
+
+ 00000022			@calculateSqrt@8 endp
+				end
+
+Microsoft (R) Macro Assembler Version 14.38.33133.0	    04/11/24 23:21:52
 asmMain.asm						     Symbols 2 - 1
 
 
@@ -39,14 +48,15 @@ Segments and Groups:
 
 FLAT . . . . . . . . . . . . . .	GROUP
 _DATA  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'DATA'	
-_TEXT  . . . . . . . . . . . . .	32 Bit	 0000000B Para	  Public  'CODE'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000022 Para	  Public  'CODE'	
 
 
 Procedures, parameters, and locals:
 
                 N a m e                 Type     Value    Attr
 
-@mul2fastCall@4  . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000000B Public
+@calculateSqrt@8 . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000022 Public
+  _loop  . . . . . . . . . . . .	L Near	 00000007 _TEXT	
 
 
 Symbols:
