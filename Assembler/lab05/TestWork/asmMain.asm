@@ -7,28 +7,30 @@ finit
 fld dword ptr[edx] 
 fld dword ptr[edx]
 _loop:
-; доделать с правильным вызовом в стеке
-fld1
-fld1
-fadd
-fdivp st(1), st(0)
-
-fld st(1) 
-fld st(0)
 
 fld1
 fld1
 fadd
+fdivp st(1), st(0) ; x/2 a
+fld st(0) ; x/2 x/2 a
 
-fdivp st(2), st(0) ; st(2)
+fld1
+fld1
+fadd
+fmul ; x x/2 a
+fld st(2)
+fld1
+fld1
+fadd
 
-fmulp st(1), st(0)
+fdivp st(1), st(0) ; a/2 x/2 x a
+
+;fdivrp st(0), st(1)
+fdivrp
 faddp st(1), st(0)
-
+   
 loop _loop
 
 ret
-
 @calculateSqrt@8 endp
 end
-

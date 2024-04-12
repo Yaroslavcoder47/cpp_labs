@@ -39,16 +39,15 @@ int main() {
     float result = CalculateSqrt(n, &a);
     std::cout << "Result of function: " << result << ' ' << "Difference: " << std::sqrt(2) - result;*/
 
-    float* a = new float(4.0);
+    float* a = new float(2.0);
     int n = 5;
-    float resA = *a;
+
     float result;
     __asm {
         mov ecx, n
         mov edx, dword ptr[a]
-
         call calculateSqrt
-        mov result, eax
+        fstp dword ptr[result]
     }
     std::cout << result;
     return 0;
