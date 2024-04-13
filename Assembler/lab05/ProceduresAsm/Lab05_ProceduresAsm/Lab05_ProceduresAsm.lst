@@ -1,12 +1,28 @@
-Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   04/13/24 11:21:41
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   04/13/24 11:57:55
 asmMain.asm						     Page 1 - 1
 
 
+				.686
+asmMain.asm(1) : error A2008:syntax error : .
+				PUBLIC _Palindrome@1
+				.model flat
+asmMain.asm(3) : error A2008:syntax error : .
+ 00000000			.code
+ 00000000			_Palindrome@1 proc
+
+ 00000000			_Palindrome@1 endp
 				end
-Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   04/13/24 11:21:41
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   04/13/24 11:57:55
 asmMain.asm						     Symbols 2 - 1
 
 
 
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+_Palindrome@1  . . . . . . . . .	P 	 00000000 _TEXT	Length= 00000000 Public
+
 	   0 Warnings
-	   0 Errors
+	   2 Errors
