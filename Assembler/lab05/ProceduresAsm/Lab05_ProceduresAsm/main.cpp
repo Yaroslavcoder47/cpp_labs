@@ -4,12 +4,14 @@ extern "C" bool __stdcall  Palindrome(char*, int);
 
 int main()
 {	
-	int size;
-	std::cout << "Enter size: ";
-	std::cin >> size;
 	std::cout << "Enter string:\n";
-	char st[20];
+	char st[40];
 	std::cin >> st;
-	std::cout << Palindrome(st, size);
+	if (Palindrome(st, std::strlen(st))) {
+		std::cout << "'" << st << "' is a palindrome";
+	}
+	else {
+		std::cout << "'" << st << "' is not a palindrome";
+	}
 	return 0;
 }
