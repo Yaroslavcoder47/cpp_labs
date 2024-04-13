@@ -12,14 +12,19 @@ dec ecx
 mov edx, 0
 checkLoop_:
 	cmp ecx, edx
-	jl end_
-	mov eax, [esi + ecx]
-	mov ebx, [esi + edx]
-	cmp eax, ebx
-	jne end_
+	jl preEnd_
+	mov al, byte ptr[esi + ecx]
+	mov bl, byte ptr[esi + edx]
+	cmp al, bl
+	jne preEndNot_
 	inc edx
 	dec ecx
 	jmp checkLoop_
+preEnd_:
+	mov eax, 1
+	jmp end_
+preEndNot_:
+	mov eax, 0
 end_:
 pop ebp
 ret 8

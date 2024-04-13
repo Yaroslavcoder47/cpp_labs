@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern "C" int __stdcall  Palindrome(char*, int);
+extern "C" bool __stdcall  Palindrome(char*, int);
 
 int main()
 {	
