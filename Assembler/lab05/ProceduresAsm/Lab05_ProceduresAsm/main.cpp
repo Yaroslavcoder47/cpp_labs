@@ -5,6 +5,7 @@ extern "C" char* __stdcall DelSymbol(char*, int, char);
 extern "C" int __fastcall CountNumbers(int, char*);
 extern "C" char* __fastcall ChangeLetters(int, char*);
 
+
 int main()
 {	
 	// For first task
@@ -41,5 +42,6 @@ int main()
 	std::cout << "New string\n";
 	ChangeLetters(std::strlen(st), st);
 	std::cout << st;
+
 	return 0;
 }
