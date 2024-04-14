@@ -31,8 +31,8 @@ ret 8
 _Palindrome@8 endp
 
 
-_DelSymbol@12 proc
 
+_DelSymbol@12 proc
 push ebp
 mov ebp, esp
 mov esi, [ebp+8] ; начало строки
@@ -57,6 +57,7 @@ loopChange_:
 	inc ebx
 	jmp loopChange_
 preContMainLoop_:
+	mov dword ptr[esi + ebx], 0
 	dec edx
 contMainLoop_:
 	inc edx

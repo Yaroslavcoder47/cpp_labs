@@ -24,10 +24,6 @@ int main()
 	std::cout << "Enter a symbol: ";
 	char sym;
 	std::cin >> sym;
-	char* newSt = DelSymbol(st, std::strlen(st), sym);
-	
-	for (size_t i = 0; i < size; ++i) {
-		std::cout << newSt[i] << ' ';
-	}
+	std::cout << DelSymbol(st, std::strlen(st), sym);
 	return 0;
 }
