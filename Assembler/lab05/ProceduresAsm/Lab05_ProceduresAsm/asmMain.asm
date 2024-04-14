@@ -39,7 +39,6 @@ mov esi, [ebp+8] ; начало строки
 mov ecx, [ebp+12] ; длина строки
 
 ;mov bl, [ebp+16] Ч удал€емый элемент
-
 mov edx, 0
 mainLoop_:
 	cmp ecx, edx
@@ -67,4 +66,39 @@ mov eax, esi
 pop ebp
 ret 12 
 _DelSymbol@12 endp
+
+
+@CountNumbers@8 proc
+xor eax, eax
+mov bl, 48
+mov bh, 57
+mov esi, 0
+mainLoop_:
+	cmp esi, ecx
+	je end_
+	mov edi, esi
+secondLoop_:
+	cmp edi, ecx
+	je endLoop_
+	cmp [edx + edi], bl
+	jl endLoop_
+	cmp [edx + edi], bh
+	jg endLoop_
+	inc edi
+	jmp secondLoop_
+endLoop_:
+	sub edi, esi
+	cmp edi, 0
+	je contmainLoop_
+	cmp edi, eax
+	jl contmainLoop_
+	mov eax, edi
+	add esi, edi
+	dec esi
+contmainLoop_:
+	inc esi
+	jmp mainLoop_
+end_:
+ret
+@CountNumbers@8 endp
 end
