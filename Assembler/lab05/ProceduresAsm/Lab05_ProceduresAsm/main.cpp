@@ -3,6 +3,7 @@
 extern "C" bool __stdcall  Palindrome(char*, int);
 extern "C" char* __stdcall DelSymbol(char*, int, char);
 extern "C" int __fastcall CountNumbers(int, char*);
+extern "C" char* __fastcall ChangeLetters(int, char*);
 
 int main()
 {	
@@ -32,5 +33,13 @@ int main()
 	char sym;
 	std::cin >> sym;
 	std::cout << DelSymbol(st, std::strlen(st), sym);*/
+
+	//For forth task
+	std::cout << "Enter string:\n";
+	char st[40];
+	std::cin.getline(st, 256); 
+	std::cout << "New string\n";
+	ChangeLetters(std::strlen(st), st);
+	std::cout << st;
 	return 0;
 }

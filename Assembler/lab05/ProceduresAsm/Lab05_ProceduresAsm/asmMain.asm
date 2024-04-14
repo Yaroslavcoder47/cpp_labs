@@ -101,4 +101,38 @@ contmainLoop_:
 end_:
 ret
 @CountNumbers@8 endp
+
+
+@ChangeLetters@8 proc
+xor eax, eax
+mov bl, 97
+mov bh, 122
+mov esi, 0
+cmp [edx], bl
+jl mainLoop_
+cmp [edx], bh
+jg mainLoop_
+mov eax, [edx]
+sub eax, 32
+mov [edx], eax
+
+mainLoop_:
+	cmp esi, ecx
+	je end_
+	cmp byte ptr[edx + esi], 32
+	jne contMainLoop_
+	cmp [edx + esi + 1], bl
+	jl contMainLoop_
+	cmp [edx + esi + 1], bh
+	jg contMainLoop_
+	xor eax, eax
+	mov eax, [edx + esi + 1]
+	sub eax, 32
+	mov [edx + esi + 1], eax
+contMainLoop_:
+	inc esi
+	jmp mainLoop_
+end_:
+ret
+@ChangeLetters@8 endp
 end
