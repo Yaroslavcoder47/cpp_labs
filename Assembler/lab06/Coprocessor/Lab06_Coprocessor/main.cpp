@@ -1,12 +1,16 @@
 #include <iostream>
 #include <cmath>
 
+extern "C" float __fastcall calcExpression(float, float);
+
 float cFuncTask1(float x, float y) {
 	return (fabs(x - y) * cosf((x / y) + (y / x)));
 }
 
 int main()
 {
+	float* xPtr;
+	float* yPtr;
 	float x, y;
 	float resultAsm;
 	float resultC;
@@ -15,22 +19,12 @@ int main()
 	std::cin >> x;
 	std::cout << "y = ";
 	std::cin >> y;
-
+	xPtr = &x;
+	yPtr = &y;
 	__asm {
-		finit
-		fld x
-		fld y
-		fsubp st(1), st(0)
-		fabs
-		fld x
-		fld y
-		fdivp st(1), st(0)
-		fld y
-		fld x
-		fdivp st(1), st(0)
-		fadd
-		fcos
-		fmul
+		mov ecx, dword ptr [xPtr]
+		mov edx, dword ptr [yPtr]
+		call calcExpression
 		fstp dword ptr[resultAsm]
 	}
 	resultC = cFuncTask1(x, y);
