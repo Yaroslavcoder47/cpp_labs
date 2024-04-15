@@ -27,5 +27,9 @@ private:
     Ui::MainWindow *ui;
     int dots_;
     QVector<QVector<QColor>> plazma_;
+    void fillPlazma (int& , int&, int&, int&);
+    const int delta = 30;
+protected:
+    void paintEvent (QPaintEvent *qp) override;
 };
 #endif // MAINWINDOW_H
