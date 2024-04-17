@@ -1,6 +1,8 @@
 .686
 PUBLIC @calcExpression@8
 .model flat
+.data
+	p dd 0
 .code
 
 @calcExpression@8 proc ; ecx - x, edx - y
@@ -47,4 +49,38 @@ fmul st(0), st(1)
 fsqrt
 ret
 @calcPi@8 endp
+
+
+
+@calcLn@4 proc
+finit
+fld1
+fldz
+sumLoop_:
+	fld st(1)
+	fld1
+	fadd
+	fistp dword ptr[p]
+	mov eax, p
+	and eax, 1
+	jz zeroEq_
+	fld1
+	fchs
+	fld st(2)
+	fdivp st(1), st(0)
+	fadd
+	jmp contLoop_
+zeroEq_:
+	fld1
+	fld st(2)
+	fdivp st(1), st(0)
+	fadd
+contLoop_:
+	fxch
+	fld1
+	fadd
+	fxch
+	loop sumLoop_	
+ret
+@calcLn@4 endp
 end

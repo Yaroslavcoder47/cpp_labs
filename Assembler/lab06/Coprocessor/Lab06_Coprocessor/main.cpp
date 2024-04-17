@@ -3,6 +3,7 @@
 
 extern "C" float __fastcall calcExpression(float, float);
 extern "C" float __fastcall calcPi(int, int);
+extern "C" float __fastcall calcLn(int);
 
 float cFuncTask1(float x, float y) {
 	return (fabs(x - y) * cosf((x / y) + (y / x)));
@@ -12,6 +13,7 @@ float cFuncTask1(float x, float y) {
 
 int main()
 {
+	//For task1
 	/*float* xPtr;
 	float* yPtr;
 	float x, y;
@@ -34,7 +36,8 @@ int main()
 	std::cout << "Asembler result: " << resultAsm << '\n';
 	std::cout << "C++ function result: " << resultC;*/
 	
-	int n;
+	//For task2
+	/*int n;
 	std::cin >> n;
 	int* num = new int(8);
 	float res;
@@ -45,6 +48,19 @@ int main()
 		call calcPi
 		fstp dword ptr[res]	
 	}
+	std::cout << res;*/
+
+	//For task3
+	int n;
+	std::cin >> n;
+	float res;
+	__asm {
+		mov ecx, n
+		call calcLn
+		fstp dword ptr[res]
+	}
 	std::cout << res;
+
+
 	return 0;
 }
