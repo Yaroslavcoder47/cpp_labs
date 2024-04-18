@@ -4,6 +4,7 @@
 extern "C" float __fastcall calcExpression(float, float);
 extern "C" float __fastcall calcPi(int, int);
 extern "C" float __fastcall calcLn(int);
+extern "C" float __fastcall calcIntegral(int);
 
 float cFuncTask1(float x, float y) {
 	return (fabs(x - y) * cosf((x / y) + (y / x)));
@@ -51,7 +52,7 @@ int main()
 	std::cout << res;*/
 
 	//For task3
-	int n;
+	/*int n;
 	std::cin >> n;
 	float res;
 	__asm {
@@ -59,8 +60,18 @@ int main()
 		call calcLn
 		fstp dword ptr[res]
 	}
+	std::cout << res;*/
+
+	//For task4
+	int n;
+	std::cin >> n;
+	float res;
+	int* nPtr = &n;
+	__asm {
+		mov ecx, dword ptr[nPtr]
+		call calcIntegral
+		fstp dword ptr[res]
+	}
 	std::cout << res;
-
-
 	return 0;
 }

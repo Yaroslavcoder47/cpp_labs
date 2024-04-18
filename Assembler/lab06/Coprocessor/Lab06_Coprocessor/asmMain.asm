@@ -3,6 +3,8 @@ PUBLIC @calcExpression@8
 .model flat
 .data
 	p dd 0
+	num dd 5
+
 .code
 
 @calcExpression@8 proc ; ecx - x, edx - y
@@ -83,4 +85,35 @@ contLoop_:
 	loop sumLoop_	
 ret
 @calcLn@4 endp
+
+
+@calcIntegral@4 proc
+finit
+fld1
+fldpi
+fld1
+fld1
+fadd
+fmul
+fild dword ptr[ecx]
+fdivp st(1), st(0)
+fldz
+fldz
+mainLoop_:
+	cmp ecx, 1
+	je end_
+	fld st(2)
+	fld st(3)
+	fmul
+	fsin
+	fld dword ptr[num]
+	fld st(3)
+	fmul
+	fadd
+	fadd
+	; доделать с загрузкой f(x_i)
+end_:
+	ret
+
+@calcIntegral@4 endp
 end
