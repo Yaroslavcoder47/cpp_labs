@@ -5,6 +5,7 @@ extern "C" float __fastcall calcExpression(float, float);
 extern "C" float __fastcall calcPi(int, int);
 extern "C" float __fastcall calcLn(int);
 extern "C" float __fastcall calcIntegral(int);
+extern "C" float __fastcall powerFunc(int);
 
 float cFuncTask1(float x, float y) {
 	return (fabs(x - y) * cosf((x / y) + (y / x)));
@@ -37,7 +38,7 @@ int main()
 	std::cout << "Asembler result: " << resultAsm << '\n';
 	std::cout << "C++ function result: " << resultC;*/
 	
-	//For task2
+	//For task3
 	/*int n;
 	std::cin >> n;
 	int* num = new int(8);
@@ -51,7 +52,7 @@ int main()
 	}
 	std::cout << res;*/
 
-	//For task3
+	//For task4
 	/*int n;
 	std::cin >> n;
 	float res;
@@ -62,8 +63,8 @@ int main()
 	}
 	std::cout << res;*/
 
-	//For task4
-	int n;
+	//For task5
+	/*int n;
 	std::cin >> n;
 	float res;
 	int* nPtr = &n;
@@ -72,6 +73,17 @@ int main()
 		call calcIntegral
 		fstp dword ptr[res]
 	}
-	std::cout << res;
+	std::cout << res;*/
+
+	//For task6
+	int n;
+	std::cin >> n;
+	float result;
+	__asm {
+		mov ecx, dword ptr[n]
+		call powerFunc
+		fstp dword ptr[result]
+	}
+	std::cout << result;
 	return 0;
 }

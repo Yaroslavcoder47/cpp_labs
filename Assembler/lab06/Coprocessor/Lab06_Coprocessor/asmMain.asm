@@ -4,7 +4,7 @@ PUBLIC @calcExpression@8
 .data
 	p dd 0
 	num dd 5
-
+	num1 dd 0.5
 .code
 
 @calcExpression@8 proc ; ecx - x, edx - y
@@ -51,7 +51,6 @@ fmul st(0), st(1)
 fsqrt
 ret
 @calcPi@8 endp
-
 
 
 @calcLn@4 proc
@@ -114,6 +113,29 @@ mainLoop_:
 	; доделать с загрузкой f(x_i)
 end_:
 	ret
-
 @calcIntegral@4 endp
+
+
+@powerFunc@4 proc
+finit
+cmp ecx, 0
+je zeroPower_
+cmp ecx, 1
+je firstPower_
+fld dword ptr[num1]
+fld dword ptr[num1]
+mainLoop_:
+	cmp ecx, 1
+	je end_
+	fmul st(0), st(1)
+	dec ecx
+	jmp mainLoop_
+zeroPower_:
+	fld1
+	jmp end_
+firstPower_:
+	fld dword ptr[num1]
+end_:
+ret
+@powerFunc@4 endp
 end
