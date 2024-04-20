@@ -89,30 +89,54 @@ ret
 @calcIntegral@4 proc
 finit
 fld1
-fldpi
-fld1
 fld1
 fadd
+fldpi
 fmul
 fild dword ptr[ecx]
 fdivp st(1), st(0)
-fldz
+fld st(0)
 fldz
 mainLoop_:
-	cmp ecx, 1
-	je end_
-	fld st(2)
-	fld st(3)
+	cmp dword ptr [ecx], 1
+	je contCalc_
+	fld st(1)
+	fld st(0)
 	fmul
 	fsin
-	fld dword ptr[num]
-	fld st(3)
+	fld st(2)
+	fild dword ptr[num]
 	fmul
 	fadd
 	fadd
-	; доделать с загрузкой f(x_i)
-end_:
-	ret
+	;fadd st(1), st(2)
+	fxch
+	fld st(2)
+	fadd
+	fxch
+	dec dword ptr [ecx]
+	jmp mainLoop_
+contCalc_:
+	fld1
+	fld1
+	fadd
+	fmul
+	fld st(1)
+	fld st(0)
+	fmul
+	fsin
+	fld st(2)
+	fild dword ptr[num]
+	fmul
+	fadd
+	fadd
+	fld st(2)
+	fld1
+	fld1
+	fadd
+	fdivp st(1), st(0)
+	fmul
+ret
 @calcIntegral@4 endp
 
 

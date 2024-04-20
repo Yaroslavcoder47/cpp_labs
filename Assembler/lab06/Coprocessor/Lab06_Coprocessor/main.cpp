@@ -64,19 +64,20 @@ int main()
 	std::cout << res;*/
 
 	//For task5
-	/*int n;
+	int n;
 	std::cin >> n;
+	int* nptr = &n;
 	float res;
-	int* nPtr = &n;
 	__asm {
-		mov ecx, dword ptr[nPtr]
-		call calcIntegral
+		xor ecx, ecx
+		mov ecx, dword ptr nptr
+ 		call calcIntegral
 		fstp dword ptr[res]
 	}
-	std::cout << res;*/
+	std::cout << res;
 
 	//For task6
-	int n;
+	/*int n;
 	std::cin >> n;
 	float result;
 	__asm {
@@ -84,6 +85,6 @@ int main()
 		call powerFunc
 		fstp dword ptr[result]
 	}
-	std::cout << result;
+	std::cout << result;*/
 	return 0;
 }
