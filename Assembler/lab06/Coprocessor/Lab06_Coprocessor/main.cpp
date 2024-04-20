@@ -2,6 +2,7 @@
 #include <cmath>
 
 extern "C" float __fastcall calcExpression(float, float);
+extern "C" float __cdecl solveEquation();
 extern "C" float __fastcall calcPi(int, int);
 extern "C" float __fastcall calcLn(int);
 extern "C" float __fastcall calcIntegral(int);
@@ -37,6 +38,12 @@ int main()
 	resultC = cFuncTask1(x, y);
 	std::cout << "Asembler result: " << resultAsm << '\n';
 	std::cout << "C++ function result: " << resultC;*/
+
+	//For task2
+	/*float result;
+	result = solveEquation();
+	std::cout << result;*/
+
 	
 	//For task3
 	/*int n;
@@ -64,7 +71,7 @@ int main()
 	std::cout << res;*/
 
 	//For task5
-	int n;
+	/*int n;
 	std::cin >> n;
 	int* nptr = &n;
 	float res;
@@ -74,7 +81,7 @@ int main()
  		call calcIntegral
 		fstp dword ptr[res]
 	}
-	std::cout << res;
+	std::cout << res;*/
 
 	//For task6
 	/*int n;
