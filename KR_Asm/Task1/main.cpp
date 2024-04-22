@@ -34,21 +34,24 @@ float CalculateSqrt(int n, float* a) {
 }
 
 int main() {
-    /*float a = 4.0;
-    int n = 5;
+    std::cout << "Input value of number a = ";
+    float a;
+    std::cin >> a;
+    std::cout << "Input number of iterations n = ";
+    int n;
+    std::cin >> n;
+
     float result = CalculateSqrt(n, &a);
-    std::cout << "Result of function: " << result << ' ' << "Difference: " << std::sqrt(2) - result;*/
 
-    float* a = new float(2.0);
-    int n = 5;
-
+    /*float* aPtr = &a;
     float result;
     __asm {
         mov ecx, n
-        mov edx, dword ptr[a]
+        mov edx, dword ptr[aPtr]
         call calculateSqrt
         fstp dword ptr[result]
-    }
-    std::cout << result;
+    }*/
+
+    std::cout << "Result of function: " << result << ' ' << "Difference: " << std::sqrt(a) - result;
     return 0;
 }

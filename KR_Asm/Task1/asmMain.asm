@@ -2,6 +2,7 @@
 PUBLIC @calculateSqrt@8
 .model flat
 .code
+
 @calculateSqrt@8 proc
 finit  
 fld dword ptr[edx] 
