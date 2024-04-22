@@ -75,6 +75,10 @@ int main() {
         }
     }
     CreateVectorB(a, n, m, b); 
+
+    for (size_t i = 0; i < res.size(); ++i) {
+        std::cout << res[i] << ' ';
+    }
     /*__asm {
         push n
         push m
