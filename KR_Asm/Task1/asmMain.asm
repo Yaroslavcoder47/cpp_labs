@@ -12,8 +12,8 @@ PUBLIC @calculateSqrt@8
 finit  
 fld dword ptr[edx] 
 fld dword ptr[edx]
-_loop:
 
+_loop:
 fld1
 fld1
 fadd
@@ -34,17 +34,17 @@ fdivp st(1), st(0) ; a/2 x/2 x a
 ;fdivrp st(0), st(1)
 fdivrp
 faddp st(1), st(0)
-   
 loop _loop
 
 ret
 @calculateSqrt@8 endp
 
 
+
 _CreateVectorB proc
 push ebp
 mov ebp, esp
-mov edi, dword ptr[ebp + 8]
+mov edi, dword ptr[ebp + 8] ; a
 xor ecx, ecx
 mov eax, [ebp + 12]
 mov n, eax

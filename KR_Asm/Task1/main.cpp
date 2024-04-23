@@ -2,8 +2,8 @@
 #include <utility>
 #include <cmath>
 #include <vector>
-const int n = 4;
-const int m = 3;
+const int n = 1;
+const int m = 2;
 
 extern "C" float __fastcall calculateSqrt(int, float*);
 extern "C" void __cdecl CreateVectorB(unsigned int a[n][m], int n, int m, int* b);
@@ -38,14 +38,13 @@ float CalculateSqrt(int n, float* a) {
 }
 
 void task1() {
+    //float result = CalculateSqrt(n, &a);
     std::cout << "Input value of number a = ";
     float a;
     std::cin >> a;
     std::cout << "Input number of iterations n = ";
     int n;
     std::cin >> n;
-
-    //float result = CalculateSqrt(n, &a);
 
     float* aPtr = &a;
     float result;
@@ -81,7 +80,7 @@ void task2()
 }
 
 int main() {
-    
+    task2();
     /*int n, m;
     std::cin >> n >> m;
     unsigned int** a = new unsigned int* [n];
