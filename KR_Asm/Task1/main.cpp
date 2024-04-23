@@ -59,33 +59,36 @@ void task1() {
     std::cout << "Result of function: " << result << ' ' << "Difference: " << std::sqrt(a) - result;
 }
 
-int main() {
-    
-    /*int n, m;
-    std::cin >> n >> m;*/
+void task2()
+{
     std::vector<int> res(n, -1);
     int* b = res.data();
-    //unsigned int** a = new unsigned int* [n];
     unsigned int a[n][m];
-
-    /*for (size_t i = 0; i < n; ++i) {
-        a[i] = new unsigned int[m];
-    }*/
     std::cout << "Input array:\n";
     for (size_t i = 0; i < n; ++i) {
         for (size_t j = 0; j < m; ++j) {
             std::cin >> a[i][j];
         }
     }
-    
-    CreateVectorB(a, n, m, b); 
+
+    CreateVectorB(a, n, m, b);
     std::cout << "Rows : ";
     for (size_t i = 0; i < n; ++i) {
         if (b[i] != -1) {
             std::cout << b[i] << ' ';
         }
-        
     }
+}
+
+int main() {
+    
+    /*int n, m;
+    std::cin >> n >> m;
+    unsigned int** a = new unsigned int* [n];
+    for (size_t i = 0; i < n; ++i) {
+        a[i] = new unsigned int[m];
+    }*/
+    
     /*__asm {
         push n
         push m
@@ -94,16 +97,6 @@ int main() {
         xor eax, eax
         xor ebx, ebx
         call CreateVectorB
-    }*/
-    /*for (int u = 0; u < n; ++u) {
-        for (int i = 0; i < m; ++i) {
-
-            for (int j = i + 1; j < m; ++j) {
-                if (a[u][i] == a[u][j]) {
-
-                }
-            }
-        }
     }*/
     return 0;
 }
