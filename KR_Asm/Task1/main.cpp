@@ -74,10 +74,11 @@ int main() {
             std::cin >> a[i][j];
         }
     }
+    
     CreateVectorB(a, n, m, b); 
 
-    for (size_t i = 0; i < res.size(); ++i) {
-        std::cout << res[i] << ' ';
+    for (size_t i = 0; i < n; ++i) {
+        std::cout << b[i] << ' ';
     }
     /*__asm {
         push n

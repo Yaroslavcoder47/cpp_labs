@@ -2,11 +2,10 @@
 PUBLIC @calculateSqrt@8
 .model flat
 .data
-	num dd ?
-	num1 dd ?
-	addres dd ?
-	currentElement dd ?
-	currentPosElementB dd ?
+	n dd ? ; количество строк
+	m dd ? ; количество столбцов
+	mSize dd ?
+	bSize dd 0
 .code
 
 @calculateSqrt@8 proc
@@ -45,23 +44,42 @@ ret
 _CreateVectorB proc
 push ebp
 mov ebp, esp
-
-; 2 - проход по a
-; 1 проход по b
-; 2 на хранение массивов
-mov currentPosElementB, edx
-
-mov edi, [ebp + 8]; указатель на a
-mov eax, 0; проход по строкам массива a
-mov ebx, 0; проход по столбцам массива a
-mov ecx, 0; проход по столбцам массива a для сравнения
-xor esi, esi
-mov esi, [ebp + 20] ; указатель на b
-mov edx, 0; проход по массиву b при его заполнении
+mov edi, [ebp + 8]
+xor ecx, ecx
 mov eax, [ebp + 12]
+mov n, eax
+mov eax, [ebp + 16]
+mov m, eax
+mov ebx, [ebp + 20]
 
+mov eax, 4
+mul m
+mov mSize, eax
+xor eax, eax
+
+firstLoop_:
+	cmp ecx, n
+	je end_
+	mov esi, 0
+	mov edx, [edi + esi*4]
+	inc esi
+secondLoop_:
+	cmp esi, m
+	je contFirstLoop_
+	cmp edx, [edi + esi*4]
+	je addElement_
+	inc esi
+	jmp secondLoop_
+addElement_:
+	;mov esi, bSize
+	mov [ebx + eax*4], esi
+	inc eax
+contFirstLoop_:
+	add edi, mSize
+	inc ecx
+	jmp firstLoop_
+end_:
 pop ebp
 ret
 _CreateVectorB endp
-
 end
