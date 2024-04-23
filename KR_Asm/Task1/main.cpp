@@ -2,9 +2,11 @@
 #include <utility>
 #include <cmath>
 #include <vector>
+const int n = 4;
+const int m = 3;
 
 extern "C" float __fastcall calculateSqrt(int, float*);
-extern "C" void __cdecl CreateVectorB(unsigned int**, int n, int m, int* b);
+extern "C" void __cdecl CreateVectorB(unsigned int a[n][m], int n, int m, int* b);
 
 float CalculateSqrt(int n, float* a) {
     float variable = *a;
@@ -59,16 +61,17 @@ void task1() {
 
 int main() {
     
-    int n, m;
-    std::cin >> n >> m;
-    std::vector<int> res(n);
+    /*int n, m;
+    std::cin >> n >> m;*/
+    std::vector<int> res(n, -1);
     int* b = res.data();
-    unsigned int** a = new unsigned int* [n];
+    //unsigned int** a = new unsigned int* [n];
+    unsigned int a[n][m];
 
-    for (size_t i = 0; i < n; ++i) {
+    /*for (size_t i = 0; i < n; ++i) {
         a[i] = new unsigned int[m];
-    }
-
+    }*/
+    std::cout << "Input array:\n";
     for (size_t i = 0; i < n; ++i) {
         for (size_t j = 0; j < m; ++j) {
             std::cin >> a[i][j];
@@ -76,9 +79,12 @@ int main() {
     }
     
     CreateVectorB(a, n, m, b); 
-
+    std::cout << "Rows : ";
     for (size_t i = 0; i < n; ++i) {
-        std::cout << b[i] << ' ';
+        if (b[i] != -1) {
+            std::cout << b[i] << ' ';
+        }
+        
     }
     /*__asm {
         push n

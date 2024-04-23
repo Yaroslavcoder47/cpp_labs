@@ -44,7 +44,7 @@ ret
 _CreateVectorB proc
 push ebp
 mov ebp, esp
-mov edi, [ebp + 8]
+mov edi, dword ptr[ebp + 8]
 xor ecx, ecx
 mov eax, [ebp + 12]
 mov n, eax
@@ -62,6 +62,7 @@ firstLoop_:
 	je end_
 	mov esi, 0
 	mov edx, [edi + esi*4]
+	
 	inc esi
 secondLoop_:
 	cmp esi, m
@@ -72,7 +73,7 @@ secondLoop_:
 	jmp secondLoop_
 addElement_:
 	;mov esi, bSize
-	mov [ebx + eax*4], esi
+	mov [ebx + eax*4], ecx
 	inc eax
 contFirstLoop_:
 	add edi, mSize
