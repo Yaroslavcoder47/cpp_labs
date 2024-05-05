@@ -71,13 +71,8 @@ void Widget::buildInterface()
 
     hLayout_1->setAlignment(Qt::AlignTop);
     vLayout_1->setAlignment(Qt::AlignTop);
-    QPushButton* exitButton = new QPushButton;
-    exitButton->setFixedSize(200, 60);
-    exitButton->setText("Выйти");
-    QIcon exitIcon("img/exit.png");
-    exitButton->setIcon(exitIcon);
-    exitButton->setIconSize(QSize(40, 40));
-    exitButton->setStyleSheet("text-align:left; padding-left: 15px;");
+    QPushButton* exitButton = new QPushButton("Выйти");
+    exitButton->setFixedSize(200, 40);
 
     hLayout_1->addLayout(leftColumnPanel);
     hLayout_1->addLayout(rightColumnPanel);
@@ -88,6 +83,7 @@ void Widget::buildInterface()
     // формирование правой половины экрана
     vLayout_2->setAlignment(Qt::AlignTop);
     QLineEdit* mainEdit = new QLineEdit();
+    mainEdit->setAlignment(Qt::AlignTop);
     mainEdit->setFixedHeight(400);
     vLayout_2->setSpacing(20);
 
