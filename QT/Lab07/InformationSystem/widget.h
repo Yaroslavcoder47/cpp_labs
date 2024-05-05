@@ -25,6 +25,13 @@ public:
 
 private:
     void buildInterface();
+    QPushButton* exitButton = new QPushButton("Выйти");
+    QPushButton* addButton = new QPushButton("Добавить");
+    QPushButton* openButton = new QPushButton("Открыть");
+    QPushButton* sortButton = new QPushButton("Сортировать");
+    QPushButton* saveButton = new QPushButton("Сохранить");
+    QPushButton* searchButton = new QPushButton("Поиск");
+    QPushButton* deleteButton = new QPushButton("Очистить");
     Ui::Widget *ui;
 };
 #endif // WIDGET_H

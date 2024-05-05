@@ -5,6 +5,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
 {
     //ui->setupUi(this);
     buildInterface();
+    connect(exitButton, &QPushButton::clicked, this, QApplication::quit);
 }
 
 Widget::~Widget()
@@ -20,12 +21,18 @@ void deleteLayout(QHBoxLayout* layout)
 
 void Widget::buildInterface()
 {
+    //главный слой для размещения
     QHBoxLayout* mainLayout = new QHBoxLayout;
 
+    //слои второго уровня для размещения объектов
     QVBoxLayout* vLayout_1 = new QVBoxLayout;
+    vLayout_1->setAlignment(Qt::AlignTop);
     vLayout_1->setSpacing(20);
     QHBoxLayout* hLayout_1 = new QHBoxLayout;
+    hLayout_1->setAlignment(Qt::AlignTop);
     QVBoxLayout* vLayout_2 = new QVBoxLayout;
+    vLayout_2->setAlignment(Qt::AlignTop);
+    vLayout_2->setSpacing(20);
 
     //формирование левой половины экрана
     QVBoxLayout* leftColumnPanel = new QVBoxLayout;
@@ -46,32 +53,24 @@ void Widget::buildInterface()
     QLineEdit* editPrice = new QLineEdit;
     editPrice->setFixedSize(400, 40);
     QLineEdit* editAditional = new QLineEdit;
-    editAditional->setFixedSize(400, 40);
-
+    editAditional->setFixedSize(400, 50);
 
     leftColumnPanel->addWidget(labelInfo);
     rightColumnPanel->addWidget(editInfo);
 
-
     leftColumnPanel->addWidget(labelName);
     rightColumnPanel->addWidget(editName);
-
 
     leftColumnPanel->addWidget(labelAuthor);
     rightColumnPanel->addWidget(editAuthor);
 
-
     leftColumnPanel->addWidget(labelPrice);
     rightColumnPanel->addWidget(editPrice);
-
-    editAditional->setFixedHeight(50);
 
     leftColumnPanel->addWidget(labelAditional);
     rightColumnPanel->addWidget(editAditional);
 
-    hLayout_1->setAlignment(Qt::AlignTop);
-    vLayout_1->setAlignment(Qt::AlignTop);
-    QPushButton* exitButton = new QPushButton("Выйти");
+
     exitButton->setFixedSize(200, 40);
 
     hLayout_1->addLayout(leftColumnPanel);
@@ -81,21 +80,13 @@ void Widget::buildInterface()
 
 
     // формирование правой половины экрана
-    vLayout_2->setAlignment(Qt::AlignTop);
     QLineEdit* mainEdit = new QLineEdit();
     mainEdit->setAlignment(Qt::AlignTop);
     mainEdit->setFixedHeight(400);
-    vLayout_2->setSpacing(20);
 
     vLayout_2->addWidget(mainEdit);
 
-    QPushButton* addButton = new QPushButton("Добавить");
-    QPushButton* openButton = new QPushButton("Открыть");
-    QPushButton* sortButton = new QPushButton("Сортировать");
-    QPushButton* saveButton = new QPushButton("Сохранить");
-    QPushButton* searchButton = new QPushButton("Поиск");
-    QPushButton* deleteButton = new QPushButton("Очистить");
-
+    //добавление кнопок на правую половину экрана
     addButton->setFixedSize(200, 40);
     openButton->setFixedSize(200, 40);
     sortButton->setFixedSize(200, 40);
@@ -110,6 +101,7 @@ void Widget::buildInterface()
     vLayout_2->addWidget(searchButton);
     vLayout_2->addWidget(deleteButton);
 
+    //итоговое формирование основного слоя приложения
     mainLayout->addLayout(vLayout_1);
     mainLayout->addLayout(vLayout_2);
     setLayout(mainLayout);
