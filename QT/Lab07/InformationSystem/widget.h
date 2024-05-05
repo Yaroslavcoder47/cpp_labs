@@ -2,6 +2,12 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QLayout>
+#include <QLabel>
+#include <QLineEdit>
+#include <QVector>
+#include <QPushButton>
+#include <QIcon>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,6 +24,7 @@ public:
     ~Widget();
 
 private:
+    void buildInterface();
     Ui::Widget *ui;
 };
 #endif // WIDGET_H
