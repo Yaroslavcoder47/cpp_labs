@@ -80,10 +80,7 @@ void Widget::buildInterface()
 
 
     // формирование правой половины экрана
-    //QLineEdit* mainEdit = new QLineEdit();
-    mainEdit->setAlignment(Qt::AlignTop);
     mainEdit->setFixedHeight(400);
-
     vLayout_2->addWidget(mainEdit);
 
     //добавление кнопок на правую половину экрана
@@ -123,9 +120,7 @@ void Widget::createArrayObjects()
     // Создаем объект JSON-документа
     QJsonDocument jsonDoc = QJsonDocument::fromJson(value.toUtf8());
 
-    // Получаем объект JSON
-    //QJsonObject jsonObj = jsonDoc.object();
-
+    // создаем массив объектов из файла Json
     QJsonArray jsonArr = jsonDoc.array();
     for(const QJsonValue &obj : jsonArr){
         if(obj.isObject()){
@@ -143,12 +138,7 @@ void Widget::createArrayObjects()
 
     QString text;
     for(const Unit &val : objects){
-        //text += QString("%1 %2 %3 %4 %5").arg(val.type).arg(val.name).arg(val.author).arg(val.price).arg(val.adition) + "\n";
-        text += val.type + " ";
-        text += val.name + " ";
-        text += val.author + " ";
-        text += QString::number(val.price) + " ";
-        text += val.adition + "\n";
+        text += QString("%1 %2 %3 %4 %5").arg(val.type).arg(val.name).arg(val.author).arg(val.price).arg(val.adition) + '\n';
     }
-    mainEdit->setText(text);
+    mainEdit->appendPlainText(text);
 }

@@ -6,8 +6,8 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QVector>
+#include <QPlainTextEdit>
 #include <QPushButton>
-#include <QDir>
 #include <QFile>
 // libraries for Json format
 #include <QJsonObject>
@@ -41,7 +41,7 @@ private:
     QPushButton* saveButton = new QPushButton("Сохранить");
     QPushButton* searchButton = new QPushButton("Поиск");
     QPushButton* deleteButton = new QPushButton("Очистить");
-    QLineEdit* mainEdit = new QLineEdit();
+    QPlainTextEdit* mainEdit = new QPlainTextEdit();
     Ui::Widget *ui;
 };
 #endif // WIDGET_H
