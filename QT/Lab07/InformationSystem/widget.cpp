@@ -3,9 +3,9 @@
 
 Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
 {
-    //ui->setupUi(this);
     buildInterface();
     connect(exitButton, &QPushButton::clicked, this, QApplication::quit);
+    connect(openButton, &QPushButton::clicked, this, &Widget::createArrayObjects);
 }
 
 Widget::~Widget()
@@ -80,7 +80,7 @@ void Widget::buildInterface()
 
 
     // формирование правой половины экрана
-    QLineEdit* mainEdit = new QLineEdit();
+    //QLineEdit* mainEdit = new QLineEdit();
     mainEdit->setAlignment(Qt::AlignTop);
     mainEdit->setFixedHeight(400);
 
@@ -105,4 +105,50 @@ void Widget::buildInterface()
     mainLayout->addLayout(vLayout_1);
     mainLayout->addLayout(vLayout_2);
     setLayout(mainLayout);
+}
+
+void Widget::createArrayObjects()
+{
+    // для проверки пути
+    //qDebug() << QCoreApplication::applicationDirPath();
+    //file.setFileName("D:/cpp_labs/QT/Lab07/InformationSystem/test.json");
+
+    QFile file;
+    file.setFileName("../../inf/test.json");
+    file.open(QIODevice::ReadOnly | QIODevice::Text);
+    QString value;
+    value = file.readAll();
+    file.close();
+
+    // Создаем объект JSON-документа
+    QJsonDocument jsonDoc = QJsonDocument::fromJson(value.toUtf8());
+
+    // Получаем объект JSON
+    //QJsonObject jsonObj = jsonDoc.object();
+
+    QJsonArray jsonArr = jsonDoc.array();
+    for(const QJsonValue &obj : jsonArr){
+        if(obj.isObject()){
+            QJsonObject jsonObj = obj.toObject();
+            Unit unit;
+            unit.type = jsonObj["Type"].toString();
+            unit.name = jsonObj["Name"].toString();
+            unit.author = jsonObj["Author"].toString();
+            unit.price = jsonObj["Price"].toInt();
+            unit.adition = jsonObj["Adition"].toString();
+
+            objects.push_back(unit);
+        }
+    }
+
+    QString text;
+    for(const Unit &val : objects){
+        //text += QString("%1 %2 %3 %4 %5").arg(val.type).arg(val.name).arg(val.author).arg(val.price).arg(val.adition) + "\n";
+        text += val.type + " ";
+        text += val.name + " ";
+        text += val.author + " ";
+        text += QString::number(val.price) + " ";
+        text += val.adition + "\n";
+    }
+    mainEdit->setText(text);
 }

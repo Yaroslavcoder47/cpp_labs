@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "Film",
+    "Name": "Peaky Blinders",
+    "Author": "Steven Knight",
+    "Price": 50,
+    "Adition": "British crime drama series"
+  },
+
+  {
+    "Type": "Music",
+    "Name": "Another Love",
+    "Author": "Tom Odell",
+    "Price": 20,
+    "Adition": "British singer"
+  }
+]

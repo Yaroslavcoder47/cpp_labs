@@ -1,15 +1,18 @@
 #ifndef UNIT_H
 #define UNIT_H
 
-#include <QObject>
+#include <QString>
 
-class Unit : public QObject
-{
-    Q_OBJECT
+class Unit{
 public:
-    explicit Unit(QObject *parent = nullptr);
+    Unit() = default;
+    ~Unit() = default;
 
-signals:
+    QString type;
+    QString name;
+    QString author;
+    int price;
+    QString adition;
 };
 
 #endif // UNIT_H

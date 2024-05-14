@@ -1,9 +1,6 @@
 #include "widget.h"
 
 #include <QApplication>
-#include <QJsonObject>
-#include <QJsonArray>
-#include <QJsonDocument>
 
 int main(int argc, char *argv[])
 {
