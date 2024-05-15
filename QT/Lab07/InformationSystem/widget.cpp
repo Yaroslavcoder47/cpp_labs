@@ -6,6 +6,9 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     buildInterface();
     connect(exitButton, &QPushButton::clicked, this, QApplication::quit);
     connect(openButton, &QPushButton::clicked, this, &Widget::createArrayObjects);
+    //connect(openButton, &QPushButton::clicked, this, &Widget::clearMainEdit);
+    connect(deleteButton, &QPushButton::clicked, this, &Widget::clearMainEdit);
+    connect(addButton, &QPushButton::clicked, this, &Widget::addElement);
 }
 
 Widget::~Widget()
@@ -17,6 +20,48 @@ void deleteLayout(QHBoxLayout* layout)
 {
     layout->deleteLater();
     layout->deleteLater();
+}
+
+void calculateColumnWidths(const QVector<Unit>& units, int& maxTypeWidth, int& maxNameWidth, int& maxAuthorWidth, int& maxPriceWidth, int& maxAditionWidth) {
+    for (const Unit& unit : units) {
+        maxTypeWidth = std::max(maxTypeWidth, unit.type.length());
+        maxNameWidth = std::max(maxNameWidth, unit.name.length());
+        maxAuthorWidth = std::max(maxAuthorWidth, unit.author.length());
+        maxPriceWidth = std::max(maxPriceWidth, QString::number(unit.price).length());
+        maxAditionWidth = std::max(maxAditionWidth, unit.adition.length());
+    }
+}
+
+void Widget::printToMainEdit()
+{
+    // форматирование текста на вывод
+    int maxTypeWidth = QString("Type").length();
+    int maxNameWidth = QString("Name").length();
+    int maxAuthorWidth = QString("Author").length();
+    int maxPriceWidth = QString("Price").length();
+    int maxAditionWidth = QString("Adition").length();
+    calculateColumnWidths(objects, maxTypeWidth, maxNameWidth, maxAuthorWidth, maxPriceWidth, maxAditionWidth);
+    QString header = QString("%1   %2   %3   %4   %5").arg("Type", -maxTypeWidth).arg("Name", -maxNameWidth).arg("Author", -maxAuthorWidth).arg("Price",
+-maxPriceWidth).arg("Adition", -maxAditionWidth);
+    mainEdit->appendPlainText(header);
+    mainEdit->appendPlainText(QString("-").repeated(header.length()));
+    QString text;
+    for(const Unit &val : objects){
+        //text += QString("%1   %2   %3   %4   %5").arg(val.type, -maxTypeWidth).arg(val.name, -maxNameWidth+maxTypeWidth).arg(val.author, -maxAuthorWidth).arg(val.price,
+        //-maxPriceWidth).arg(val.adition, -maxAditionWidth) + '\n';
+        text += QString("%1 %2 %3 %4 %5\n")
+                    .arg(val.type.leftJustified(maxTypeWidth, ' '))
+                    .arg(val.name.leftJustified(maxNameWidth, ' '))
+                    .arg(val.author.leftJustified(maxAuthorWidth, ' '))
+                    .arg(QString::number(val.price).leftJustified(maxPriceWidth, ' '))
+                    .arg(val.adition.leftJustified(maxAditionWidth, ' '));
+    }
+    mainEdit->appendPlainText(text);
+}
+
+void Widget::clearMainEdit()
+{
+    mainEdit->clear();
 }
 
 void Widget::buildInterface()
@@ -44,15 +89,10 @@ void Widget::buildInterface()
     QLabel* labelPrice = new QLabel("Цена");
     QLabel* labelAditional = new QLabel("Примечание");
 
-    QLineEdit* editInfo = new QLineEdit;
     editInfo->setFixedSize(400, 40);
-    QLineEdit* editName = new QLineEdit;
     editName->setFixedSize(400, 40);
-    QLineEdit* editAuthor = new QLineEdit;
     editAuthor->setFixedSize(400, 40);
-    QLineEdit* editPrice = new QLineEdit;
     editPrice->setFixedSize(400, 40);
-    QLineEdit* editAditional = new QLineEdit;
     editAditional->setFixedSize(400, 50);
 
     leftColumnPanel->addWidget(labelInfo);
@@ -109,6 +149,10 @@ void Widget::createArrayObjects()
     // для проверки пути
     //qDebug() << QCoreApplication::applicationDirPath();
     //file.setFileName("D:/cpp_labs/QT/Lab07/InformationSystem/test.json");
+    if(!mainEdit->toPlainText().isEmpty()){
+        objects.clear();
+        clearMainEdit();
+    }
 
     QFile file;
     file.setFileName("../../inf/test.json");
@@ -135,10 +179,18 @@ void Widget::createArrayObjects()
             objects.push_back(unit);
         }
     }
+    printToMainEdit();
+}
 
-    QString text;
-    for(const Unit &val : objects){
-        text += QString("%1 %2 %3 %4 %5").arg(val.type).arg(val.name).arg(val.author).arg(val.price).arg(val.adition) + '\n';
-    }
-    mainEdit->appendPlainText(text);
+
+void Widget::addElement()
+{
+    Unit unit;
+    unit.type = editInfo->text();
+    unit.name = editName->text();
+    unit.author = editAuthor->text();
+    unit.price = editPrice->text().toInt();
+    unit.adition = editAditional->text();
+    objects.push_back(unit);
+    printToMainEdit();
 }

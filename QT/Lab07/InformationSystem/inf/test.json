@@ -6,12 +6,207 @@
     "Price": 50,
     "Adition": "British crime drama series"
   },
-
   {
     "Type": "Music",
     "Name": "Another Love",
     "Author": "Tom Odell",
     "Price": 20,
     "Adition": "British singer"
+  },
+  {
+    "Type": "Software",
+    "Name": "Adobe Photoshop",
+    "Author": "Adobe Inc.",
+    "Price": 300,
+    "Adition": "Graphic design software"
+  },
+  {
+    "Type": "Book",
+    "Name": "1984",
+    "Author": "George Orwell",
+    "Price": 15,
+    "Adition": "Dystopian social science fiction novel"
+  },
+  {
+    "Type": "Game",
+    "Name": "The Witcher 3: Wild Hunt",
+    "Author": "CD Projekt Red",
+    "Price": 60,
+    "Adition": "Action role-playing game"
+  },
+  {
+    "Type": "Music",
+    "Name": "Bohemian Rhapsody",
+    "Author": "Queen",
+    "Price": 25,
+    "Adition": "British rock band"
+  },
+  {
+    "Type": "Film",
+    "Name": "Inception",
+    "Author": "Christopher Nolan",
+    "Price": 40,
+    "Adition": "Science fiction heist thriller"
+  },
+  {
+    "Type": "Software",
+    "Name": "Microsoft Office",
+    "Author": "Microsoft",
+    "Price": 150,
+    "Adition": "Productivity software suite"
+  },
+  {
+    "Type": "Book",
+    "Name": "To Kill a Mockingbird",
+    "Author": "Harper Lee",
+    "Price": 18,
+    "Adition": "Pulitzer Prize-winning novel"
+  },
+  {
+    "Type": "Game",
+    "Name": "Cyberpunk 2077",
+    "Author": "CD Projekt Red",
+    "Price": 70,
+    "Adition": "Open-world role-playing game"
+  },
+  {
+    "Type": "Film",
+    "Name": "The Godfather",
+    "Author": "Francis Ford Coppola",
+    "Price": 30,
+    "Adition": "Classic crime film"
+  },
+  {
+    "Type": "Music",
+    "Name": "Shape of You",
+    "Author": "Ed Sheeran",
+    "Price": 15,
+    "Adition": "British singer-songwriter"
+  },
+  {
+    "Type": "Software",
+    "Name": "AutoCAD",
+    "Author": "Autodesk",
+    "Price": 400,
+    "Adition": "Design and drafting software"
+  },
+  {
+    "Type": "Book",
+    "Name": "The Great Gatsby",
+    "Author": "F. Scott Fitzgerald",
+    "Price": 20,
+    "Adition": "Classic American novel"
+  },
+  {
+    "Type": "Game",
+    "Name": "Red Dead Redemption 2",
+    "Author": "Rockstar Games",
+    "Price": 60,
+    "Adition": "Action-adventure game"
+  },
+  {
+    "Type": "Film",
+    "Name": "The Dark Knight",
+    "Author": "Christopher Nolan",
+    "Price": 35,
+    "Adition": "Superhero film"
+  },
+  {
+    "Type": "Music",
+    "Name": "Hotel California",
+    "Author": "Eagles",
+    "Price": 25,
+    "Adition": "American rock band"
+  },
+  {
+    "Type": "Software",
+    "Name": "Slack",
+    "Author": "Slack Technologies",
+    "Price": 100,
+    "Adition": "Team collaboration software"
+  },
+  {
+    "Type": "Book",
+    "Name": "Moby-Dick",
+    "Author": "Herman Melville",
+    "Price": 18,
+    "Adition": "Epic sea story"
+  },
+  {
+    "Type": "Game",
+    "Name": "Minecraft",
+    "Author": "Mojang",
+    "Price": 30,
+    "Adition": "Sandbox video game"
+  },
+  {
+    "Type": "Film",
+    "Name": "Pulp Fiction",
+    "Author": "Quentin Tarantino",
+    "Price": 25,
+    "Adition": "Cult classic crime film"
+  },
+  {
+    "Type": "Music",
+    "Name": "Thriller",
+    "Author": "Michael Jackson",
+    "Price": 30,
+    "Adition": "Best-selling album"
+  },
+  {
+    "Type": "Software",
+    "Name": "Zoom",
+    "Author": "Zoom Video Communications",
+    "Price": 120,
+    "Adition": "Video conferencing software"
+  },
+  {
+    "Type": "Book",
+    "Name": "Pride and Prejudice",
+    "Author": "Jane Austen",
+    "Price": 14,
+    "Adition": "Classic romantic novel"
+  },
+  {
+    "Type": "Game",
+    "Name": "Fortnite",
+    "Author": "Epic Games",
+    "Price": 0,
+    "Adition": "Battle royale game"
+  },
+  {
+    "Type": "Film",
+    "Name": "The Matrix",
+    "Author": "Lana and Lilly Wachowski",
+    "Price": 35,
+    "Adition": "Science fiction action film"
+  },
+  {
+    "Type": "Music",
+    "Name": "Imagine",
+    "Author": "John Lennon",
+    "Price": 20,
+    "Adition": "Iconic song"
+  },
+  {
+    "Type": "Software",
+    "Name": "Trello",
+    "Author": "Atlassian",
+    "Price": 80,
+    "Adition": "Project management software"
+  },
+  {
+    "Type": "Book",
+    "Name": "The Catcher in the Rye",
+    "Author": "J.D. Salinger",
+    "Price": 17,
+    "Adition": "Coming-of-age novel"
+  },
+  {
+    "Type": "Game",
+    "Name": "Overwatch",
+    "Author": "Blizzard Entertainment",
+    "Price": 40,
+    "Adition": "Team-based shooter"
   }
 ]

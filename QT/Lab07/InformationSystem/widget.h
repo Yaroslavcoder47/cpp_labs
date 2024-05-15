@@ -30,10 +30,18 @@ public:
     ~Widget();
 private slots:
     void createArrayObjects();
-
+    void addElement();
 private:
+    QLineEdit* editInfo = new QLineEdit;
+    QLineEdit* editName = new QLineEdit;
+    QLineEdit* editAuthor = new QLineEdit;
+    QLineEdit* editPrice = new QLineEdit;
+    QLineEdit* editAditional = new QLineEdit;
+    void clearMainEdit();
+
     QVector<Unit> objects;
     void buildInterface();
+    void printToMainEdit();
     QPushButton* exitButton = new QPushButton("Выйти");
     QPushButton* addButton = new QPushButton("Добавить");
     QPushButton* openButton = new QPushButton("Открыть");
