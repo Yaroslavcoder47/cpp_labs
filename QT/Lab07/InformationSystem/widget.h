@@ -27,7 +27,7 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = nullptr);
-    ~Widget();
+    ~Widget() = default;
 private slots:
     void createArrayObjects();
     void addElement();
@@ -37,11 +37,7 @@ private:
     QLineEdit* editAuthor = new QLineEdit;
     QLineEdit* editPrice = new QLineEdit;
     QLineEdit* editAditional = new QLineEdit;
-    void clearMainEdit();
 
-    QVector<Unit> objects;
-    void buildInterface();
-    void printToMainEdit();
     QPushButton* exitButton = new QPushButton("Выйти");
     QPushButton* addButton = new QPushButton("Добавить");
     QPushButton* openButton = new QPushButton("Открыть");
@@ -50,6 +46,10 @@ private:
     QPushButton* searchButton = new QPushButton("Поиск");
     QPushButton* deleteButton = new QPushButton("Очистить");
     QPlainTextEdit* mainEdit = new QPlainTextEdit();
-    Ui::Widget *ui;
+
+    QVector<Unit> objects;
+    void buildInterface();
+    void printToMainEdit(QJsonArray& units);
+    void clearMainEdit();
 };
 #endif // WIDGET_H
