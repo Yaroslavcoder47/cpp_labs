@@ -31,6 +31,7 @@ public:
 private slots:
     void createArrayObjects();
     void addElement();
+    void saveObjects();
 private:
     QLineEdit* editInfo = new QLineEdit;
     QLineEdit* editName = new QLineEdit;

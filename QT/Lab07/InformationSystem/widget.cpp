@@ -8,6 +8,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent)
     connect(openButton, &QPushButton::clicked, this, &Widget::createArrayObjects);
     connect(deleteButton, &QPushButton::clicked, this, &Widget::clearMainEdit);
     connect(addButton, &QPushButton::clicked, this, &Widget::addElement);
+    connect(saveButton, &QPushButton::clicked, this, &Widget::saveObjects);
 }
 
 void deleteLayout(QHBoxLayout* layout)
@@ -159,7 +160,7 @@ void Widget::createArrayObjects()
                 unit.type = jsonObj["Type"].toString();
                 unit.name = jsonObj["Name"].toString();
                 unit.author = jsonObj["Author"].toString();
-                unit.price = jsonObj["Price"].toInt();
+                unit.price = jsonObj["Price"].toString();
                 unit.adition = jsonObj["Adition"].toString();
 
                 objects.push_back(unit);
@@ -179,4 +180,26 @@ void Widget::addElement()
     unit.adition = editAditional->text();
     objects.push_back(unit);
     printToMainEdit();
+}
+
+void Widget::saveObjects()
+{
+    QJsonArray jsonArr;
+    for (const Unit& unit : objects) {
+        QJsonObject jsonObject;
+        jsonObject["Type"] = unit.type;
+        jsonObject["Name"] = unit.name;
+        jsonObject["Author"] = unit.author;
+        jsonObject["Price"] = unit.price;
+        jsonObject["Adition"] = unit.adition;
+        jsonArr.append(jsonObject);
+    }
+
+    QJsonDocument jsonDoc(jsonArr);
+    QFile file("../../inf/test.json");
+    if (!file.open(QIODevice::WriteOnly)) {
+        qWarning("Couldn't open save file.");
+        return;
+    }
+    file.write(jsonDoc.toJson());
 }
