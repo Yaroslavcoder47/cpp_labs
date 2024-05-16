@@ -9,6 +9,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent)
     connect(deleteButton, &QPushButton::clicked, this, &Widget::clearMainEdit);
     connect(addButton, &QPushButton::clicked, this, &Widget::addElement);
     connect(saveButton, &QPushButton::clicked, this, &Widget::saveObjects);
+    connect(searchButton, &QPushButton::clicked, this, &Widget::searchObjects);
 }
 
 void deleteLayout(QHBoxLayout* layout)
@@ -162,7 +163,6 @@ void Widget::createArrayObjects()
                 unit.author = jsonObj["Author"].toString();
                 unit.price = jsonObj["Price"].toString();
                 unit.adition = jsonObj["Adition"].toString();
-
                 objects.push_back(unit);
             }
         }
@@ -202,4 +202,12 @@ void Widget::saveObjects()
         return;
     }
     file.write(jsonDoc.toJson());
+}
+
+void Widget::searchObjects()
+{
+
+    if(!editInfo->text().isEmpty()){
+
+    }
 }
