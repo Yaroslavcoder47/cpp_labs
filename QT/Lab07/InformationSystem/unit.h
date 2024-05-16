@@ -11,7 +11,7 @@ public:
     QString type;
     QString name;
     QString author;
-    int price;
+    QString price;
     QString adition;
 };
 

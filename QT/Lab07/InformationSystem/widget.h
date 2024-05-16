@@ -50,6 +50,13 @@ private:
     QVector<Unit> objects;
     void buildInterface();
     void printToMainEdit(QJsonArray& units);
+    void printToMainEdit();
     void clearMainEdit();
+
+    int maxTypeWidth = QString("Type").length();
+    int maxNameWidth = QString("Name").length();
+    int maxAuthorWidth = QString("Author").length();
+    int maxPriceWidth = QString("Price").length();
+    int maxAditionWidth = QString("Adition").length();
 };
 #endif // WIDGET_H

@@ -10,47 +10,37 @@ Widget::Widget(QWidget *parent) : QWidget(parent)
     connect(addButton, &QPushButton::clicked, this, &Widget::addElement);
 }
 
-
 void deleteLayout(QHBoxLayout* layout)
 {
     layout->deleteLater();
     layout->deleteLater();
 }
 
-void calculateColumnWidths(const QJsonArray& units, int& maxTypeWidth, int& maxNameWidth, int& maxAuthorWidth, int& maxPriceWidth, int& maxAditionWidth) {
-    for (const QJsonValue &obj : units) {
-        maxTypeWidth = std::max(maxTypeWidth, obj["Type"].toString().length());
-        maxNameWidth = std::max(maxNameWidth, obj["Name"].toString().length());
-        maxAuthorWidth = std::max(maxAuthorWidth, obj["Author"].toString().length());
-        maxPriceWidth = std::max(maxPriceWidth, obj["Price"].toString().length());
-        maxAditionWidth = std::max(maxAditionWidth, obj["Adition"].toString().length());
-    }
-}
-
 void Widget::printToMainEdit(QJsonArray& units)
 {
     // форматирование текста на вывод
-    int maxTypeWidth = QString("Type").length();
-    int maxNameWidth = QString("Name").length();
-    int maxAuthorWidth = QString("Author").length();
-    int maxPriceWidth = QString("Price").length();
-    int maxAditionWidth = QString("Adition").length();
-    calculateColumnWidths(units, maxTypeWidth, maxNameWidth, maxAuthorWidth, maxPriceWidth, maxAditionWidth);
-    QString header = QString("%1   %2   %3   %4   %5").arg("Type", -maxTypeWidth).arg("Name", -maxNameWidth).arg("Author", -maxAuthorWidth).arg("Price",
--maxPriceWidth).arg("Adition", -maxAditionWidth);
-    mainEdit->appendPlainText(header);
-    mainEdit->appendPlainText(QString("-").repeated(header.length()));
     QString text;
     for(const QJsonValue &val : units){
-        //text += QString("%1   %2   %3   %4   %5").arg(val.type, -maxTypeWidth).arg(val.name, -maxNameWidth+maxTypeWidth).arg(val.author, -maxAuthorWidth).arg(val.price,
-        //-maxPriceWidth).arg(val.adition, -maxAditionWidth) + '\n';
-        text += QString("%1 %2 %3 %4 %5\n")
+        text += QString("Type: %1\nName: %2\nAuthor: %3\nPrice: %4\nAdition: %5\n\n")
                     .arg(val["Type"].toString().leftJustified(maxTypeWidth, ' '))
                     .arg(val["Name"].toString().leftJustified(maxNameWidth, ' '))
                     .arg(val["Author"].toString().leftJustified(maxAuthorWidth, ' '))
                     .arg(val["Price"].toString().leftJustified(maxPriceWidth, ' '))
                     .arg(val["Adition"].toString().leftJustified(maxAditionWidth, ' '));
+
     }
+    mainEdit->appendPlainText(text);
+}
+
+void Widget::printToMainEdit()
+{
+    QString text;
+    text += QString("Type: %1\nName: %2\nAuthor: %3\nPrice: %4\nAdition: %5\n\n")
+                .arg(objects[objects.size()-1].type.leftJustified(maxTypeWidth, ' '))
+                .arg(objects[objects.size()-1].name.leftJustified(maxNameWidth, ' '))
+                .arg(objects[objects.size()-1].author.leftJustified(maxAuthorWidth, ' '))
+                .arg(objects[objects.size()-1].price.leftJustified(maxPriceWidth, ' '))
+                .arg(objects[objects.size()-1].adition.leftJustified(maxAditionWidth, ' '));
     mainEdit->appendPlainText(text);
 }
 
@@ -179,15 +169,14 @@ void Widget::createArrayObjects()
     printToMainEdit(jsonArr);
 }
 
-
 void Widget::addElement()
 {
     Unit unit;
     unit.type = editInfo->text();
     unit.name = editName->text();
     unit.author = editAuthor->text();
-    unit.price = editPrice->text().toInt();
+    unit.price = editPrice->text();
     unit.adition = editAditional->text();
     objects.push_back(unit);
-
+    printToMainEdit();
 }
