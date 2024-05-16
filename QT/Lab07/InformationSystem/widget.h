@@ -52,7 +52,7 @@ private:
     QVector<Unit> objects;
     void buildInterface();
     void printToMainEdit(QJsonArray& units);
-    void printToMainEdit();
+    void printToMainEdit(QVector<Unit>& objects);
     void clearMainEdit();
 
     int maxTypeWidth = QString("Type").length();

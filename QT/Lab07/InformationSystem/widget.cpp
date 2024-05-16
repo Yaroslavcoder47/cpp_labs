@@ -34,15 +34,18 @@ void Widget::printToMainEdit(QJsonArray& units)
     mainEdit->appendPlainText(text);
 }
 
-void Widget::printToMainEdit()
+void Widget::printToMainEdit(QVector<Unit>& objects)
 {
+    clearMainEdit();
     QString text;
-    text += QString("Type: %1\nName: %2\nAuthor: %3\nPrice: %4\nAdition: %5\n\n")
-                .arg(objects[objects.size()-1].type.leftJustified(maxTypeWidth, ' '))
-                .arg(objects[objects.size()-1].name.leftJustified(maxNameWidth, ' '))
-                .arg(objects[objects.size()-1].author.leftJustified(maxAuthorWidth, ' '))
-                .arg(objects[objects.size()-1].price.leftJustified(maxPriceWidth, ' '))
-                .arg(objects[objects.size()-1].adition.leftJustified(maxAditionWidth, ' '));
+    for(const Unit& unit : objects){
+        text += QString("Type: %1\nName: %2\nAuthor: %3\nPrice: %4\nAdition: %5\n\n")
+                    .arg(unit.type.leftJustified(maxTypeWidth, ' '))
+                    .arg(unit.name.leftJustified(maxNameWidth, ' '))
+                    .arg(unit.author.leftJustified(maxAuthorWidth, ' '))
+                    .arg(unit.price.leftJustified(maxPriceWidth, ' '))
+                    .arg(unit.adition.leftJustified(maxAditionWidth, ' '));
+    }
     mainEdit->appendPlainText(text);
 }
 
@@ -108,6 +111,7 @@ void Widget::buildInterface()
 
     // формирование правой половины экрана
     mainEdit->setFixedHeight(400);
+    mainEdit->setReadOnly(true);
     vLayout_2->addWidget(mainEdit);
 
     //добавление кнопок на правую половину экрана
@@ -179,7 +183,7 @@ void Widget::addElement()
     unit.price = editPrice->text();
     unit.adition = editAditional->text();
     objects.push_back(unit);
-    printToMainEdit();
+    printToMainEdit(objects);
 }
 
 void Widget::saveObjects()
@@ -206,8 +210,33 @@ void Widget::saveObjects()
 
 void Widget::searchObjects()
 {
-
+    QString name = "";
+    QString type = "";
+    QString author = "";
+    QVector<Unit> searchObj;
     if(!editInfo->text().isEmpty()){
-
+        type = editInfo->text();
+        for(const Unit& unit : objects){
+            if(unit.type == type){
+                searchObj.push_back(unit);
+            }
+        }
     }
+    if(!editName->text().isEmpty()){
+        name = editName->text();
+        for(const Unit& unit : objects){
+            if(unit.name == name){
+                searchObj.push_back(unit);
+            }
+        }
+    }
+    if(!editAuthor->text().isEmpty()){
+        author = editAuthor->text();
+        for(const Unit& unit : objects){
+            if(unit.author == author){
+                searchObj.push_back(unit);
+            }
+        }
+    }
+    printToMainEdit(searchObj);
 }
