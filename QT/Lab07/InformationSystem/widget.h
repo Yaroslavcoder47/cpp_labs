@@ -8,12 +8,14 @@
 #include <QVector>
 #include <QPlainTextEdit>
 #include <QPushButton>
+#include <QCheckBox>
 #include <QFile>
 // libraries for Json format
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QJsonDocument>
 #include "unit.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -33,6 +35,8 @@ private slots:
     void addElement();
     void saveObjects();
     void searchObjects();
+    void sortObjects();
+    void functionCheck();
 private:
     QLineEdit* editInfo = new QLineEdit;
     QLineEdit* editName = new QLineEdit;
@@ -48,6 +52,9 @@ private:
     QPushButton* searchButton = new QPushButton("Поиск");
     QPushButton* deleteButton = new QPushButton("Очистить");
     QPlainTextEdit* mainEdit = new QPlainTextEdit();
+
+    QCheckBox* checkName = new QCheckBox("Наименование");
+    QCheckBox* checkAuthor = new QCheckBox("Автор");
 
     QVector<Unit> objects;
     void buildInterface();

@@ -10,12 +10,41 @@ Widget::Widget(QWidget *parent) : QWidget(parent)
     connect(addButton, &QPushButton::clicked, this, &Widget::addElement);
     connect(saveButton, &QPushButton::clicked, this, &Widget::saveObjects);
     connect(searchButton, &QPushButton::clicked, this, &Widget::searchObjects);
+    connect(sortButton, &QPushButton::clicked, this, &Widget::sortObjects);
+    connect(checkName, &QCheckBox::stateChanged, this, &Widget::functionCheck);
+    connect(checkAuthor, &QCheckBox::stateChanged, this, &Widget::functionCheck);
+}
+
+void Widget::functionCheck()
+{
+    if(checkName->isChecked()){
+        checkAuthor->setEnabled(false);
+    }
+    else{
+        checkAuthor->setEnabled(true);
+    }
+    if(checkAuthor->isChecked()){
+        checkName->setEnabled(false);
+    }
+    else{
+        checkName->setEnabled(true);
+    }
 }
 
 void deleteLayout(QHBoxLayout* layout)
 {
     layout->deleteLater();
     layout->deleteLater();
+}
+
+bool compName(Unit first, Unit second)
+{
+    return first.name < second.name;
+}
+
+bool compAuthor(Unit first, Unit second)
+{
+    return first.author < second.author;
 }
 
 void Widget::printToMainEdit(QJsonArray& units)
@@ -125,6 +154,9 @@ void Widget::buildInterface()
     vLayout_2->addWidget(addButton);
     vLayout_2->addWidget(openButton);
     vLayout_2->addWidget(sortButton);
+    vLayout_2->addWidget(checkName);
+    vLayout_2->addWidget(checkAuthor);
+    vLayout_2->addWidget(checkName);
     vLayout_2->addWidget(saveButton);
     vLayout_2->addWidget(searchButton);
     vLayout_2->addWidget(deleteButton);
@@ -239,4 +271,26 @@ void Widget::searchObjects()
         }
     }
     printToMainEdit(searchObj);
+}
+
+void Widget::sortObjects()
+{
+    QVector<Unit> sortObj;
+    if(checkName->checkState()){
+        for(const Unit& unit : objects){
+            if(unit.type == editInfo->text()){
+                sortObj.push_back(unit);
+            }
+        }
+        std::sort(sortObj.begin(), sortObj.end(), compName);
+    }
+    else if(checkAuthor->checkState()){
+        for(const Unit& unit : objects){
+            if(unit.type == editInfo->text()){
+                sortObj.push_back(unit);
+            }
+        }
+        std::sort(sortObj.begin(), sortObj.end(), compAuthor);
+    }
+    printToMainEdit(sortObj);
 }
