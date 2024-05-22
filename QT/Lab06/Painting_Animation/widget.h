@@ -2,6 +2,9 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QPalette>
+#include <QPainter>
+#include <QPixmap>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,5 +21,6 @@ public:
     ~Widget();
 private:
     Ui::Widget *ui;
+    QPixmap* fox;
 };
 #endif // WIDGET_H
