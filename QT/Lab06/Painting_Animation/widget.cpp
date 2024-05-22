@@ -1,20 +1,25 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include <QRect>
+#include <QFile>
+#include <QDebug>
 
-Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget) {
+Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget), fox("../../data/fox.png") {
     ui->setupUi(this);
-    fox->load(":/data/fox.png");
     setFixedSize(1000, 625);
-    //setStyleSheet("background-image: url(:/../data/field.jpg);");
-    QPalette pal2;
-    pal2.setBrush(backgroundRole(),QBrush(QPixmap("../../data/field.jpg")));
-    setPalette(pal2);
-    //QPalette pal1;
-    //pal1.setBrush(backgroundRole(),QBrush(QPixmap("../../data/fox.png")));
-    //fox->setPalette(pal1);
+
+    QPalette palBackGround;
+    palBackGround.setBrush(backgroundRole(),QBrush(QPixmap("../../data/field.jpg")));
+    setPalette(palBackGround);
 }
 
 Widget::~Widget()
 {
     delete ui;
+}
+
+void Widget::paintEvent(QPaintEvent*)
+{
+    QPainter painter(this);
+    painter.drawPixmap(200, 200, fox);
 }
