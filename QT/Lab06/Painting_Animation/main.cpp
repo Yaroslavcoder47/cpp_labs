@@ -1,6 +1,7 @@
 #include "widget.h"
 
 #include <QApplication>
+#include <QCoreApplication>
 
 int main(int argc, char *argv[])
 {
