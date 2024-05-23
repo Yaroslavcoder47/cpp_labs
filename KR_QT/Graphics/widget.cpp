@@ -1,27 +1,22 @@
 #include "widget.h"
-#include <QMenuBar>
-#include <QMenu>
-#include <QAction>
-#include <QVBoxLayout>
-#include <QMessageBox>
-#include <QLabel>
+#include "ui_widget.h"
 
 Graphics::Graphics(QWidget *parent) : QWidget(parent) {
     setFixedSize(600, 400);
 }
 
-void Graphics::setPolygon(const QPolygon &polygon) {
+void Graphics::setPolygon(const QPolygon& polygon) {
     this->polygon = polygon;
     update();
 }
 
-void Graphics::setFillColor(const QColor &color) {
+void Graphics::setFillColor(const QColor& color) {
     this->fillColor = color;
     update();
 }
 
 void Graphics::setLineWidth(int width) {
-    this->lineWidth = width;
+    this->widthOfLine = width;
     update();
 }
 
@@ -30,74 +25,42 @@ void Graphics::setUsePen(bool usePen) {
     update();
 }
 
+void Graphics::setPenColor(const QColor& color) {
+    this->penColor = color;
+    update();
+}
+
 void Graphics::paintEvent(QPaintEvent*) {
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
     if (usePen) {
-        painter.setPen(QPen(Qt::black, lineWidth));
-    } else {
+        painter.setPen(QPen(penColor, widthOfLine));
+        painter.setBrush(QBrush(fillColor));
+    }
+    else {
         painter.setPen(Qt::NoPen);
     }
-    painter.setBrush(QBrush(fillColor));
 
-    painter.drawPolygon(polygon);
 
-    // Drawing the circle around the polygon
     if (polygon.size() == 4) {
         QRect boundingRect = polygon.boundingRect();
-        int radius = qMax(boundingRect.width(), boundingRect.height()) / 2;
+        int a = qMax(boundingRect.width(), boundingRect.height()) / 2;
+        int b = qMin(boundingRect.width(), boundingRect.height()) / 2;
+        int radius = sqrt(a * a + b * b);
         QPoint center = boundingRect.center();
         painter.drawEllipse(center, radius, radius);
     }
+    painter.drawPolygon(polygon);
 }
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
+MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent)
+{
     setWindowTitle("Графические примитивы");
-
-    graphicsWidget = new Graphics;
-    listWidget = new QListWidget;
-    lineEdit = new QLineEdit;
-    widthOfPen = new QSlider(Qt::Horizontal);
-    QLabel* sliderLabel = new QLabel("Толщина линии:");
-
-    // Slider settings
-    widthOfPen->setRange(1, 20); // Установим диапазон от 1 до 10
-    widthOfPen->setValue(1);
-    widthOfPen->setFixedSize(100, 20);
-
-
-
-    radioGroup = new QButtonGroup(this);
-    auto *radioButton1 = new QRadioButton("1 px");
-    auto *radioButton2 = new QRadioButton("3 px");
-    auto *radioButton3 = new QRadioButton("5 px");
-    checkBox = new QCheckBox("Использовать цвет пера");
-    auto *layout = new QVBoxLayout;
-    auto *centralWidget = new QWidget;
-
-    radioGroup->addButton(radioButton1, 1);
-    radioGroup->addButton(radioButton2, 3);
-    radioGroup->addButton(radioButton3, 5);
-
-    layout->addWidget(listWidget);
-    layout->addWidget(new QLabel("Координаты четырехугольника"));
-    layout->addWidget(lineEdit);
-    layout->addWidget(widthOfPen);
-    layout->addWidget(sliderLabel);
-    layout->addWidget(radioButton1);
-    layout->addWidget(radioButton2);
-    layout->addWidget(radioButton3);
-    layout->addWidget(checkBox);
-    layout->addWidget(graphicsWidget);
-    centralWidget->setLayout(layout);
-    setCentralWidget(centralWidget);
-
-    // Menu setup
-    auto *menuBar = new QMenuBar(this);
-    auto *menu = new QMenu("Меню", this);
-    auto *colorAction = new QAction("Выбрать цвет фона", this);
-    auto *infoAction = new QAction("О проекте", this);
-    auto *exitAction = new QAction("Выход", this);
+    QMenuBar* menuBar = new QMenuBar(this);
+    QMenu* menu = new QMenu("Меню", this);
+    QAction* colorAction = new QAction("Выбрать цвет заливки", this);
+    QAction* infoAction = new QAction("О проекте", this);
+    QAction* exitAction = new QAction("Выход", this);
 
     menu->addAction(colorAction);
     menu->addAction(infoAction);
@@ -105,40 +68,73 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     menuBar->addMenu(menu);
     setMenuBar(menuBar);
 
-    // Connect signals and slots
-    connect(colorAction, &QAction::triggered, this, [this](){
-        QColor color = QColorDialog::getColor(Qt::white, graphicsWidget, "Выберите цвет фона");
-        if (color.isValid()) {
-            graphicsWidget->setFillColor(color);
-        }
-    });
+    paintWidget = new Graphics;
+    listWidget = new QListWidget;
+    coordsOfPolygon = new QLineEdit;
+    useOfPen = new QCheckBox("Использовать цвет пера");
+    sliderWidth = new QSlider(Qt::Horizontal);
+    sliderLabel = new QLabel("Толщина линии");
 
-    connect(infoAction, &QAction::triggered, this, [](){
-        QMessageBox::information(nullptr, "О проекте", "Приложение для работы с графическими примитивами.\nАвтор: Ваше имя");
-    });
+    sliderWidth->setRange(1, 20);
+    sliderWidth->setValue(1);
+    sliderWidth->setFixedSize(200, 20);
 
+
+    QVBoxLayout *layout = new QVBoxLayout;
+    QWidget *centralWidget = new QWidget;
+
+    layout->addWidget(listWidget);
+    layout->addWidget(new QLabel("Координаты четырехугольника (писать через пробел всех 4 вершин)"));
+    layout->addWidget(coordsOfPolygon);
+    layout->addWidget(useOfPen);
+    layout->addWidget(sliderLabel);
+    layout->addWidget(sliderWidth);
+    layout->addWidget(paintWidget);
+    centralWidget->setLayout(layout);
+    setCentralWidget(centralWidget);
+
+    connect(colorAction, &QAction::triggered, this, &MainWindow::setBackGroundColor);
+    connect(infoAction, &QAction::triggered, this, &MainWindow::showInformation);
     connect(exitAction, &QAction::triggered, this, &QMainWindow::close);
+    connect(useOfPen, &QCheckBox::toggled, this, &MainWindow::usageOfPen);
+    connect(sliderWidth, &QSlider::valueChanged, this, &MainWindow::changeLineWidth);
 
-    connect(radioGroup, QOverload<int>::of(&QButtonGroup::idClicked), graphicsWidget, &Graphics::setLineWidth);
-    connect(checkBox, &QCheckBox::toggled, graphicsWidget, &Graphics::setUsePen);
 
-    // Example polygon
-    QPolygon polygon;
-    polygon << QPoint(150, 100) << QPoint(450, 100) << QPoint(450, 300) << QPoint(150, 300);
-    graphicsWidget->setPolygon(polygon);
-
-    // Example coordinates
-    listWidget->addItem("150, 100");
-    listWidget->addItem("450, 100");
-    listWidget->addItem("450, 300");
-    listWidget->addItem("150, 300");
-
-    // Update lineEdit when item in listWidget is selected
-    connect(listWidget, &QListWidget::itemClicked, [this](QListWidgetItem *item){
-        lineEdit->setText(item->text());
-    });
 }
 
 MainWindow::~MainWindow() {
-    // Destructor implementation
+    delete ui;
+}
+
+void MainWindow::setBackGroundColor() {
+    QColor color = QColorDialog::getColor(Qt::white, paintWidget, "Выберите цвет заливки");
+    if (color.isValid()) {
+        paintWidget->setFillColor(color);
+    }
+}
+
+void MainWindow::showInformation() {
+    QMessageBox::information(this, "О проекте", "Описать окружность около прямоугольника, координаты которого вводятся.\nАвтор: Карачун Ярослав");
+}
+
+void MainWindow::changeLineWidth() {
+    int valueOfWidth = sliderWidth->value();
+    paintWidget->setLineWidth(valueOfWidth);
+}
+
+void MainWindow::usageOfPen(bool checked) {
+    QString info = coordsOfPolygon->text();
+    if(!info.isEmpty()){
+        if(useOfPen->isChecked()){
+            listWidget->addItem(info);
+        }
+        QStringList coords = info.split(' ');
+        QPolygon polygonNew;
+        for(size_t i = 0; i < coords.size(); i+=2){
+            QPoint point(coords[i].toInt(), coords[i+1].toInt());
+            polygonNew << point;
+        }
+        paintWidget->setPolygon(polygonNew);
+        paintWidget->setUsePen(checked);
+    }
 }
