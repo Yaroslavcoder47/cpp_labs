@@ -1,9 +1,3 @@
-
-#include <QtMath>
-#include <QColor>
-#include <QPainter>
-#include <QDebug>
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -12,21 +6,18 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    int width_ = width();
-    int height_ = height();
 
-    int n = qCeil(std::log2f(qMax(width_, height_) - 1));
+    //расчет массива точек plazma_
+    int n = qCeil(std::log2f(qMax(width(), height()) - 1));
     dots_ = qPow(2, n) + 1;
-
     plazma_.resize(dots_);
 
     for (auto &i : plazma_) {
         i.resize(dots_);
-        for (auto & item: i) {
-            item = nullptr;
+        for (auto &j: i) {
+            j = nullptr;
         }
     }
-
     initDotsColor();
 }
 
@@ -38,30 +29,32 @@ MainWindow::~MainWindow()
 void MainWindow::initDotsColor() {
 
     //Шаг 1. Инициализация угловых точек. Присваивание им значений высот (например, выбором случайных чисел).
-    plazma_[0][0] = QColor(Qt::red);
-    plazma_[0][dots_ - 1] = QColor(Qt::green);
-    plazma_[dots_ - 1][0] = QColor(Qt::blue);
-    plazma_[dots_ - 1][dots_ - 1] = QColor(Qt::yellow);
+    plazma_[0][0] = QColor(QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255));
+    plazma_[0][dots_-1] = QColor(QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255));
+    plazma_[dots_-1][0] = QColor(QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255));
+    plazma_[dots_-1][dots_-1] = QColor(QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255), QRandomGenerator::global()->bounded(0,255));
 
     int x1 = 0;
     int y1 = 0;
-    int x2 = dots_ - 1;
-    int y2 = dots_ - 1;
+    int x2 = dots_-1;
+    int y2 = dots_-1;
 
-    fillPlazma (x1, y1, x2, y2);
+    fillPlazma(x1, y1, x2, y2);
     update();
 }
 
-void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
+void MainWindow::fillPlazma(int& x1, int& y1, int& x2, int& y2) {
 
     if (x2 - x1 <= 1 && y2 - y1 <= 1)
+    {
         return; // Базовый случай: если размер области слишком мал, выходим из рекурсии
-
+    }
 
     //Шаг 2. Шаг diamond. Нахождение срединной точки, присваивание ей значения, на основе среднего от угловых, плюс случайное число
 
     int xCenter = (x1 + x2) / 2;
     int yCenter = (y1 + y2) / 2;
+
     int redCenter = (plazma_[x1][y1].red() + plazma_[x1][y2].red() + plazma_[x2][y1].red() + plazma_[x2][y2].red()) / 4;
 
     int greenCenter = (plazma_[x1][y1].green() + plazma_[x1][y2].green() + plazma_[x2][y1].green() + plazma_[x2][y2].green()) / 4;
@@ -91,8 +84,6 @@ void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
 
 
     //find the color of the left point
-
-
     int redLeft = (plazma_[x1][y1].red() + plazma_[x1][y2].red() + plazma_[xCenter][yCenter].red());
     int greenLeft = (plazma_[x1][y1].green() + plazma_[x1][y2].green() + plazma_[xCenter][yCenter].green());
     int blueLeft = (plazma_[x1][y1].blue() + plazma_[x1][y2].blue() + plazma_[xCenter][yCenter].blue());
@@ -101,9 +92,9 @@ void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
     if(xLeftLeft >= 0){
         redLeft += plazma_[xLeftLeft][yCenter].red();
         redLeft /= 4;
-        greenLeft += plazma_[xLeftLeft][yCenter].red();
+        greenLeft += plazma_[xLeftLeft][yCenter].green();
         greenLeft /= 4;
-        blueLeft += plazma_[xLeftLeft][yCenter].red();
+        blueLeft += plazma_[xLeftLeft][yCenter].blue();
         blueLeft /= 4;
     }else {
         redLeft /=3;
@@ -123,13 +114,11 @@ void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
     plazma_[xLeft][yLeft] = colorLeft;
 
     //find the color of the right point
-
-
     int redRight = (plazma_[x2][y1].red() + plazma_[x2][y2].red() + plazma_[xCenter][yCenter].red());
     int greenRight= (plazma_[x2][y1].green() + plazma_[x2][y2].green() + plazma_[xCenter][yCenter].green());
     int blueRight = (plazma_[x2][y1].blue() + plazma_[x2][y2].blue() + plazma_[xCenter][yCenter].blue());
-
     int xRightRight = 2 * x2 - xCenter; //x2 + (x2 - xCenter)
+
     if(xRightRight < dots_){
         redRight += plazma_[xRightRight][yCenter].red();
         redRight /= 4;
@@ -155,12 +144,11 @@ void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
     plazma_[xRight][yRight] = colorRight;
 
     //find the color of the top point
-
     int redTop = (plazma_[x1][y2].red() + plazma_[x2][y2].red() + plazma_[xCenter][yCenter].red());
     int greenTop = (plazma_[x1][y2].green() + plazma_[x2][y2].green() + plazma_[xCenter][yCenter].green());
     int blueTop = (plazma_[x1][y2].blue() + plazma_[x2][y2].blue() + plazma_[xCenter][yCenter].blue());
-
     int yTopTop = 2 * y2 - yCenter; //y2 + (y2 - yCenter)
+
     if(yTopTop < dots_){
         redTop += plazma_[xCenter][yTopTop].red();
         redTop /= 4;
@@ -186,13 +174,12 @@ void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
 
 
     //find the color of the bottom point
-
     int redBottom = (plazma_[x1][y1].red() + plazma_[x2][y1].red() + plazma_[xCenter][yCenter].red());
     int greenBottom = (plazma_[x1][y1].green() + plazma_[x2][y1].green() + plazma_[xCenter][yCenter].green());
     int blueBottom = (plazma_[x1][y1].blue() + plazma_[x2][y1].blue() + plazma_[xCenter][yCenter].blue());
-
     int yBottomBottom = 2 * y1 - yCenter; //y1 - (yCenter - y1)
-    if(yBottomBottom > 0){
+
+    if(yBottomBottom >= 0){
         redBottom += plazma_[xCenter][yBottomBottom].red();
         redBottom /= 4;
         greenBottom += plazma_[xCenter][yBottomBottom].green();
@@ -216,19 +203,15 @@ void MainWindow::fillPlazma (int& x1, int& y1, int& x2, int& y2) {
     plazma_[xBottom][yBottom] = colorBottom;
 
 
-    fillPlazma(x1, y1, xCenter, yCenter);
-    fillPlazma(xCenter, y1, x2, yCenter);
-    fillPlazma(x1, yCenter, xCenter, y2);
-    fillPlazma(xCenter, yCenter, x2, y2);
-
+    fillPlazma(x1, y1, xCenter, yCenter); // левый верхний квадрат
+    fillPlazma(xCenter, y1, x2, yCenter); // правый верхний квадрат
+    fillPlazma(x1, yCenter, xCenter, y2); // левый нижний квадрат
+    fillPlazma(xCenter, yCenter, x2, y2); // правый нижний квадрат
 }
 
 void MainWindow::paintEvent (QPaintEvent *qp) {
     Q_UNUSED (qp)
-
-
     QPainter painter(this);
-
     for (int i = 0; i < height(); ++i){
         for (int j = 0; j < width(); ++j) {
             painter.fillRect(i, j, 1, 1, plazma_[i][j]);

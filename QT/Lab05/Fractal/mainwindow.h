@@ -5,7 +5,8 @@
 #include <QVector>
 #include <QColor>
 #include <QtMath>
-#include <cmath>
+#include <QPainter>
+#include <QDebug>
 #include <QRandomGenerator>
 
 QT_BEGIN_NAMESPACE
@@ -21,15 +22,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void initDotsColor();
-
 private:
     Ui::MainWindow *ui;
+    const int delta = 50;
     int dots_;
     QVector<QVector<QColor>> plazma_;
     void fillPlazma (int& , int&, int&, int&);
-    const int delta = 30;
+    void initDotsColor();
 protected:
-    void paintEvent (QPaintEvent *qp) override;
+    void paintEvent(QPaintEvent *qp) override;
 };
 #endif // MAINWINDOW_H
