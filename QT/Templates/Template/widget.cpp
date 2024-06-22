@@ -2,10 +2,30 @@
 #include <QDebug>
 #include <QButtonGroup>
 #include <QLayout>
+#include <QScrollBar>
 
 
 Widget::Widget(QWidget *parent) : QWidget(parent)
 {
+    QPushButton* button = new QPushButton(QIcon(":/button_icon.png"), "My button", this);
+    button->setFixedSize(200, 200);
+    connect(button, &QPushButton::pressed, [button]() {
+        button->setText("Button is clicked");
+    });
+
+    connect(button, &QPushButton::released, [button]() {
+        button->setText("My button");
+    });
+
+
+    QPushButton* button1 = new QPushButton("F",this);
+   // button1->setFixedSize(200, 40);
+    button1->move(200, 400);
+    connect(button1, &QPushButton::clicked, [button1](){
+        button1->setText("Button 1 clicked");
+    });
+
+
 
 }
 

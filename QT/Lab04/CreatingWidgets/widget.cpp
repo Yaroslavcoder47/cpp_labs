@@ -5,7 +5,8 @@ Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
 {
-    this->setFixedSize(300, 300);
+
+    setFixedHeight(300);
 
     QPushButton* btn = new QPushButton("Spawn");
     QComboBox* cmbox = new QComboBox;
