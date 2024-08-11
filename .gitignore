@@ -337,21 +337,23 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 # Folder from QT
-build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Notepad-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Gistogramm-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-TicTacToe-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Translator-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Button-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-ButtonPosition-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Clicker-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-CreatingWidgets-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-LabelProject-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-VisualControl-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build-Fractal-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
-build/
-
+QT/Lab01/build-lab01-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab01/build-Lab01Test-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab02/build-Notepad-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab03/build-Gistogramm-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab03/build-TicTacToe-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab03/build-Translator-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab04/build-Button-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab04/build-ButtonPosition-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab04/build-Clicker-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab04/build-CreatingWidgets-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab04/build-LabelProject-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab04/build-VisualControl-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab05/build-Fractal-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+QT/Lab06/Graphics_Functions/build/
+QT/Lab06/Painting_Animation/build/
+QT/Lab07/InformationSystem/build/
+QT/Lab08/Paint/build/
 
 
 
