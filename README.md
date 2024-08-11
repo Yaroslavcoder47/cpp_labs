@@ -1,3 +1,8 @@
-# cpp_labs
-Repository for all labs
-Studying C++ is cool
+<h1>Study repository</h1>
+<p>In this repository you find all projects from my first year of education at BSU. There are laboratory works and projects.</p>
+<h3>Technologies</h3>
+<ul>
+  <li>C++</li>
+  <li>Assembler</li>
+  <li>Qt framework</li>
+</ul>
