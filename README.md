@@ -5,4 +5,5 @@
   <li>C++</li>
   <li>Assembler</li>
   <li>Qt framework</li>
+  <li>Java</li>
 </ul>
