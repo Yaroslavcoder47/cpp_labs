@@ -1,0 +1,117 @@
+1. Draw a field triangle
+public class Triangle
+{
+   public static void main(String[] args)
+   {
+      System.out.println("   X   ");
+      System.out.println("  XXX  ");
+      System.out.println(" XXXXX ");
+      System.out.println("XXXXXXX");
+
+   }
+}
+
+2. Draw a staircase
+public class Staircase
+{
+   public static void main(String[] args)
+   {
+      System.out.println("  ____");
+      System.out.println("  I__I___");
+      System.out.println("  I_____I___");
+      System.out.println("  I________I___");
+      System.out.println("  I___________I___");
+      System.out.println("  I______________I___");
+   }
+}
+
+3. Draw a parallelogram
+public class Parallelogram
+{
+   public static void main(String[] args)
+   {
+      System.out.println("      ______________________");
+      System.out.println("     /                     /");
+      System.out.println("    /    Parallelogram    / ");
+      System.out.println("   /                     /  ");
+      System.out.println("  /_____________________/   ");
+   }
+}
+
+4. Draw picture with a tree and bush
+public class TreeBush
+{
+   public static void main(String[] args)
+   {
+
+      /* Your work here */
+
+      System.out.println("        #");
+      System.out.println("      ####");
+      System.out.println("    #######");
+      System.out.println("    ########");
+      System.out.println("     ##||# #       ###");
+      System.out.println("     # ||         ######");
+      System.out.println("  _____||_________ ####____");
+   }
+}
+
+5. Print lines of Frost poem
+public class Frost
+{
+   public static void main(String[] args)
+   {
+      System.out.println("Two roads diverged in a wood, and I --");
+      System.out.println("I took the one less traveled by,");
+      System.out.println("And that has made all the difference.");
+      System.out.println("    by Robert Frost");
+
+   }
+}
+
+6. Print Peter Piper poem
+public class PeterPiper
+{
+   public static void main(String[] args)
+   {
+
+      System.out.println("Peter Piper picked a peck of pickled peppers.");
+      System.out.println("A peck of pickled peppers, Peter Piper picked.");
+      System.out.println("If Peter picked a peck of pickled peppers,");
+      System.out.println("Where's the peck of pickled peppers Peter Piper picked?");
+
+   }
+}
+
+7. Print an equation
+public class Algebra
+{
+   public static void main(String[] args)
+   {
+      System.out.println("Given: f(x) = 3x - 15");
+      System.out.println("Let x = 4");
+      System.out.println("Then");
+      System.out.println("  f(4) = 3x4 - 15");
+      System.out.println("       = 12 - 15");
+      System.out.println("       = -3");
+
+   }
+}
+
+8. Print a multiplication table
+public class MultTable
+{
+   public static void main(String[] args)
+   {
+       System.out.println("  y | 1y | 2y | 3y | 4y | 5y ");
+       System.out.println("----|----|----|----|----|----");
+
+       for (int i = 1; i <= 10; i++) {
+          System.out.printf("%3d ", i);
+          for (int j = 1; j <= 5; j++) {
+             System.out.printf("|%3d ", i*j);
+          }
+          System.out.println();
+       }
+   }
+}
