@@ -1,0 +1,219 @@
+1. Bank account constructor with IllegalArgumentException
+
+/**
+   A bank account has a balance that can be changed by 
+   deposits and withdrawals.
+*/
+public class BankAccount
+{  
+   private double balance; 
+   private double interestRate;
+   
+   /**
+      Constructs a bank account with a zero balance and no interest.
+   */
+   public BankAccount()
+   {  
+      balance = 0;
+      interestRate = 0;
+   }
+
+   /**
+      Constructs a bank account with a given interest rate.
+      @balance initialBalance the initial balance
+      @param rate the interest rate
+   */
+   public BankAccount(double initialBalance, double rate) 
+   {  
+      if(initialBalance < 0 || rate < 0){
+         throw new IllegalArgumentException();
+      }
+      balance = initialBalance;
+      interestRate = rate;
+   }
+ 
+   /**
+      Deposits money into the bank account.
+      @param amount the amount to deposit
+   */
+   public void deposit(double amount) 
+   {  
+      balance = balance + amount;
+   }
+
+   /**
+      Withdraws money from the bank account.
+      @param amount the amount to withdraw
+   */
+   public void withdraw(double amount) 
+   {  
+      balance = balance - amount;
+   }
+
+   /**
+      Gets the current balance of the bank account.
+      @return the current balance
+   */
+   public double getBalance()
+   {  
+      return balance; 
+   }
+   
+   /**
+      Adds the earned interest to the account balance.
+   */
+   public void addInterest() 
+   {  
+      double interest = getBalance() * interestRate / 100;
+      deposit(interest); 
+   }
+}
+
+2. Catching a NumberFormatException
+
+// TODO: Determine whether a or b do not represent an integer
+// by catching the NumberFormatException. If either one is not an integer,
+// use the value 0 when computing the sum.
+
+public class Numbers
+{
+   public int add(String a, String b)
+   {
+      int x = 0;
+      int y = 0;
+      try{
+         x = Integer.parseInt(a);
+      }
+      catch(NumberFormatException e){
+         
+      }
+      try{
+         y = Integer.parseInt(b);
+      }
+      catch(NumberFormatException e){
+         
+      }
+      return x + y;
+      
+   }
+}
+
+3. Add throws clause to web reader
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Scanner;
+
+public class WebReader
+{
+   public static boolean checkURL(String site) throws Exception
+   {
+      URL u = new URL(site);
+      Scanner in = new Scanner(u.openStream());
+      return in.hasNextLine();
+   }
+
+   // This method checks your work. Do not modify it.
+
+   public static String check(String site)
+   {
+      try
+      {
+         if (checkURL(site))
+            return "good";
+         else
+            return "empty";
+      }
+      catch (MalformedURLException ex)
+      {
+         return "bad URL";
+      }
+      catch (Exception ex)
+      {
+         return "bad";
+      }
+   }
+}
+
+4. Throw IllegalArgumentException in Vehicle constructor
+
+/**
+   Describes a vehicle with a self-contained propulsion unit.
+*/
+public class Vehicle
+{
+   private String make;
+   private String model;
+   private String year;
+   private String type;
+   private int wheelCount;
+   private String engineType;
+   private String fuel;
+
+   /**
+      Constructs a vehicle
+      @param aMake the vehicle's make
+      @param aModel the vehicle's model
+      @param aType the type of the vehicle
+      @param numWheels the number of wheels on this vehicle
+      @param aFuel the type of fuel used by this vehicle
+   */
+
+   public Vehicle(String aMake, String aModel, String aYear,
+         String aType, int numWheels, String aEngineType, String aFuel)
+   {
+      /*
+        TODO: Modify the constructor to throw an IllegalArgumentException
+        if the conditions of the problem statement are not met.
+      */
+      if((aType.equals("truck") && numWheels < 4) || (aType.equals("motorcycle") && numWheels != 2)){
+            throw new IllegalArgumentException();
+      }
+      make = aMake;
+      model = aModel;
+      year = aYear;
+      type = aType;
+      wheelCount = numWheels;
+      engineType = aEngineType;
+      fuel = aFuel;
+   }
+
+   /**
+      Formats the vehicle information for printing
+      @returns a string sutiable for printing
+   */
+   public String formatForPrinting()
+   {
+      return "Make: " + make + "\n"
+            + "Model: " + model + "\n"
+            + "Year: " + year + "\n"
+            + "Type: " + type + "\n"
+            + "Number of wheels: " + wheelCount + "\n"
+            + "Engine type: " + engineType + "\n"
+            + "Fuel: " + fuel + "\n";
+   }
+
+   /**
+     The following method checks your constructor. We use the exception
+     handling mechanism to determine whether (a) the
+     constructor completed normally, or (b) an exception occurred.
+   */
+   public static String check(String aMake, String aModel, String aYear,
+         String aType, int numWheels, String aEngineType, String aFuel)
+   {
+     try
+     {
+       Vehicle aVehicle = new Vehicle(aMake,aModel,aYear,aType,
+             numWheels,aEngineType,aFuel);
+       return "Constructor completed normally";
+     }
+     catch (Exception exception)
+     {
+       return "Exception in constructor";
+     }
+   }
+}
+
+5. Design IllegalNumberOfWheels Exception
+

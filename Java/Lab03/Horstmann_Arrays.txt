@@ -1,0 +1,343 @@
+1. Find the sum of array elements
+
+public class ArrayOps
+{
+   /**
+      This method adds up the integer values in an array,
+      with the integer sum returned at the end of the method.
+      @param values, an array of integers, may be positive or negative
+      @ return, the sum of the integers
+   */
+   public static int sumArray(int values[])
+   {
+      int res = 0;
+      for(int i : values){
+         res += i;
+      }
+      return res;
+   }
+}
+
+2. Find average price in array
+
+import java.util.Scanner;
+public class Prices
+{
+   /**
+      A method to determine and return the average price
+   */
+   public static double averagePrice(double[] priceData)
+   {
+      double res = 0.;
+      int count = 0;
+      for(double i : priceData){
+         res += i;
+         count++;
+      }
+      return res / count;
+
+
+   }
+}
+
+3. Find middle element(s) of array
+
+public class ArrayOps
+{
+   /**
+      This method accepts and integer array as a parameter, and then
+      returns the "middle" value of the array.
+      For an array of odd length, this would be the actual middle value.
+      For an array of even length, there are TWO middle values, so only
+      the first of the two values is returned.
+      @param values, an array of integers
+      @ return, the "middle" element of the array
+   */
+   public static int middleArray(int values[])
+   {
+      int lenOfArray = values.length;
+      int middleIndex = lenOfArray / 2;
+      if(lenOfArray % 2 == 0){
+         middleIndex--;
+      }
+      return values[middleIndex];
+   }
+}
+
+4. Linear search
+
+public class ArrayOps
+{
+   /**
+      This method performs a linear search on the array identified by
+      the first parameter, while looking for the value indicated by
+      the second parameter.
+      @param values, an array of integers
+      @param valueToFind, an integer to look for in the array values
+      @ return, the index (subscript) of the array where the value
+            was found OR the length of the array if it was not found.
+   */
+   public static int findValue(int values[], int valueToFind)
+   {
+      int pos = values.length;
+      for(int i = 0; i < values.length; i++){
+         if(values[i] == valueToFind){
+            pos = i;
+            break;
+         }
+      }
+      return pos;
+   }
+}
+
+5. Count occurrences of given int in array
+
+public class ArrayOps
+{
+   /**
+      This method goes through the array of integers identified by
+      the first parameter, while counting the number of occurrences
+      of the second parameter, a single integer, within the array.
+      @param theArray, an array of integers
+      @param theChar, an integer whose occurrences within the array
+         need to be counted
+      @ return, the count of the occurrences of the integer represented
+      by the second parameter in the array of integers.
+   */
+   public static int countOccurs(int[] theArray, int theInt)
+   {
+      int count = 0;
+      for(int item : theArray){
+         if(item == theInt){
+            count++;
+         }
+      }
+      return count;
+   }
+}
+
+6. Find larger sum of 2D array rows
+
+public class ArrayOps
+{
+   /**
+      This method sums up both rows of a two-dimensional array
+      (the only parameter to the method) and returns the greater sum.
+      @param theArray, a 2-D array of integers
+      @return, the greater row sum
+   */
+   public static int bigSum(int[][] theArray)
+   {
+      int sum1 = 0;
+      int sum2 = 0;
+      for(int item : theArray[0]){
+         sum1 += item;
+      }
+      for(int item : theArray[1]){
+         sum2 += item;
+      }
+      if(sum1 > sum2){
+         return sum1;
+      }
+      return sum2;
+   }
+}
+
+7. Compute test averages from 2 1D arrays
+
+public class Grades
+{
+   /**
+      This method examines the two arrays of test grades (double)
+      identified by the two parameters, and creates an array
+      containing the average values of these two arrays.
+      The test scores for each student (given in the same row in each test
+      array) are combined to find the average score for each student. 
+      This average is placed in the corresponding row in the new array.
+      @param test1, the array of scores for the first test
+      @param test2, the array of scores for the second test
+      @return, the array containing the average scorres
+   */
+   public static double[] makeAverage(double[] test1, double[] test2)
+   {
+      double res[] = new double[test1.length];
+      for(int i = 0; i < test1.length; i++){
+         res[i] = (test1[i] + test2[i]) / 2;
+      }
+      return res;
+   }
+}
+
+8. Count test averages below 70 with 2D array
+
+public class Grades
+{
+   /**
+      This method examines the two-dimensional array of integers
+      identified by the first parameter, whose length (number of rows,
+      also the number of students) is the second parameter, while the
+      three columns in the array represent the scores for three
+      different tests.
+      The test scores for each student (one row of three grades) are
+      combined to find the average score for each student.  The integer
+      returned is the number of students with a test average less than 70. 
+      @param numStudents, the number of students who took the three tests
+      @param theArray, a 2-D array of integer scores
+      @return, the number of test averages below a score of 70
+   */
+   public static int testAverage(double[][] theArray, int numStudents)
+   {
+      int NUM_TESTS = 3;
+      int count = 0;
+      for(int i = 0; i < numStudents; ++i){
+         double sum = 0.;
+         for(int j = 0 ; j < NUM_TESTS; j++){
+            sum += theArray[i][j];
+         }
+         if(sum / 3 < 70.){
+            count++;
+         }
+      }
+      return count;
+   }
+}
+
+9. Copy array in reverse order to ArrayList
+
+import java.util.ArrayList;
+
+public class ArrayOps
+{
+   /**
+      This method goes through the array of integers identified by
+      the only parameter, creating a new ArrayList from the array,
+      but in reverse order.
+      @param theArray, an array of integers
+      @return reversedArr, the new ArrayList of Integers
+
+   */
+   public static ArrayList copyReverse(int[] anArray)
+   {
+      ArrayList arr = new ArrayList();
+      for(int i = anArray.length - 1; i >= 0; i--){
+         arr.add(anArray[i]);
+      }
+      return arr;
+   }
+}
+
+10. Copy array to ArrayList, excluding duplicates
+
+import java.util.ArrayList;
+
+public class ArrayOps
+{
+   /**
+       This method goes through the array of integers identified by
+       the only parameter, creating a new ArrayList from the array,
+       eliminating duplicates from the original array.
+       @param theArray, an array of integer
+       @return uniqueIntAL, the new ArrayList
+
+   */
+   public static ArrayList copyArray(int[] anArray)
+   {
+      ArrayList res = new ArrayList();
+      
+      for(int i = 0; i < anArray.length; i++){
+         if(!res.contains(anArray[i])){
+            res.add(anArray[i]);
+         }
+      }
+      return res;
+   }
+}
+
+11. List of numbers
+
+public class Numbers 
+{
+   /**
+      Produces a string containing the numbers in an array,
+      separated by commas, such as "1,4,9"
+      @param values an array of integer values
+      @return a string containing the array elements, separated by
+      commas.
+    */
+   public String separateWithCommas(int[] values)
+   {
+      String res = "";
+      for(int i = 0; i < values.length - 1; i++){
+         res += values[i] + ",";
+      }
+      if(values.length != 0)
+         res += values[values.length - 1];
+      return res;
+      
+   }
+}
+
+12. Short words
+
+import java.util.ArrayList;
+
+public class Words
+{
+   /**
+      Returns all short words (length <= 3) in an array of words
+      @param words an array of strings
+      @return an array list containing the short words in words
+   */
+   public ArrayList<String> shortWords(String[] words)
+   {
+      ArrayList<String> res = new ArrayList<String>();
+      for(String item : words){
+         if(item.length() <= 3){
+            res.add(item);
+         }
+      }
+      return res;
+   }
+}
+
+13. Select a short word
+
+import java.util.Arrays;
+import java.util.ArrayList;
+public class Words
+{
+   /**
+      Returns the nth short word (length <= 3) in an array.
+      @param words an array of strings
+      @param n an integer > 0
+      @return the nth short word in words, or the empty string if there is
+      no such word
+   */
+   public String nthShortWord(String[] words, int n)
+   {
+      ArrayList<String> arrWords = new ArrayList<String>();
+      for(String item : words){
+         if(item.length() <= 3){
+            arrWords.add(item);
+         }
+      }
+      if(arrWords.size() < n){
+         return "";
+      }
+      return arrWords.get(n-1);
+   }
+}
+
+14. Diagonals on board
+
+
+15. Border on board
+16. Run lengths
+17. Same beginning and end sequence
+18. Remove short words
+19. Number of even and odd elements
+20. Letter frequency (count)
+21. Letter frequency (percentage)
+22. Swap first and second half of array
+23. Swap adjacent elements in array
+24. Railfence cypher
