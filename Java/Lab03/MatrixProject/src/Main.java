@@ -4,61 +4,52 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] matrix = getMatrix();
-        for(int i = 0; i < matrix.length; i++){
-            for(int j = 0; j < matrix[i].length; j++){
-                System.out.print(matrix[i][j] + " ");
+        try{
+            int[][] matrix = getMatrix();
+            for(int[] i : matrix){
+                for(int j : i){
+                    System.out.print(j + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
+            System.out.println("Local Minimum");
+            localMinimum(matrix);
+            System.out.println("Local Maximum");
+            localMaximum(matrix);
         }
-        System.out.println("Local Minimum");
-        localMinimum(matrix);
-        System.out.println("Local Maximum");
-        localMaximum(matrix);
+        catch(IllegalArgumentException | FileNotFoundException exc){
+            System.out.println(exc.getMessage());
+        }
     }
 
-    public static int[][] getMatrix() {
+    public static int[][] getMatrix() throws FileNotFoundException{
         String path = "data/input.txt";
-        try {
-            Scanner scan = new Scanner(new File(path));
-            try {
-                int n = scan.nextInt();
-                int m = scan.nextInt();
-                if (n <= 0 || m <= 0) {
-                    throw new IllegalArgumentException("Wrong arguments");
+        Scanner scan = new Scanner(new File(path));
+
+        int n = scan.nextInt();
+        int m = scan.nextInt();
+        if (n <= 0 || m <= 0) {
+            throw new IllegalArgumentException("Wrong arguments");
+        }
+
+        int[][] matrix = new int[n][m];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (!scan.hasNextInt()) {
+                    throw new IllegalArgumentException("Not enough elements");
                 }
-
-                int[][] matrix = new int[n][m];
-                int elementCount = 0;
-
-
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < m; j++) {
-                        if (!scan.hasNextInt()) { // Проверяем, что вводятся целые числа
-                            throw new IllegalArgumentException("Not enough elements");
-                        }
-                        matrix[i][j] = scan.nextInt();
-                        elementCount++;
-                    }
-                }
-
-                if (scan.hasNextInt()) {
-                    throw new IllegalArgumentException("Too much arguments");
-                }
-
-                return matrix;
-            }
-            catch (IllegalArgumentException e) {
-                throw new IllegalArgumentException("Mistake in input of data: " + e.getMessage());
-            }
-            finally {
-                scan.close();
+                matrix[i][j] = scan.nextInt();
             }
         }
-        catch (FileNotFoundException e) {
-            throw new RuntimeException(e.getMessage());
+
+        if (scan.hasNextInt()) {
+            throw new IllegalArgumentException("Too much arguments");
         }
+        scan.close();
+        return matrix;
     }
+
 
     public static void localMinimum(int[][] matr){
         for(int i = 0 ; i < matr.length; i++) {
