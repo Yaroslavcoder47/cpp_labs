@@ -1,0 +1,4 @@
+Elements of series
+2 4 8 16
+Sum of elements
+30
