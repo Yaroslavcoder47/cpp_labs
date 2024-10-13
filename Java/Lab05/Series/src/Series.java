@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.lang.StringBuilder;
 import java.io.FileWriter;
+
 public abstract class Series{
     public final int firstElement;
 
@@ -34,7 +35,7 @@ public abstract class Series{
             file.write(Integer.toString(sumOfSeries(n)));
         }
         catch (IOException exc){
-            System.out.println(exc.getMessage());
+            System.err.println(exc.getMessage());
         }
     }
 }
