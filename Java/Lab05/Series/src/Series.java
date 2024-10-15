@@ -27,15 +27,15 @@ public abstract class Series{
         return res.toString();
     }
 
-    public void saveToFile(String path, int n){
-        try(FileWriter file = new FileWriter(path)){
-            file.write("Elements of series\n");
-            file.write(seriesToString(n) + "\n");
-            file.write("Sum of elements\n");
-            file.write(Integer.toString(sumOfSeries(n)));
+    public void saveToFile(String path, int n) throws IOException{
+        if(path == null){
+            throw new NullPointerException("Invalid path");
         }
-        catch (IOException exc){
-            System.err.println(exc.getMessage());
-        }
+        FileWriter file = new FileWriter(path);
+        file.write("Elements of series\n");
+        file.write(seriesToString(n) + "\n");
+        file.write("Sum of elements\n");
+        file.write(Integer.toString(sumOfSeries(n)));
+        file.close();
     }
 }
