@@ -1,7 +1,6 @@
 public class NumberArray <T extends Number>{
-    T[] array;
 
-    T countSum() {
+    T countSum(T[] array) {
         Number sum = 0;
         for (T elem : array) {
             sum = sum.doubleValue() + ((Number)elem).doubleValue();
@@ -9,10 +8,10 @@ public class NumberArray <T extends Number>{
         return (T)sum;
     }
 
-    double findArithmeticMean() {
+    double findArithmeticMean(T[] array) {
         if(array.length == 0){
             throw new IllegalArgumentException("Zero elements in array");
         }
-        return (double)countSum() / array.length;
+        return (double)countSum(array) / array.length;
     }
 }

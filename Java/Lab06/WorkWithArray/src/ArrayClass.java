@@ -1,8 +1,7 @@
 import java.util.function.Predicate;
 
-public class Array<T extends Comparable<T>> {
-    T[] array;
-    boolean contains(T value) {
+public class ArrayClass<T extends Comparable<T>> {
+    boolean contains(T[] array, T value) {
         for (T elem : array) {
             if (elem.compareTo(value) == 0) {
                 return true;
@@ -11,7 +10,7 @@ public class Array<T extends Comparable<T>> {
         return false;
     }
 
-    int countElementsWithValue(T value) {
+    int countElementsWithValue(T[] array, T value) {
         int count = 0;
         for (T element : array) {
             if (element.equals(value)) {
@@ -21,7 +20,7 @@ public class Array<T extends Comparable<T>> {
         return count;
     }
 
-    int countElementsGreaterThan(T value) {
+    int countElementsGreaterThan(T[] array, T value) {
         int count = 0;
         for (T element : array) {
             if (element.compareTo(value) > 0) {
@@ -31,7 +30,7 @@ public class Array<T extends Comparable<T>> {
         return count;
     }
 
-    int countElementsMatchingPredicate(Predicate<T> predicate) {
+    int countElementsMatchingPredicate(T[] array, Predicate<T> predicate) {
         int count = 0;
         for (T element : array) {
             if (predicate.test(element)) {

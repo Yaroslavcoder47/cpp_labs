@@ -1,10 +1,14 @@
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 import java.io.File;
 
 public class Main {
     public static void main(String[] args){
+        Integer[] arr = {1, 2, 6, 2};
+        ArrayClass<Integer> obj = new ArrayClass<Integer>();
+        System.out.println(obj.countElementsWithValue(arr, 2));
 //        Integer[] array = {1, 2, 3, 4, 5};
 //        Predicate<Integer> predicate = new DivPredicate(2);
 //        int count = MyUtil.countIf(array, predicate);
