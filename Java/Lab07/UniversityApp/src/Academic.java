@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class Academic {
+public class Academic extends Person{
+    public Academic(String name){
+        super(name);
+    }
 }

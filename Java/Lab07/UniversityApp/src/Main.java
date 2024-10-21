@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Main {
@@ -10,5 +11,14 @@ public class Main {
 
         Course course = new Course("MA", students);
         System.out.println(course);
+
+        for(Student elem : course){
+            System.out.println(elem);
+        }
+        Iterator<Student> iter = course.iterator();
+        while(iter.hasNext()){
+            Student student = iter.next();
+            System.out.println(student.getEmail());
+        }
     }
 }

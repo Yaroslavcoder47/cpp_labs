@@ -1,6 +1,12 @@
-public class Student extends Person {
+public class Student extends Person implements Notifiable{
     private String email;
     private String login;
+
+    public Student(String login, String email, String name) {
+        super(name);
+        this.email = email;
+        this.login = login;
+    }
 
     public void setLogin(String login) {
         this.login = login;
@@ -18,17 +24,16 @@ public class Student extends Person {
         return email;
     }
 
-    public Student(String login, String email, String name) {
-        super(name);
-        this.email = email;
-        this.login = login;
-    }
-
     @Override
     public String toString() {
         return "Student{" +
                 "email='" + email + '\'' +
                 ", login='" + login + '\'' +
                 "} " + super.toString();
+    }
+
+    @Override
+    public void notify(String message) {
+        System.out.println(message);
     }
 }

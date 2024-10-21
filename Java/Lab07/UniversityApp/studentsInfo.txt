@@ -1,0 +1,6 @@
+MA
+Student{email='vanya@mail.ru', login='gg4'} Person{name='Ivan'}
+Student{email='vano@gmail.com', login='yj34'} Person{name='Ivan'}
+Student{email='petya@mail.ru', login='pr3'} Person{name='Petya'}
+Student{email='yarik@mail.ru', login='te2'} Person{name='Yaroslav'}
+Student{email='ilya@mail.ru', login='jj8'} Person{name='Ilya'}
