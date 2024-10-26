@@ -2,9 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
-import java.util.*;
-import java.util.List;
 
 public class StudentGUI extends JFrame {
     private final JTextArea textArea;
@@ -12,7 +9,6 @@ public class StudentGUI extends JFrame {
     private final JTextField nameField;
     private final JTextField courseField;
     private final JTextField groupField;
-    private final List<Student> studentList = new ArrayList<>();
 
     public StudentGUI(String filepath){
         setTitle("Student Info");
@@ -20,11 +16,13 @@ public class StudentGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
 
-        loadDataFromFile(filepath);
+        Utility.loadDataFromFile(filepath);
 
         textArea = new JTextArea();
         textArea.setEditable(false);
-        showSortedStudents();
+        String textStudents = Utility.showSortedStudents().toString();
+        textArea.setText(textStudents);
+
         JScrollPane scrollPane = new JScrollPane(textArea);
         add(scrollPane, BorderLayout.CENTER);
         scrollPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -65,44 +63,10 @@ public class StudentGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 Student newStudent = new Student(Integer.parseInt(idField.getText()), nameField.getText(), Integer.parseInt(courseField.getText()),
                         Integer.parseInt(groupField.getText()));
-                studentList.add(newStudent);
-                showSortedStudents();
+                Utility.addStudent(newStudent);
+                String textStudents = Utility.showSortedStudents().toString();
+                textArea.setText(textStudents);
             }
         });
-    }
-
-    private void loadDataFromFile(String fileName) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] parts = line.split(" ");
-                int id = Integer.parseInt(parts[0]);
-                String surname = parts[1];
-                int course = Integer.parseInt(parts[2]);
-                int group = Integer.parseInt(parts[3]);
-                studentList.add(new Student(id, surname, course, group));
-            }
-        } catch (IOException exc) {
-            System.out.println(exc.getMessage());
-        }
-    }
-
-    private void showSortedStudents() {
-        Map<String, Integer> surnameCount = new HashMap<>();
-        for (Student student : studentList) {
-            surnameCount.put(student.getSurname(), surnameCount.getOrDefault(student.getSurname(), 0) + 1);
-        }
-
-        studentList.sort(
-                Comparator.comparing(Student::getSurname)
-                        .thenComparingInt(Student::getCourse)
-                        .thenComparingInt(Student::getGroup)
-                        .thenComparingInt(Student::getId)
-        );
-
-        textArea.setText("");
-        for (Student student : studentList) {
-            textArea.append(String.format("%d   %s   %d   %d\n", student.getId(), student.getSurname(), student.getCourse(), student.getGroup()));
-        }
     }
 }

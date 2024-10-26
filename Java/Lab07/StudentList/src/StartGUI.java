@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -35,7 +34,7 @@ public class StartGUI extends JFrame{
             public void actionPerformed(ActionEvent e){
                 String path = inputField.getText();
                 try{
-                    checkFileOpen(path);
+                    Utility.checkFileOpen(path);
                     StudentGUI studentWindow = new StudentGUI(path);
                     dispose();
                 }
@@ -50,16 +49,5 @@ public class StartGUI extends JFrame{
         });
 
         setVisible(true);
-    }
-
-    private void checkFileOpen(String name) throws FileNotFoundException, IOException{
-        File file = new File(name);
-
-        if(!file.exists() || !file.isFile()){
-            throw new FileNotFoundException("File does not exist!");
-        }
-        if(!file.canRead()){
-            throw new IOException("File cannot be read!");
-        }
     }
 }
