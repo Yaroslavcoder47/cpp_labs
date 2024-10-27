@@ -1,0 +1,6 @@
+DARK Chocolate{sugar: 20, weight: 10}
+MILK Chocolate{sugar: 10, weight: 12}
+RED Lollipop{sugar: 40, weight: 15}
+YELLOW Lollipop{sugar: 42, weight: 18}
+RED Lollipop{sugar: 40, weight: 15}
+WHITE Chocolate{sugar: 50, weight: 20}

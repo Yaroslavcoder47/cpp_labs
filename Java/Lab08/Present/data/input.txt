@@ -1,0 +1,5 @@
+Chocolate 20 10 DARK
+Chocolate 10 12 MILK
+Lollipop 40 15 RED
+Lollipop 42 18 YELLOW
+Lollipop 40 15 RED
