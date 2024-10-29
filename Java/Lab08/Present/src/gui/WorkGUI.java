@@ -1,11 +1,14 @@
 package gui;
 import io.Writer;
-import present.Present;
+import present.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.List;
 
 public class WorkGUI extends JFrame{
     private final JTextArea textArea;
@@ -31,6 +34,7 @@ public class WorkGUI extends JFrame{
         add(scrollPane, BorderLayout.CENTER);
         scrollPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
+        // left input panel
         JPanel leftInputPanel = new JPanel();
         leftInputPanel.setLayout(new GridLayout(5, 2, 10, 5));
         JLabel typeLabel = new JLabel("Type");
@@ -93,11 +97,74 @@ public class WorkGUI extends JFrame{
 
         add(bottomPanel, BorderLayout.SOUTH);
 
-
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(candyBox.getSelectedItem().equals("Chocolate")){
+                    present.putCandy(new Chocolate(Integer.parseInt(sugarField.getText()),
+                            Integer.parseInt(weightField.getText()), ChocolateType.valueOf(typeField.getText())));
+                }
+                else if(candyBox.getSelectedItem().equals("Lollipop")){
+                    present.putCandy(new Lollipop(Integer.parseInt(sugarField.getText()),
+                            Integer.parseInt(weightField.getText()), LollipopColor.valueOf(typeField.getText())));
+                }
+                textArea.setText(Writer.writeToString(present.getCandies()).toString());
+            }
+        });
 
+        writeToFileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Writer.writeToFile("./data/candiesData.txt", present.getCandies());
+                JOptionPane.showMessageDialog(WorkGUI.this, "Data was saved!");
+            }
+        });
+
+        sortButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(sortBox.getSelectedItem().equals("By Weight")){
+                    present.sortCandies(true);
+                }
+                else if(sortBox.getSelectedItem().equals("By Sugar")){
+                    present.sortCandies(false);
+                }
+                textArea.setText(Writer.writeToString(present.getCandies()).toString());
+            }
+        });
+
+        findButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int sugarValue = sugarField.getText().isEmpty() ? 1 : Integer.parseInt(sugarField.getText());
+                int weightValue = weightField.getText().isEmpty() ? 1 : Integer.parseInt(weightField.getText());
+
+                Predicate<Candy> predicate = candy -> {
+                    boolean matchesSugar = sugarValue == -1 || candy.getSugar() == sugarValue;
+                    boolean matchesWeight = weightValue == -1 || candy.getWeight() == weightValue;
+
+                    return matchesWeight || matchesSugar;
+                };
+
+                String resultCandies = present.findCandy(predicate);
+                textArea.setText(resultCandies);
+            }
+        });
+
+        writeSumButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Writer.WriteToFileSum(present.getCandies());
+                JOptionPane.showMessageDialog(WorkGUI.this, "Data was saved!");
+            }
+        });
+
+        mapButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Map<Integer, List<Candy>> result = present.creatMapOfCandies();
+                Writer.writeMapToFile(result);
+                JOptionPane.showMessageDialog(WorkGUI.this, "Map<Weight, Candy> was saved!");
             }
         });
     }

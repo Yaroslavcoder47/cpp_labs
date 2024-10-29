@@ -1,0 +1,27 @@
+Map of candies grouped by weight:
+Weight: 18 grams
+Candies:
+  - YELLOW Lollipop{sugar: 42, weight: 18}
+
+
+Weight: 10 grams
+Candies:
+  - DARK Chocolate{sugar: 20, weight: 10}
+
+  - WHITE Chocolate{sugar: 47, weight: 10}
+
+  - YELLOW Lollipop{sugar: 10, weight: 10}
+
+
+Weight: 12 grams
+Candies:
+  - MILK Chocolate{sugar: 10, weight: 12}
+
+
+Weight: 15 grams
+Candies:
+  - RED Lollipop{sugar: 40, weight: 15}
+
+  - RED Lollipop{sugar: 40, weight: 15}
+
+
