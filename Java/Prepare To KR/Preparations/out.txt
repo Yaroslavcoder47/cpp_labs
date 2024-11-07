@@ -1,0 +1,4 @@
+Toy{name='book', minAge=3, maxAge=5}
+Toy{name='bear', minAge=3, maxAge=12}
+Toy{name='ball', minAge=1, maxAge=3}
+Toy{name='book', minAge=16, maxAge=100}
