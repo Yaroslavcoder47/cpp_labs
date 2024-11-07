@@ -1,0 +1,11 @@
+Oak 20 LEAFY 40
+Pine 30 PINY 50
+Maple 25 LEAFY 35
+Spruce 40 PINY 60
+Birch 15 LEAFY 20
+Cedar 35 PINY 45
+Fir 28 PINY 55
+Willow 18 LEAFY 25
+Aspen 22 LEAFY 32
+Hemlock 38 PINY 52
+
