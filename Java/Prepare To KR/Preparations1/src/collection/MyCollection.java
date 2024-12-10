@@ -4,10 +4,12 @@ import iterator.MyIterable;
 import iterator.MyIterator;
 import strategy.MyStrategy;
 import strategy.StreamStrategy;
+import visitor.Element;
+import visitor.Visitor;
 
 import java.util.ArrayList;
 
-public class MyCollection implements MyIterable<Integer> {
+public class MyCollection implements MyIterable<Integer>, Element {
     private ArrayList<Integer> data = new ArrayList<>();
     private MyStrategy strategy = new StreamStrategy();
 
@@ -62,5 +64,12 @@ public class MyCollection implements MyIterable<Integer> {
                 return data.get(current);
             }
         };
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        for(int element : data){
+            visitor.visit(element);
+        }
     }
 }
