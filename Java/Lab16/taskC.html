@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Использование HTML 5</title>
+
+</head>
+<body>
+    <div id="task-c" class="image-map">
+        <h2>Карта с изображением</h2>
+        <img src="images/image.jpg" usemap="#image-map" alt="Карта изображения" align="left">
+        <map name="image-map">
+            
+            <area shape="rect" coords="0,0,300,577" href="https://example.com/part1" alt="Часть 1">
+            <area shape="rect" coords="300,0,600,577" href="https://example.com/part2" alt="Часть 2">
+            <area shape="rect" coords="600,0,900,577" href="https://example.com/part3" alt="Часть 3">
+            <area shape="rect" coords="900,0,1200,577" href="https://example.com/part4" alt="Часть 4">
+
+        </map>
+        <div id="highlight" class="highlight" style="display: none;"></div>
+    </div>
+
+    <script>
+        const areas = document.querySelectorAll('area');
+        const highlight = document.getElementById('highlight');
+        
+        areas.forEach(area => {
+            area.addEventListener('mouseover', function() {
+                const coords = area.coords.split(',');
+                highlight.style.display = 'block';
+                highlight.style.left = `${coords[0]}px`;
+                highlight.style.top = `${coords[1]}px`;
+                highlight.style.width = `${coords[2] - coords[0]}px`;
+                highlight.style.height = `${coords[3] - coords[1]}px`;
+            });
+        
+            area.addEventListener('mouseout', function() {
+                highlight.style.display = 'none';
+            });
+        });
+    </script>
+    
+</body>
+</html>

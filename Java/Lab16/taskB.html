@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Использование HTML 5</title>
+
+</head>
+<body>
+    <div id="task-b" class="form">
+        <h2>Информация о студенте</h2>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="text" id="surname" placeholder="Фамилия" required>
+            <select id="course" required>
+                <option value="">Курс студента</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="file" id="photo" accept="image/*" placeholder="Фотография">
+          
+            <label>Активный студент <input type="checkbox" id="active"></label>
+            <button type="submit">
+                <img src="images/imgOK.png" alt="ОК">
+                ОК
+            </button>
+            <button type="button" class="cancel">
+                <img src="images/imgCancel.png" alt="Отмена">
+                Отмена
+            </button>
+        </form>
+        <div id="output" class="output" style="display: none;">
+            <h2>Введённые данные</h2>
+            <p><strong>Имя:</strong> <span id="outputName"></span></p>
+            <p><strong>Фамилия:</strong> <span id="outputSurname"></span></p>
+            <p><strong>Курс:</strong> <span id="outputCourse"></span></p>
+            <p><strong>Активный студент:</strong> <span id="outputActive"></span></p>
+            <p><strong>Фотография:</strong></p>
+            <img id="outputPhoto" src="" alt="Выбранное фото" style="display: none;">
+        </div>
+    </div>
+    
+</body>
+</html>
