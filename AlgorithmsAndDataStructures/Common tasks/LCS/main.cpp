@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
     int n;
     cin >> n;
     int a[1000];
@@ -53,8 +54,6 @@ int main()
 
     reverse(a_ind.begin(), a_ind.end());
     reverse(b_ind.begin(), b_ind.end());
-
-    cout << a_ind.size() << '\n';
 
     cout << k << '\n';
     for(int i : a_ind){
