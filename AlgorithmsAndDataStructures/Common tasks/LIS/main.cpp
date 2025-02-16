@@ -1,35 +1,48 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
 
 using namespace std;
+
+
+int bin_upper(int left, int right, vector<int>& arr, int x){
+    while(left < right){
+        int mid = (right + left) / 2;
+        if(x <= arr[mid]){
+            right = mid;
+        }
+        else{
+            left = mid + 1;
+        }
+    }
+    return left;
+}
 
 int main()
 {
     ios_base::sync_with_stdio(false);
+    ifstream fin("input.txt");
+    ofstream fout("output.txt");
     int n;
-    cin >> n;
+    fin >> n;
  
-    int a[70000];
+    vector<int> a(n);
     for(int i = 0; i < n; ++i){
-        cin >> a[i];
+        fin >> a[i];
     }
 
-
-    int dp[70000];
-    for(int i = 0; i < n; ++i)
-    {
-        dp[i] = 1;
-    }
-
-    for(int i = 1; i < n; ++i){
-        int max_el = dp[0];
-        for(int j = 0;  j < i; ++j){
-            if(a[j] < a[i] && dp[j] >= max_el){
-                max_el = dp[j];
-            }
+    vector<int> dp;
+    
+    for(int i = 0; i < n; ++i){
+        int index = bin_upper(0, dp.size(), dp, a[i]);
+        if(index == dp.size()){
+            dp.push_back(a[i]);
         }
-        dp[i] = max_el + 1;
+        else{
+            dp[index] = a[i];
+        }
     }
 
-    cout << dp[n-1];
+    fout << dp.size();
     return 0;
 }
