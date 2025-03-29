@@ -6,4 +6,5 @@
   <li>Assembler</li>
   <li>Qt framework</li>
   <li>Java</li>
+  <li>Access, MySQL, ERwin</li>
 </ul>
