@@ -365,6 +365,9 @@ QT/Lab08/Paint/build/
 #Java folders
 Java/Test_Java
 
+#Python envs
+venv
+
 
 
 
